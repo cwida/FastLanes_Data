@@ -1,0 +1,100 @@
+{
+  "columns": [
+    {
+      "name": "a",
+      "type": "struct",
+      "children": [
+        {
+          "name": "b",
+          "type": "integer"
+        },
+        {
+          "name": "c",
+          "type": "integer"
+        },
+        {
+          "name": "d",
+          "type": "struct",
+          "children": [
+            {
+              "name": "e",
+              "type": "integer"
+            }
+          ]
+        },
+        {
+          "name": "f",
+          "type": "list",
+          "children": [
+            {
+              "name": "child",
+              "type": "integer"
+            }
+          ]
+        },
+        {
+          "name": "g",
+          "type": "list",
+          "children": [
+            {
+              "name": "child",
+              "type": "struct",
+              "children": [
+                {
+                  "name": "h",
+                  "type": "integer"
+                },
+                {
+                  "name": "i",
+                  "type": "integer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "j",
+          "type": "list",
+          "children": [
+            {
+              "name": "child",
+              "type": "list",
+              "children": [
+                {
+                  "name": "child",
+                  "type": "integer"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "k",
+          "type": "list",
+          "children": [
+            {
+              "name": "child",
+              "type": "list",
+              "children": [
+                {
+                  "name": "child",
+                  "type": "struct",
+                  "children": [
+                    {
+                      "name": "l",
+                      "type": "integer"
+                    },
+                    {
+                      "name": "m",
+                      "type": "integer"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
