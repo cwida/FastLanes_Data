@@ -1,0 +1,17 @@
+columns:
+  - name: C_CUSTKEY
+    type: UINT32
+  - name: C_NAME
+    type: string
+  - name: C_ADDRESS
+    type: string
+  - name: C_CITY
+    type: string
+  - name: C_NATION
+    type: string
+  - name: C_REGION
+    type: string
+  - name: C_PHONE
+    type: string
+  - name: C_MKTSEGMENT
+    type: string

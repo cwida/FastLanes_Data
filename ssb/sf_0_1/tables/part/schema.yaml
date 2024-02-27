@@ -1,0 +1,17 @@
+columns:
+  - name: P_PARTKEY
+    type: UINT32
+  - name: P_NAME
+    type: string
+  - name: P_MFGR
+    type: string
+  - name: P_CATEGORY
+    type: string
+  - name: P_COLOR
+    type: string
+  - name: P_TYPE
+    type: string
+  - name: P_SIZE
+    type: UINT8
+  - name: P_CONTAINER
+    type: string

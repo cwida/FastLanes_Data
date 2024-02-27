@@ -1,0 +1,35 @@
+columns:
+  - name: LO_ORDERKEY
+    type: UINT32
+  - name: LO_LINENUMBER
+    type: UINT8
+  - name: LO_CUSTKEY
+    type: UINT32
+  - name: LO_PARTKEY
+    type: UINT32
+  - name: LO_SUPPKEY
+    type: UINT32
+  - name: LO_ORDERDATE
+    type: Date
+  - name: LO_ORDERPRIORITY
+    type: string
+  - name: LO_SHIPPRIORITY
+    type: UINT8
+  - name: LO_QUANTITY
+    type: UINT8
+  - name: LO_EXTENDEDPRICE
+    type: UINT32
+  - name: LO_ORDTOTALPRICE
+    type: UINT32
+  - name: LO_DISCOUNT
+    type: UINT8
+  - name: LO_REVENUE
+    type: UINT32
+  - name: LO_SUPPLYCOST
+    type: UINT32
+  - name: LO_TAX
+    type: UINT8
+  - name: LO_COMMITDATE
+    type: DATE
+  - name: LO_SHIPMODE
+    type: string

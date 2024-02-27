@@ -1,0 +1,15 @@
+columns:
+  - name: S_SUPPKEY
+    type: UINT32
+  - name: S_NAME
+    type: string
+  - name: S_ADDRESS
+    type: string
+  - name: S_CITY
+    type: string
+  - name: S_NATION
+    type: string
+  - name: S_REGION
+    type: string
+  - name: S_PHONE
+    type: string
