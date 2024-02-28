@@ -93,6 +93,44 @@
               ]
             }
           ]
+        },
+        {
+          "name": "n",
+          "type": "map",
+          "children": [
+            {
+              "name": "key",
+              "type": "string"
+            },
+            {
+              "name": "value",
+              "type": "integer"
+            }
+          ]
+        },
+        {
+          "name": "o",
+          "type": "map",
+          "children": [
+            {
+              "name": "key",
+              "type": "string"
+            },
+            {
+              "name": "value",
+              "type": "struct",
+              "children": [
+                {
+                  "name": "p",
+                  "type": "integer"
+                },
+                {
+                  "name": "q",
+                  "type": "integer"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
