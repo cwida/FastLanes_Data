@@ -1,0 +1,65 @@
+columns:
+  - name: seqname
+    type: BIGINT
+  - name: source
+    type: VARCHAR
+  - name: feature
+    type: VARCHAR
+  - name: start
+    type: BIGINT
+  - name: end
+    type: BIGINT
+  - name: score
+    type: VARCHAR
+  - name: strand
+    type: VARCHAR
+  - name: frame
+    type: VARCHAR
+  - name: CCDS
+    type: DOUBLE
+  - name: basic
+    type: DOUBLE
+  - name: ccds_id
+    type: VARCHAR
+  - name: cds_end_NF
+    type: DOUBLE
+  - name: cds_start_NF
+    type: DOUBLE
+  - name: exon_id
+    type: VARCHAR
+  - name: exon_number
+    type: BIGINT
+  - name: exon_version
+    type: BIGINT
+  - name: gene_biotype
+    type: VARCHAR
+  - name: gene_id
+    type: VARCHAR
+  - name: gene_name
+    type: VARCHAR
+  - name: gene_source
+    type: VARCHAR
+  - name: gene_version
+    type: BIGINT
+  - name: mRNA_end_NF
+    type: DOUBLE
+  - name: mRNA_start_NF
+    type: DOUBLE
+  - name: protein_id
+    type: VARCHAR
+  - name: protein_version
+    type: BIGINT
+  - name: seleno
+    type: VARCHAR
+  - name: transcript_biotype
+    type: VARCHAR
+  - name: transcript_id
+    type: VARCHAR
+  - name: transcript_name
+    type: VARCHAR
+  - name: transcript_source
+    type: VARCHAR
+  - name: transcript_support_level
+    type: VARCHAR
+  - name: transcript_version
+    type: BIGINT
