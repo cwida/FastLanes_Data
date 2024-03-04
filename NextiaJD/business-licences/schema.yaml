@@ -1,0 +1,3 @@
+columns:
+  - name: column0
+    type: VARCHAR
