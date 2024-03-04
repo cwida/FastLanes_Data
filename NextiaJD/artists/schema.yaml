@@ -1,0 +1,21 @@
+columns:
+  - name: mbid
+    type: VARCHAR
+  - name: artist_mb
+    type: VARCHAR
+  - name: artist_lastfm
+    type: VARCHAR
+  - name: country_mb
+    type: VARCHAR
+  - name: country_lastfm
+    type: VARCHAR
+  - name: tags_mb
+    type: VARCHAR
+  - name: tags_lastfm
+    type: VARCHAR
+  - name: listeners_lastfm
+    type: BIGINT
+  - name: scrobbles_lastfm
+    type: BIGINT
+  - name: ambiguous_artist
+    type: BOOLEAN
