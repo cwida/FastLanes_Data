@@ -1,7 +1,0 @@
-columns:
-  - name: catch
-    type: TIMESTAMP
-  - name: id
-    type: VARCHAR
-  - name: player
-    type: VARCHAR
