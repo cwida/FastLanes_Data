@@ -53,22 +53,23 @@ def download_and_decompress_file(url, folder_path, csv_filename):
         print(f"Failed to download {url}")
 
 
-def process_csv_file(csv_file_path, max_rows):
+def trim_csv(csv_file_path, max_rows):
     """
-    Reads a CSV file as a plain text file, retains only the first `max_rows` of data excluding the header,
-    and rewrites the CSV file with this subset. If the actual number of data rows in the file is less than `max_rows`,
-    prints a warning indicating the file is shorter than expected.
+    Reads a CSV file as a plain text file, respects multiline quotes as part of a single row,
+    retains only the first `max_rows` of data excluding the header, and rewrites the CSV file
+    with this subset. Prints a warning if the actual number of data rows in the file is less
+    than `max_rows`.
 
     Parameters:
-    - csv_file_path (str): The path to the CSV file to process.
-    - max_rows (int): The maximum number of data rows to keep in the CSV file, excluding the header.
+    - csv_file_path (str): Path to the CSV file to process.
+    - max_rows (int): Maximum number of data rows to keep in the CSV file, excluding the header.
 
     Returns:
-    - None: This function directly modifies the file specified by `csv_file_path` and does not return a value.
+    - None: Modifies the file specified by `csv_file_path` directly and does not return a value.
 
     Side effects:
     - Rewrites the CSV file at `csv_file_path` with up to `max_rows` of data, preserving the header.
-    - Prints a warning to the console if the file contains fewer data rows than `max_rows`.
+    - Prints a warning if the file contains fewer data rows than `max_rows`.
     """
     temp_file_path = csv_file_path + ".tmp"
     try:
@@ -76,27 +77,46 @@ def process_csv_file(csv_file_path, max_rows):
             header = read_file.readline()
             write_file.write(header)  # Write the header to the temp file
             rows_written = 0
-            
-            # Read and write the next `max_rows` lines
+            in_quote = False
+
             for line in read_file:
-                if rows_written < max_rows:
-                    write_file.write(line)
-                    rows_written += 1
-                else:
+                if rows_written >= max_rows:
                     break  
+                write_file.write(line)
+                # Check if the line contains an odd number of quotes, flipping the in_quote flag accordingly
+                if line.count('"') % 2 != 0:
+                    in_quote = not in_quote
+                if not in_quote and line.endswith('\n'):
+                    rows_written += 1
 
-        # Check if the file had fewer rows than max_rows
         if rows_written < max_rows:
-            print(f"Warning: The file {csv_file_path} has only {rows_written} rows, which is less than {max_rows}.")
+            print(f"Warning: The file {csv_file_path} has only {rows_written} data rows, which is less than {max_rows}.")
 
-        # Replace the original file with the temp file
         os.replace(temp_file_path, csv_file_path)
 
     except Exception as e:
         print(f"An error occurred while processing {csv_file_path}: {e}")
-        # Clean up temp file in case of an error
         if os.path.exists(temp_file_path):
             os.remove(temp_file_path)
+
+
+# Increase the maximum field size limit
+csv.field_size_limit(sys.maxsize)
+
+cwd = os.getcwd()
+folders = [f for f in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, f))]
+
+for folder in folders:
+    if folder == '.ipynb_checkpoints':
+        continue
+    # Construct the file path for the CSV file in each folder
+    csv_file_path = os.path.join(cwd, folder, f'{folder}.csv')
+    print(f"Processing {folder}")
+    
+    if os.path.isfile(csv_file_path):
+        trim_csv(csv_file_path, 64 * 1024)
+    else:
+        print(f"No CSV file found for folder: {folder}")
 
 
 # ========================================================
@@ -170,7 +190,7 @@ for folder in folders:
     print(f"Processing {folder}")
 
     if os.path.isfile(csv_file_path):
-        process_csv_file(csv_file_path, size_limit)
+        trim_csv(csv_file_path, size_limit)
     else:
         print(f"No CSV file found for folder: {folder}")
 
@@ -294,6 +314,8 @@ folders = [f for f in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, f))]
 # =======================================================
 # When we generate the schema.yaml, we also get rid of the header of the .csv
 
+max_rows = 1024 * 64
+
 # This is for correct .yaml formatting
 class MyDumper(yaml.Dumper):
     def increase_indent(self, flow=False, indentless=False):
@@ -302,50 +324,53 @@ class MyDumper(yaml.Dumper):
 
 for folder in folders:
     csv_file_path = os.path.join(cwd, folder, f'{folder}.csv')
-
+    
     if os.path.isfile(csv_file_path):
-        con = duckdb.connect(database=':memory:')
+        con = duckdb.connect(database=':memory:') 
 
         # DuckDB cannot correctly guess the formatting of some files. Thus, we sometimes help it 
         # The commented out lines may be useful when row number of files is > 64 * 1024
         if folder == 'wowah_data':
-            con.execute(
-                f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}', "
-                f"timestampformat='%m/%d/%y %H:%M:%S')")
+            con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}', timestampformat='%m/%d/%y %H:%M:%S')")
         elif folder == 'us_perm_visas':
             con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
-            'employer_postal_code': 'VARCHAR'})""")
-            # 'wage_offer_from_9089': 'VARCHAR',
-            # 'wage_offer_to_9089': 'VARCHAR',
-            # 'pw_amount_9089': 'VARCHAR'})""")
+            'employer_postal_code': 'VARCHAR'})""") 
+            #'wage_offer_from_9089': 'VARCHAR', 
+            #'wage_offer_to_9089': 'VARCHAR', 
+            #'pw_amount_9089': 'VARCHAR'})""")
         elif folder == 'business-licences':
-           con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
-           'House': 'VARCHAR'})""")
+            con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
+            'House': 'VARCHAR'})""")
         else:
             con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}')")
 
+        # Check if the number of rows matches max_rows
+        row_count_result = con.execute("SELECT COUNT(*) FROM my_table").fetchone()[0]
+        if row_count_result != max_rows:
+            raise ValueError(f"Error: The table created from {csv_file_path} contains {row_count_result} rows, which does not match the expected {max_rows} rows.")
+        
         # Retrieve and convert the schema to YAML
         schema_result = con.execute("DESCRIBE my_table").fetchall()
         # Transform the schema result into the desired format
         schema_formatted = {'columns': [{'name': col[0], 'type': col[1]} for col in schema_result]}
         schema_yaml = yaml.dump(schema_formatted, sort_keys=False)
-
+        
         # Save the YAML
         yaml_file_path = os.path.join(cwd, folder, 'schema.yaml')
         with open(yaml_file_path, 'w') as f:
             yaml.dump(schema_formatted, f, sort_keys=False, Dumper=MyDumper, default_flow_style=False)
-
+        
         # After saving the schema, remove the header from the CSV file
         # Read the CSV file again, this time as a list of lines
         with open(csv_file_path, 'r') as file:
             lines = file.readlines()
-
+        
         # Write the lines back, excluding the first line (header)
         with open(csv_file_path, 'w') as file:
             file.writelines(lines[1:])
-
+        
         print(f"Made schema.yaml and removed header for: {csv_file_path}")
-
+        
         con.close()
     else:
         print(f"No CSV file found for folder: {folder}")
