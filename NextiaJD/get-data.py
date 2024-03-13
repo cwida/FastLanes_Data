@@ -53,11 +53,11 @@ def download_and_decompress_file(url, folder_path, csv_filename):
         print(f"Failed to download {url}")
 
 
-def process_csv_file(csv_path, max_rows):
+def process_csv_file(csv_file_path, max_rows):
     """
-    Reads a CSV file, retains only the first `max_rows` of data excluding the header,
-    and rewrites the CSV file with this subset. If the actual number of data rows in the
-    file is less than `max_rows`, prints a warning indicating the file is shorter than expected.
+    Reads a CSV file as a plain text file, retains only the first `max_rows` of data excluding the header,
+    and rewrites the CSV file with this subset. If the actual number of data rows in the file is less than `max_rows`,
+    prints a warning indicating the file is shorter than expected.
 
     Parameters:
     - csv_file_path (str): The path to the CSV file to process.
@@ -70,23 +70,33 @@ def process_csv_file(csv_path, max_rows):
     - Rewrites the CSV file at `csv_file_path` with up to `max_rows` of data, preserving the header.
     - Prints a warning to the console if the file contains fewer data rows than `max_rows`.
     """
+    temp_file_path = csv_file_path + ".tmp"
     try:
-        with open(csv_path, 'r', encoding='utf-8') as file:
-            reader = csv.reader(file)
-            rows = list(reader)
+        with open(csv_file_path, 'r') as read_file, open(temp_file_path, 'w') as write_file:
+            header = read_file.readline()
+            write_file.write(header)  # Write the header to the temp file
+            rows_written = 0
+            
+            # Read and write the next `max_rows` lines
+            for line in read_file:
+                if rows_written < max_rows:
+                    write_file.write(line)
+                    rows_written += 1
+                else:
+                    break  
 
-        num_rows = len(rows) - 1
-        if num_rows < max_rows:
-            print(f"Warning: The file {csv_path} has only {num_rows} rows, which is less than {max_rows}.")
+        # Check if the file had fewer rows than max_rows
+        if rows_written < max_rows:
+            print(f"Warning: The file {csv_file_path} has only {rows_written} rows, which is less than {max_rows}.")
 
-        # Write back only the desired number of rows (including the header)
-        with open(csv_path, 'w') as file:
-            writer = csv.writer(file)
-            for row in rows[:max_rows + 1]:
-                writer.writerow(row)
+        # Replace the original file with the temp file
+        os.replace(temp_file_path, csv_file_path)
 
     except Exception as e:
-        print(f"An error occurred while processing {csv_path}: {e}")
+        print(f"An error occurred while processing {csv_file_path}: {e}")
+        # Clean up temp file in case of an error
+        if os.path.exists(temp_file_path):
+            os.remove(temp_file_path)
 
 
 # ========================================================
@@ -308,9 +318,9 @@ for folder in folders:
             # 'wage_offer_from_9089': 'VARCHAR',
             # 'wage_offer_to_9089': 'VARCHAR',
             # 'pw_amount_9089': 'VARCHAR'})""")
-        # elif folder == 'business-licences':
-        #    con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
-        #    'House': 'VARCHAR'})""")
+        elif folder == 'business-licences':
+           con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
+           'House': 'VARCHAR'})""")
         else:
             con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}')")
 
