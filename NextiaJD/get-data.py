@@ -8,6 +8,7 @@ import yaml
 import pandas as pd
 import csv
 import sys
+import shutil
 
 url = 'https://homepages.cwi.nl/~boncz/NextiaJD/'
 cwd = os.getcwd()
@@ -374,3 +375,50 @@ for folder in folders:
         con.close()
     else:
         print(f"No CSV file found for folder: {folder}")
+
+
+# ========================================================
+# ========== Rename the files to work with C++ ===========
+# ========================================================
+# C++ doesn't support file names with '-' and '.' symbols, and at some point we do want to have files for each file name.
+# Thus, we replace these symbols in files/folders now with underscore.
+
+def rename_folders_and_files(directory):
+    """
+    Renames folders and files within the specified directory.
+    Only affects folders whose names contain '-' or '.', replacing these characters with '_'.
+    Moves all files from the old folder to the newly named folder if renaming is necessary.
+    """
+    directory = os.path.abspath(directory)
+    folders = [d for d in os.listdir(directory) if os.path.isdir(os.path.join(directory, d))]
+
+    for folder in folders:
+        if '-' in folder or '.' in folder:
+            new_folder_name = folder.replace('-', '_').replace('.', '_')
+            old_folder_path = os.path.join(directory, folder)
+            new_folder_path = os.path.join(directory, new_folder_name)
+
+            os.makedirs(new_folder_path, exist_ok=True)
+
+            old_csv_path = os.path.join(old_folder_path, f"{folder}.csv")
+            new_csv_path = os.path.join(new_folder_path, f"{new_folder_name}.csv")
+            if os.path.exists(old_csv_path):
+                shutil.move(old_csv_path, new_csv_path)
+
+            for item in os.listdir(old_folder_path):
+                old_item_path = os.path.join(old_folder_path, item)
+
+                if old_item_path != old_csv_path:
+                    new_item_path = os.path.join(new_folder_path, item)
+                    shutil.move(old_item_path, new_item_path)
+
+            if not os.listdir(old_folder_path):
+                os.rmdir(old_folder_path)
+            else:
+                print(f"Folder not empty: {old_folder_path}")
+        else:
+            continue
+
+
+current_directory = '.'
+rename_folders_and_files(current_directory)
