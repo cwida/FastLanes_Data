@@ -82,7 +82,7 @@ def trim_csv(csv_file_path, max_rows):
 
             for line in read_file:
                 if rows_written >= max_rows:
-                    break  
+                    break
                 write_file.write(line)
                 # Check if the line contains an odd number of quotes, flipping the in_quote flag accordingly
                 if line.count('"') % 2 != 0:
@@ -91,7 +91,8 @@ def trim_csv(csv_file_path, max_rows):
                     rows_written += 1
 
         if rows_written < max_rows:
-            print(f"Warning: The file {csv_file_path} has only {rows_written} data rows, which is less than {max_rows}.")
+            print(
+                f"Warning: The file {csv_file_path} has only {rows_written} data rows, which is less than {max_rows}.")
 
         os.replace(temp_file_path, csv_file_path)
 
@@ -113,12 +114,11 @@ for folder in folders:
     # Construct the file path for the CSV file in each folder
     csv_file_path = os.path.join(cwd, folder, f'{folder}.csv')
     print(f"Processing {folder}")
-    
+
     if os.path.isfile(csv_file_path):
         trim_csv(csv_file_path, 64 * 1024)
     else:
         print(f"No CSV file found for folder: {folder}")
-
 
 # ========================================================
 # ========== Download the files that are <100MB ==========
@@ -147,7 +147,6 @@ for link in soup.find_all('a'):
 
 print("Download and decompression completed for all files under 100MB.")
 
-
 # =================================================================================================
 # ========== Download metadata.csv and delete information about files we didn't download ==========
 # =================================================================================================
@@ -173,7 +172,6 @@ valid_filenames = [f"{folder}.csv" for folder in folders]
 df_filtered = df[df['filename'].apply(lambda x: any(x == valid_name for valid_name in valid_filenames))]
 df_filtered.drop(axis=1, labels='file_size', inplace=True)
 
-
 # ========================================================
 # ========== Keep only the first 64 * 1024 rows ==========
 # ========================================================
@@ -194,7 +192,6 @@ for folder in folders:
         trim_csv(csv_file_path, size_limit)
     else:
         print(f"No CSV file found for folder: {folder}")
-
 
 # THE FOLLOWING CODE IS COMMENTED OUT AS IT IS ONLY NECESSARY WHEN DEALING WITH MORE THAN 64K ROWS OF DATA
 # ===============================================================================
@@ -309,13 +306,13 @@ df_filtered.to_csv('metadata.csv', index=False)
 
 folders = [f for f in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, f))]
 
-
 # =======================================================
 # ========= Generate schema.yaml for all files ==========
 # =======================================================
 # When we generate the schema.yaml, we also get rid of the header of the .csv
 
 max_rows = 1024 * 64
+
 
 # This is for correct .yaml formatting
 class MyDumper(yaml.Dumper):
@@ -325,20 +322,21 @@ class MyDumper(yaml.Dumper):
 
 for folder in folders:
     csv_file_path = os.path.join(cwd, folder, f'{folder}.csv')
-    
+
     if os.path.isfile(csv_file_path):
-        con = duckdb.connect(database=':memory:') 
+        con = duckdb.connect(database=':memory:')
 
         # DuckDB cannot correctly guess the formatting of some files. Thus, we sometimes help it 
         # The commented out lines may be useful when row number of files is > 64 * 1024
         if folder == 'wowah_data':
-            con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}', timestampformat='%m/%d/%y %H:%M:%S')")
+            con.execute(
+                f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}', timestampformat='%m/%d/%y %H:%M:%S')")
         elif folder == 'us_perm_visas':
             con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
-            'employer_postal_code': 'VARCHAR'})""") 
-            #'wage_offer_from_9089': 'VARCHAR', 
-            #'wage_offer_to_9089': 'VARCHAR', 
-            #'pw_amount_9089': 'VARCHAR'})""")
+            'employer_postal_code': 'VARCHAR'})""")
+            # 'wage_offer_from_9089': 'VARCHAR',
+            # 'wage_offer_to_9089': 'VARCHAR',
+            # 'pw_amount_9089': 'VARCHAR'})""")
         elif folder == 'business-licences':
             con.execute(f"CREATE TABLE my_table AS SELECT * FROM read_csv('{csv_file_path}'," + """ types = {
             'House': 'VARCHAR'})""")
@@ -348,30 +346,31 @@ for folder in folders:
         # Check if the number of rows matches max_rows
         row_count_result = con.execute("SELECT COUNT(*) FROM my_table").fetchone()[0]
         if row_count_result != max_rows:
-            raise ValueError(f"Error: The table created from {csv_file_path} contains {row_count_result} rows, which does not match the expected {max_rows} rows.")
-        
+            raise ValueError(
+                f"Error: The table created from {csv_file_path} contains {row_count_result} rows, which does not match the expected {max_rows} rows.")
+
         # Retrieve and convert the schema to YAML
         schema_result = con.execute("DESCRIBE my_table").fetchall()
         # Transform the schema result into the desired format
         schema_formatted = {'columns': [{'name': col[0], 'type': col[1]} for col in schema_result]}
         schema_yaml = yaml.dump(schema_formatted, sort_keys=False)
-        
+
         # Save the YAML
         yaml_file_path = os.path.join(cwd, folder, 'schema.yaml')
         with open(yaml_file_path, 'w') as f:
             yaml.dump(schema_formatted, f, sort_keys=False, Dumper=MyDumper, default_flow_style=False)
-        
+
         # After saving the schema, remove the header from the CSV file
         # Read the CSV file again, this time as a list of lines
         with open(csv_file_path, 'r') as file:
             lines = file.readlines()
-        
+
         # Write the lines back, excluding the first line (header)
         with open(csv_file_path, 'w') as file:
             file.writelines(lines[1:])
-        
+
         print(f"Made schema.yaml and removed header for: {csv_file_path}")
-        
+
         con.close()
     else:
         print(f"No CSV file found for folder: {folder}")
@@ -437,7 +436,7 @@ with open(file_path, 'r') as file:
 
 modified_content = schema_content.replace(
     '''congestion_surcharge
-    type: VARCHAR''', 
+    type: VARCHAR''',
     '''congestion_surcharge
     type: BIGINT'''
 )
