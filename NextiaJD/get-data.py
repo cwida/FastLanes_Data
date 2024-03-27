@@ -422,3 +422,25 @@ def rename_folders_and_files(directory):
 
 current_directory = '.'
 rename_folders_and_files(current_directory)
+
+# ========================================
+# ========== Fix wrong schemas ===========
+# ========================================
+# Since we are using only small slice of the files, the last column of yellow_tripdata_2019_01 
+# is always empty. Duckdb inferes that the column is a string and never contains any values 
+# (and it is not wrong in it's inference!). But if we look at the larger file, we are actually 
+# dealing with an integer. So let's reflect that in schema as it causes errors later during compression
+file_path = os.path.abspath(".") + '/yellow_tripdata_2019_01/schema.yaml'
+
+with open(file_path, 'r') as file:
+    schema_content = file.read()
+
+modified_content = schema_content.replace(
+    '''congestion_surcharge
+    type: VARCHAR''', 
+    '''congestion_surcharge
+    type: BIGINT'''
+)
+
+with open(file_path, 'w') as file:
+    file.write(modified_content)
