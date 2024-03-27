@@ -34,4 +34,4 @@ columns:
   - name: total_amount
     type: DOUBLE
   - name: congestion_surcharge
-    type: VARCHAR
+    type: BIGINT
