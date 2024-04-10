@@ -1,0 +1,424 @@
+columns:
+  #  WatchID BIGINT NOT NULL,
+  - name: WatchID
+    type: BIGINT
+    nullable: false
+  #  JavaEnable SMALLINT NOT NULL,
+  - name: JavaEnable
+    type: SMALLINT
+    nullable: false
+  #  Title TEXT,
+  - name: Title
+    type: TEXT
+    nullable: true
+  #  GoodEvent SMALLINT NOT NULL,
+  - name: GoodEvent
+    type: SMALLINT
+    nullable: false
+  #  EventTime TIMESTAMP NOT NULL,
+  - name: EventTime
+    type: TIMESTAMP
+    nullable: false
+  #  EventDate Date NOT NULL,
+  - name: EventDate
+    type: Date
+    nullable: false
+  #  CounterID INTEGER NOT NULL,
+  - name: CounterID
+    type: INTEGER
+    nullable: false
+  #  ClientIP INTEGER NOT NULL,
+  - name: ClientIP
+    type: INTEGER
+    nullable: false
+  #  RegionID INTEGER NOT NULL,
+  - name: RegionID
+    type: INTEGER
+    nullable: false
+  #  UserID BIGINT NOT NULL,
+  - name: UserID
+    type: BIGINT
+    nullable: false
+  #  CounterClass SMALLINT NOT NULL,
+  - name: CounterClass
+    type: SMALLINT
+    nullable: false
+    #    OS SMALLINT NOT NULL,
+  - name: OS
+    type: SMALLINT
+    nullable: false
+  #    UserAgent SMALLINT NOT NULL,
+  - name: UserAgent
+    type: SMALLINT
+    nullable: false
+  #    URL TEXT,
+  - name: URL
+    type: TEXT
+    nullable: true
+  #    Referer TEXT,
+  - name: Referer
+    type: TEXT
+    nullable: true
+  #    IsRefresh SMALLINT NOT NULL,
+  - name: IsRefresh
+    type: SMALLINT
+    nullable: false
+  #    RefererCategoryID SMALLINT NOT NULL,
+  - name: RefererCategoryID
+    type: SMALLINT
+    nullable: false
+  #    RefererRegionID INTEGER NOT NULL,
+  - name: RefererRegionID
+    type: INTEGER
+    nullable: false
+  #    URLCategoryID SMALLINT NOT NULL,
+  - name: URLCategoryID
+    type: SMALLINT
+    nullable: false
+  #    URLRegionID INTEGER NOT NULL,
+  - name: URLRegionID
+    type: INTEGER
+    nullable: false
+  #    ResolutionWidth SMALLINT NOT NULL,
+  - name: ResolutionWidth
+    type: SMALLINT
+    nullable: false
+  #    ResolutionHeight SMALLINT NOT NULL,
+  - name: ResolutionHeight
+    type: SMALLINT
+    nullable: false
+  #    ResolutionDepth SMALLINT NOT NULL,
+  - name: ResolutionDepth
+    type: SMALLINT
+    nullable: false
+  #    FlashMajor SMALLINT NOT NULL,
+  - name: FlashMajor
+    type: SMALLINT
+    nullable: false
+  #    FlashMinor SMALLINT NOT NULL,
+  - name: FlashMinor
+    type: SMALLINT
+    nullable: false
+  #    FlashMinor2 TEXT,
+  - name: FlashMinor2
+    type: TEXT
+    nullable: true
+  #    NetMajor SMALLINT NOT NULL,
+  - name: NetMajor
+    type: SMALLINT
+    nullable: false
+  #    NetMinor SMALLINT NOT NULL,
+  - name: NetMinor
+    type: SMALLINT
+    nullable: false
+  #    UserAgentMajor SMALLINT NOT NULL,
+  - name: UserAgentMajor
+    type: SMALLINT
+    nullable: false
+  #    UserAgentMinor VARCHAR(255) NOT NULL,
+  - name: UserAgentMinor
+    type: VARCHAR(255)
+    nullable: false
+  #    CookieEnable SMALLINT NOT NULL,
+  - name: CookieEnable
+    type: SMALLINT
+    nullable: false
+  #    JavascriptEnable SMALLINT NOT NULL,
+  - name: JavascriptEnable
+    type: SMALLINT
+    nullable: false
+  #    IsMobile SMALLINT NOT NULL,
+  - name: IsMobile
+    type: SMALLINT
+    nullable: false
+  #    MobilePhone SMALLINT NOT NULL,
+  - name: MobilePhone
+    type: SMALLINT
+    nullable: false
+  #    MobilePhoneModel TEXT,
+  - name: MobilePhoneModel
+    type: TEXT
+    nullable: false
+  #    Params TEXT,
+  - name: Params
+    type: TEXT
+    nullable: true
+  #    IPNetworkID INTEGER NOT NULL,
+  - name: IPNetworkID
+    type: INTEGER
+    nullable: false
+  #    TraficSourceID SMALLINT NOT NULL,
+  - name: TraficSourceID
+    type: SMALLINT
+    nullable: false
+  #    SearchEngineID SMALLINT NOT NULL,
+  - name: SearchEngineID
+    type: SMALLINT
+    nullable: false
+  #    SearchPhrase TEXT,
+  - name: SearchPhrase
+    type: TEXT
+    nullable: true
+  #    AdvEngineID SMALLINT NOT NULL,
+  - name: AdvEngineID
+    type: SMALLINT
+    nullable: false
+#    IsArtifical SMALLINT NOT NULL,
+  - name: IsArtifical
+    type: SMALLINT
+    nullable: false
+#    WindowClientWidth SMALLINT NOT NULL,
+  - name: WindowClientWidth
+    type: SMALLINT
+    nullable: false
+#    WindowClientHeight SMALLINT NOT NULL,
+  - name: WindowClientHeight
+    type: SMALLINT
+    nullable: false
+#    ClientTimeZone SMALLINT NOT NULL,
+  - name: ClientTimeZone
+    type: SMALLINT
+    nullable: false
+#    ClientEventTime TIMESTAMP NOT NULL,
+  - name: ClientEventTime
+    type: TIMESTAMP
+    nullable: false
+#    SilverlightVersion1 SMALLINT NOT NULL,
+  - name: SilverlightVersion1
+    type: SMALLINT
+    nullable: false
+#    SilverlightVersion2 SMALLINT NOT NULL,
+  - name: SilverlightVersion2
+    type: SMALLINT
+    nullable: false
+#    SilverlightVersion3 INTEGER NOT NULL,
+  - name: SilverlightVersion3
+    type: INTEGER
+    nullable: false
+#    SilverlightVersion4 SMALLINT NOT NULL,
+  - name: SilverlightVersion4
+    type: SMALLINT
+    nullable: false
+#    PageCharset TEXT,
+  - name: PageCharset
+    type: TEXT
+    nullable: true
+#    CodeVersion INTEGER NOT NULL,
+  - name: CodeVersion
+    type: INTEGER
+    nullable: false
+#    IsLink SMALLINT NOT NULL,
+  - name: IsLink
+    type: SMALLINT
+    nullable: false
+#    IsDownload SMALLINT NOT NULL,
+  - name: IsDownload
+    type: SMALLINT
+    nullable: false
+#    IsNotBounce SMALLINT NOT NULL,
+  - name: IsNotBounce
+    type: SMALLINT
+    nullable: false
+#    FUniqID BIGINT NOT NULL,
+  - name: FUniqID
+    type: BIGINT
+    nullable: false
+#    OriginalURL TEXT,
+  - name: OriginalURL
+    type: TEXT
+    nullable: true
+#    HID INTEGER NOT NULL,
+  - name: HID
+    type: INTEGER
+    nullable: false
+#    IsOldCounter SMALLINT NOT NULL,
+  - name: IsOldCounter
+    type: SMALLINT
+    nullable: false
+#    IsEvent SMALLINT NOT NULL,
+  - name: IsEvent
+    type: SMALLINT
+    nullable: false
+#    IsParameter SMALLINT NOT NULL,
+  - name: IsParameter
+    type: SMALLINT
+    nullable: false
+#    DontCountHits SMALLINT NOT NULL,
+  - name: DontCountHits
+    type: SMALLINT
+    nullable: false
+#    WithHash SMALLINT NOT NULL,
+  - name: WithHash
+    type: SMALLINT
+    nullable: false
+#    HitColor CHAR NOT NULL,
+  - name: HitColor
+    type: CHAR
+    nullable: false
+#    LocalEventTime TIMESTAMP NOT NULL,
+  - name: LocalEventTime
+    type: TIMESTAMP
+    nullable: false
+#    Age SMALLINT NOT NULL,
+  - name: Age
+    type: SMALLINT
+    nullable: false
+#    Sex SMALLINT NOT NULL,
+  - name: Sex
+    type: SMALLINT
+    nullable: false
+#    Income SMALLINT NOT NULL,
+  - name: Income
+    type: SMALLINT
+    nullable: false
+#    Interests SMALLINT NOT NULL,
+  - name: Interests
+    type: SMALLINT
+    nullable: false
+#    Robotness SMALLINT NOT NULL,
+  - name: Robotness
+    type: SMALLINT
+    nullable: false
+#    RemoteIP INTEGER NOT NULL,
+  - name: RemoteIP
+    type: INTEGER
+    nullable: false
+#    WindowName INTEGER NOT NULL,
+  - name: WindowName
+    type: INTEGER
+    nullable: false
+#    OpenerName INTEGER NOT NULL,
+  - name: OpenerName
+    type: INTEGER
+    nullable: false
+#    HistoryLength SMALLINT NOT NULL,
+  - name: HistoryLength
+    type: SMALLINT
+    nullable: false
+#    BrowserLanguage TEXT,
+  - name: BrowserLanguage
+    type: TEXT
+    nullable: true
+#    BrowserCountry TEXT,
+  - name: BrowserCountry
+    type: TEXT
+    nullable: true
+#    SocialNetwork TEXT,
+  - name: SocialNetwork
+    type: TEXT
+    nullable: true
+#    SocialAction TEXT,
+  - name: SocialAction
+    type: TEXT
+    nullable: true
+#    HTTPError SMALLINT NOT NULL,
+  - name: HTTPError
+    type: SMALLINT
+    nullable: false
+#    SendTiming INTEGER NOT NULL,
+  - name: SendTiming
+    type: INTEGER
+    nullable: false
+#    DNSTiming INTEGER NOT NULL,
+  - name: DNSTiming
+    type: INTEGER
+    nullable: false
+#    ConnectTiming INTEGER NOT NULL,
+  - name: ConnectTiming
+    type: INTEGER
+    nullable: false
+#    ResponseStartTiming INTEGER NOT NULL,
+  - name: ResponseStartTiming
+    type: INTEGER
+    nullable: false
+#    ResponseEndTiming INTEGER NOT NULL,
+  - name: ResponseEndTiming
+    type: INTEGER
+    nullable: false
+#    FetchTiming INTEGER NOT NULL,
+  - name: FetchTiming
+    type: INTEGER
+    nullable: false
+#    SocialSourceNetworkID SMALLINT NOT NULL,
+  - name: SocialSourceNetworkID
+    type: SMALLINT
+    nullable: false
+#    SocialSourcePage TEXT,
+  - name: SocialSourcePage
+    type: TEXT
+    nullable: true
+#    ParamPrice BIGINT NOT NULL,
+  - name: ParamPrice
+    type: BIGINT
+    nullable: false
+#    ParamOrderID TEXT,
+  - name: ParamOrderID
+    type: TEXT
+    nullable: true
+#    ParamCurrency TEXT,
+  - name: ParamCurrency
+    type: TEXT
+    nullable: true
+#    ParamCurrencyID SMALLINT NOT NULL,
+  - name: CodeVersion
+    type: SMALLINT
+    nullable: false
+#    OpenstatServiceName TEXT,
+  - name: OpenstatServiceName
+    type: TEXT
+    nullable: true
+#    OpenstatCampaignID TEXT,
+  - name: OpenstatCampaignID
+    type: TEXT
+    nullable: true
+#    OpenstatAdID TEXT,
+  - name: OpenstatAdID
+    type: TEXT
+    nullable: true
+#    OpenstatSourceID TEXT,
+  - name: OpenstatSourceID
+    type: TEXT
+    nullable: true
+#    UTMSource TEXT,
+  - name: UTMSource
+    type: TEXT
+    nullable: true
+#    UTMMedium TEXT,
+  - name: UTMMedium
+    type: TEXT
+    nullable: true
+#    UTMCampaign TEXT,
+  - name: UTMCampaign
+    type: TEXT
+    nullable: true
+#    UTMContent TEXT,
+  - name: UTMContent
+    type: TEXT
+    nullable: true
+#    UTMTerm TEXT,
+  - name: UTMTerm
+    type: TEXT
+    nullable: true
+#    FromTag TEXT,
+  - name: FromTag
+    type: TEXT
+    nullable: true
+#    HasGCLID SMALLINT NOT NULL,
+  - name: HasGCLID
+    type: SMALLINT
+    nullable: false
+#    RefererHash BIGINT NOT NULL,
+  - name: RefererHash
+    type: BIGINT
+    nullable: false
+#    URLHash BIGINT NOT NULL,
+  - name: URLHash
+    type: BIGINT
+    nullable: false
+#    CLID INTEGER NOT NULL
+  - name: CLID
+    type: INTEGER
+    nullable: false
+
+
+
