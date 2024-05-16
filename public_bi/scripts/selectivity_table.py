@@ -104,7 +104,7 @@ def get_table_stats(tables):
 
 def generate_equality_selectivity_rows(table_stats):
     """
-    Generate rows for predicates with selectivity 0 and 1 for '=' and '≠'.
+    Generate rows for predicates with selectivity 0 and 1 for '=' and '!='.
 
     :param table_stats: Dictionary with table statistics.
     :return: List of rows with selectivity information.
@@ -123,7 +123,7 @@ def generate_equality_selectivity_rows(table_stats):
                 "Query": f'SELECT * FROM {table} WHERE "{column}" = {value}'
             })
             rows.append({
-                "Predicate": "≠",
+                "Predicate": "!=",
                 "Selectivity": 1,
                 "Filter": value,
                 "Table": table,
@@ -132,13 +132,13 @@ def generate_equality_selectivity_rows(table_stats):
             })
 
         # Add rows for columns with only one unique value.
-        # This is a special case where the selectivity is 0 for '≠' and 1 for '='
+        # This is a special case where the selectivity is 0 for '!=' and 1 for '='
         for column, col_stats in stats.items():
             unique_values = col_stats.get("unique", [])
             if len(unique_values) == 1:
                 unique_value = unique_values[0]
                 rows.append({
-                    "Predicate": "≠",
+                    "Predicate": "!=",
                     "Selectivity": 0,
                     "Filter": unique_value,
                     "Table": table,
@@ -171,21 +171,21 @@ def generate_inequality_selectivity_rows(table_stats):
 
                 predicate_rows = [
                     {"Predicate": "<", "Selectivity": 0, "Filter": min_val, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} < {min_val}'},
-                    {"Predicate": "≤", "Selectivity": 0, "Filter": min_val - 1, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} <= {min_val - 1}'},
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" < {min_val}'},
+                    {"Predicate": "<=", "Selectivity": 0, "Filter": min_val - 1, "Table": table, "Column": column,
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" <= {min_val - 1}'},
                     {"Predicate": ">", "Selectivity": 0, "Filter": max_val, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} > {max_val}'},
-                    {"Predicate": "≥", "Selectivity": 0, "Filter": max_val + 1, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} >= {max_val + 1}'},
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" > {max_val}'},
+                    {"Predicate": ">=", "Selectivity": 0, "Filter": max_val + 1, "Table": table, "Column": column,
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" >= {max_val + 1}'},
                     {"Predicate": "<", "Selectivity": 1, "Filter": max_val + 1, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} < {max_val + 1}'},
-                    {"Predicate": "≤", "Selectivity": 1, "Filter": max_val, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} <= {max_val}'},
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" < {max_val + 1}'},
+                    {"Predicate": "<=", "Selectivity": 1, "Filter": max_val, "Table": table, "Column": column,
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" <= {max_val}'},
                     {"Predicate": ">", "Selectivity": 1, "Filter": min_val - 1, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} > {min_val - 1}'},
-                    {"Predicate": "≥", "Selectivity": 1, "Filter": min_val, "Table": table, "Column": column,
-                     "Query": f'SELECT * FROM "{table}" WHERE {column} >= {min_val}'}
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" > {min_val - 1}'},
+                    {"Predicate": ">=", "Selectivity": 1, "Filter": min_val, "Table": table, "Column": column,
+                     "Query": f'SELECT * FROM {table} WHERE "{column}" >= {min_val}'}
                 ]
 
                 rows.extend(predicate_rows)
@@ -201,13 +201,13 @@ def calculate_selectivity(predicate, value, value_counts, cumulative_dist):
         return value_counts.get(value, 0)
     elif predicate == "<":
         return cumulative_dist.get(value, 0) - value_counts.get(value, 0)
-    elif predicate == "≤":
+    elif predicate == "<=":
         return cumulative_dist.get(value, 0)
     elif predicate == ">":
         return 1 - cumulative_dist.get(value, 0)
-    elif predicate == "≥":
+    elif predicate == ">=":
         return 1 - cumulative_dist.get(value, 0) + value_counts.get(value, 0)
-    elif predicate == "≠":
+    elif predicate == "!=":
         return 1 - value_counts.get(value, 0)
     else:
         raise ValueError(f"Invalid predicate: {predicate}")
@@ -236,7 +236,7 @@ def generate_all_predicates_rows(tables, table_stats):
                 continue
 
             for unique_value in unique_values:
-                for predicate in ["=", "<", "≤", ">", "≥", "≠"]:
+                for predicate in ["=", "<", "<=", ">", ">=", "!="]:
                     selectivity = calculate_selectivity(predicate, unique_value, value_counts, cumulative_dist)
                     query = f'SELECT * FROM {table} WHERE "{column}" {predicate} {unique_value}'
                     row = {
@@ -341,10 +341,20 @@ def save_csv(df, folder):
     Save a DataFrame to a CSV file using Dask to speed up the process.
     """
     ddf = dd.from_pandas(df, npartitions=6)
-    ddf.to_csv(folder, single_file=True)
+    ddf.to_csv(folder, index=False, single_file=True)
 
 
 if __name__ == '__main__':
+    """
+    This generates two CSV files: 'selectivity.csv' and 'selectivity_mini.csv'.
+
+    'selectivity.csv' contains a query for each predicate for each unique value a column has in the 'public_bi' dataset.
+    It also includes queries for values not present in the column to achieve 0 and 1 selectivity.
+
+    'selectivity_mini.csv' is a condensed version of 'selectivity.csv'. It contains queries for each predicate that 
+    achieve the closest possible selectivity to each value in the range from 0.000 to 1.000, incrementing by 0.001.
+    """
+
     print("Loading the columns and tables...")
     table_columns, table_columns_int = get_table_columns()
     tables = load_tables(table_columns, table_columns_int)
