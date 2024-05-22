@@ -1,1 +1,0 @@
-{"columns": [{"name": "dbXRefs", "type": "list", "children": [{"name": "child", "type": "varchar"}]}, {"name": "namespace", "type": "list", "children": [{"name": "child", "type": "varchar"}]}, {"name": "obsolete_terms", "type": "list", "children": [{"name": "child", "type": "varchar"}]}, {"name": "parents", "type": "list", "children": [{"name": "child", "type": "varchar"}]}]}
