@@ -1,1 +1,0 @@
-{"columns": [{"name": "chemblIds", "type": "list", "children": [{"name": "child", "type": "varchar"}]}, {"name": "references", "type": "list", "children": [{"name": "child", "type": "struct", "children": [{"name": "ref_id", "type": "varchar"}, {"name": "ref_type", "type": "varchar"}, {"name": "ref_url", "type": "varchar"}]}]}]}
