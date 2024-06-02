@@ -1,0 +1,48 @@
+{
+  "columns": [
+    {
+      "name": "LON",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "LAT",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "NUMBER",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "STREET",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "UNIT",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "CITY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "DISTRICT",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "REGION",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "POSTCODE",
+      "type": "BIGINT"
+    },
+    {
+      "name": "ID",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "HASH",
+      "type": "VARCHAR"
+    }
+  ]
+}
