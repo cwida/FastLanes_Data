@@ -1,0 +1,100 @@
+{
+  "columns": [
+    {
+      "name": "FOLDERYEAR",
+      "type": "BIGINT"
+    },
+    {
+      "name": "LicenceRSN",
+      "type": "BIGINT"
+    },
+    {
+      "name": "LicenceNumber",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "LicenceRevisionNumber",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BusinessName",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BusinessTradeName",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Status",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "IssuedDate",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "ExpiredDate",
+      "type": "DATE"
+    },
+    {
+      "name": "BusinessType",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BusinessSubType",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Unit",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "UnitType",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "House",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Street",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "City",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Province",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Country",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "PostalCode",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "LocalArea",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "NumberofEmployees",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "FeePaid",
+      "type": "BIGINT"
+    },
+    {
+      "name": "ExtractDate",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "Geom",
+      "type": "VARCHAR"
+    }
+  ]
+}

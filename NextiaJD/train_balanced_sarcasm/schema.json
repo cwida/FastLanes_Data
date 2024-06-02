@@ -1,0 +1,44 @@
+{
+  "columns": [
+    {
+      "name": "label",
+      "type": "BIGINT"
+    },
+    {
+      "name": "comment",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "author",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "subreddit",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "score",
+      "type": "BIGINT"
+    },
+    {
+      "name": "ups",
+      "type": "BIGINT"
+    },
+    {
+      "name": "downs",
+      "type": "BIGINT"
+    },
+    {
+      "name": "date",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "created_utc",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "parent_comment",
+      "type": "VARCHAR"
+    }
+  ]
+}
