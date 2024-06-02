@@ -1,0 +1,12 @@
+{
+  "columns": [
+    {
+      "name": "publish_date",
+      "type": "BIGINT"
+    },
+    {
+      "name": "headline_tokens",
+      "type": "VARCHAR"
+    }
+  ]
+}

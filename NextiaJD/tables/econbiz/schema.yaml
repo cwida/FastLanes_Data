@@ -1,0 +1,9 @@
+columns:
+  - name: id
+    type: BIGINT
+  - name: title
+    type: VARCHAR
+  - name: labels
+    type: VARCHAR
+  - name: fold
+    type: BIGINT

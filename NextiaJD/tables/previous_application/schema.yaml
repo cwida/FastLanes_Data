@@ -1,0 +1,75 @@
+columns:
+  - name: SK_ID_PREV
+    type: BIGINT
+  - name: SK_ID_CURR
+    type: BIGINT
+  - name: NAME_CONTRACT_TYPE
+    type: VARCHAR
+  - name: AMT_ANNUITY
+    type: DOUBLE
+  - name: AMT_APPLICATION
+    type: DOUBLE
+  - name: AMT_CREDIT
+    type: DOUBLE
+  - name: AMT_DOWN_PAYMENT
+    type: DOUBLE
+  - name: AMT_GOODS_PRICE
+    type: DOUBLE
+  - name: WEEKDAY_APPR_PROCESS_START
+    type: VARCHAR
+  - name: HOUR_APPR_PROCESS_START
+    type: BIGINT
+  - name: FLAG_LAST_APPL_PER_CONTRACT
+    type: VARCHAR
+  - name: NFLAG_LAST_APPL_IN_DAY
+    type: BIGINT
+  - name: RATE_DOWN_PAYMENT
+    type: DOUBLE
+  - name: RATE_INTEREST_PRIMARY
+    type: DOUBLE
+  - name: RATE_INTEREST_PRIVILEGED
+    type: DOUBLE
+  - name: NAME_CASH_LOAN_PURPOSE
+    type: VARCHAR
+  - name: NAME_CONTRACT_STATUS
+    type: VARCHAR
+  - name: DAYS_DECISION
+    type: BIGINT
+  - name: NAME_PAYMENT_TYPE
+    type: VARCHAR
+  - name: CODE_REJECT_REASON
+    type: VARCHAR
+  - name: NAME_TYPE_SUITE
+    type: VARCHAR
+  - name: NAME_CLIENT_TYPE
+    type: VARCHAR
+  - name: NAME_GOODS_CATEGORY
+    type: VARCHAR
+  - name: NAME_PORTFOLIO
+    type: VARCHAR
+  - name: NAME_PRODUCT_TYPE
+    type: VARCHAR
+  - name: CHANNEL_TYPE
+    type: VARCHAR
+  - name: SELLERPLACE_AREA
+    type: BIGINT
+  - name: NAME_SELLER_INDUSTRY
+    type: VARCHAR
+  - name: CNT_PAYMENT
+    type: DOUBLE
+  - name: NAME_YIELD_GROUP
+    type: VARCHAR
+  - name: PRODUCT_COMBINATION
+    type: VARCHAR
+  - name: DAYS_FIRST_DRAWING
+    type: DOUBLE
+  - name: DAYS_FIRST_DUE
+    type: DOUBLE
+  - name: DAYS_LAST_DUE_1ST_VERSION
+    type: DOUBLE
+  - name: DAYS_LAST_DUE
+    type: DOUBLE
+  - name: DAYS_TERMINATION
+    type: DOUBLE
+  - name: NFLAG_INSURED_ON_APPROVAL
+    type: DOUBLE

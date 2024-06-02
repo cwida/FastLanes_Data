@@ -1,0 +1,28 @@
+{
+  "columns": [
+    {
+      "name": "listing_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "date",
+      "type": "DATE"
+    },
+    {
+      "name": "reviewer_id",
+      "type": "BIGINT"
+    },
+    {
+      "name": "reviewer_name",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "comments",
+      "type": "VARCHAR"
+    }
+  ]
+}
