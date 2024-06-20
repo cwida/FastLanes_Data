@@ -1,0 +1,8 @@
+{
+  "columns": [
+    {
+      "name": "anns",
+      "type": "varchar"
+    }
+  ]
+}

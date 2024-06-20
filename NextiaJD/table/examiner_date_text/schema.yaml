@@ -1,5 +1,0 @@
-columns:
-  - name: publish_date
-    type: BIGINT
-  - name: headline_text
-    type: VARCHAR
