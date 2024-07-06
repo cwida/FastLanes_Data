@@ -1,0 +1,529 @@
+{
+  "columns": [
+    {
+      "name": "WatchID",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "JavaEnable",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "Title",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "GoodEvent",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "EventTime",
+      "type": "TIMESTAMP",
+      "nullable": false
+    },
+    {
+      "name": "EventDate",
+      "type": "Date",
+      "nullable": false
+    },
+    {
+      "name": "CounterID",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "ClientIP",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "RegionID",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "UserID",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "CounterClass",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "OS",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "UserAgent",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "URL",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "Referer",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "IsRefresh",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "RefererCategoryID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "RefererRegionID",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "URLCategoryID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "URLRegionID",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "ResolutionWidth",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "ResolutionHeight",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "ResolutionDepth",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "FlashMajor",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "FlashMinor",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "FlashMinor2",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "NetMajor",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "NetMinor",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "UserAgentMajor",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "UserAgentMinor",
+      "type": "VARCHAR(255)",
+      "nullable": false
+    },
+    {
+      "name": "CookieEnable",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "JavascriptEnable",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "IsMobile",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "MobilePhone",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "MobilePhoneModel",
+      "type": "TEXT",
+      "nullable": false
+    },
+    {
+      "name": "Params",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "IPNetworkID",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "TraficSourceID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "SearchEngineID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "SearchPhrase",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "AdvEngineID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "IsArtifical",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "WindowClientWidth",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "WindowClientHeight",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "ClientTimeZone",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "ClientEventTime",
+      "type": "TIMESTAMP",
+      "nullable": false
+    },
+    {
+      "name": "SilverlightVersion1",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "SilverlightVersion2",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "SilverlightVersion3",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "SilverlightVersion4",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "PageCharset",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "CodeVersion",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "IsLink",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "IsDownload",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "IsNotBounce",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "FUniqID",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "OriginalURL",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "HID",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "IsOldCounter",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "IsEvent",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "IsParameter",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "DontCountHits",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "WithHash",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "HitColor",
+      "type": "CHAR",
+      "nullable": false
+    },
+    {
+      "name": "LocalEventTime",
+      "type": "TIMESTAMP",
+      "nullable": false
+    },
+    {
+      "name": "Age",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "Sex",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "Income",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "Interests",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "Robotness",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "RemoteIP",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "WindowName",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "OpenerName",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "HistoryLength",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "BrowserLanguage",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "BrowserCountry",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "SocialNetwork",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "SocialAction",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "HTTPError",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "SendTiming",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "DNSTiming",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "ConnectTiming",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "ResponseStartTiming",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "ResponseEndTiming",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "FetchTiming",
+      "type": "INTEGER",
+      "nullable": false
+    },
+    {
+      "name": "SocialSourceNetworkID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "SocialSourcePage",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "ParamPrice",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "ParamOrderID",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "ParamCurrency",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "CodeVersion",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "OpenstatServiceName",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "OpenstatCampaignID",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "OpenstatAdID",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "OpenstatSourceID",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "UTMSource",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "UTMMedium",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "UTMCampaign",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "UTMContent",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "UTMTerm",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "FromTag",
+      "type": "TEXT",
+      "nullable": true
+    },
+    {
+      "name": "HasGCLID",
+      "type": "SMALLINT",
+      "nullable": false
+    },
+    {
+      "name": "RefererHash",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "URLHash",
+      "type": "BIGINT",
+      "nullable": false
+    },
+    {
+      "name": "CLID",
+      "type": "INTEGER",
+      "nullable": false
+    }
+  ]
+}
