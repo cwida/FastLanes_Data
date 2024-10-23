@@ -3,8 +3,8 @@
   "columns": [
     {
       "name": "AUTOPREVENTA: Costo Fijo",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 12)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "AUTOPREVENTA: Costo Variable",
@@ -18,8 +18,8 @@
     },
     {
       "name": "AUTOPREVENTA: Tiempos de Venta + Traslado Autopreventa Normal",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 14)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "AUTOVENTA: Carga Paseante",
@@ -38,8 +38,8 @@
     },
     {
       "name": "AUTOVENTA: Tiempos de Venta + Traslado Autoventa Normal",
-      "type": "decimal(17",
-      "nullability": "NULL"
+      "type": "decimal(17, 14)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "BODEGA: CEDIS Propio- Costos Bodega",
@@ -213,13 +213,13 @@
     },
     {
       "name": "GERENTES VENTA: Coordinadores Bronces",
-      "type": "decimal(17",
-      "nullability": "NULL"
+      "type": "decimal(17, 11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "GERENTES VENTA: Costo Gerente de Ventas Normal",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "GUC",
@@ -263,7 +263,7 @@
     },
     {
       "name": "Latitud AUTO PREV",
-      "type": "decimal(16",
+      "type": "decimal(16, 14)",
       "nullability": "NULL"
     },
     {
@@ -283,7 +283,7 @@
     },
     {
       "name": "Longitud AUTO PREV",
-      "type": "decimal(15",
+      "type": "decimal(15, 13)",
       "nullability": "NULL"
     },
     {
@@ -298,13 +298,13 @@
     },
     {
       "name": "MERCADEO: Costo Refrigeraci\u00f3n",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "MERCADEO: PDE",
-      "type": "decimal(17",
-      "nullability": "NULL"
+      "type": "decimal(17, 11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "MERCADEO: PDV- Descuentos Habituales",
@@ -393,7 +393,7 @@
     },
     {
       "name": "OTROS VENTA: Costo de Rotaci\u00f3n Pre/Televendedores",
-      "type": "decimal(16",
+      "type": "decimal(16, 12)",
       "nullability": "NULL"
     },
     {
@@ -403,7 +403,7 @@
     },
     {
       "name": "PREVENTA NCB: Tiempos de Venta + Traslado Preventa NCB",
-      "type": "decimal(16",
+      "type": "decimal(16, 14)",
       "nullability": "NULL"
     },
     {
@@ -413,8 +413,8 @@
     },
     {
       "name": "PREVENTA: Tiempos de Venta + Traslado Preventa Normal",
-      "type": "decimal(17",
-      "nullability": "NULL"
+      "type": "decimal(17, 14)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Poblaci\u00f3n Distribuidor GVF/GVI",
@@ -483,8 +483,8 @@
     },
     {
       "name": "REPARTO: Tiempos de Reparto Fijo + Variable",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 13)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REPARTO: Visitas de Reparto Acumulado Ene-May",
@@ -598,8 +598,8 @@
     },
     {
       "name": "TELEVENTA: Tiempos de Venta Televenta Normal",
-      "type": "decimal(16",
-      "nullability": "NULL"
+      "type": "decimal(16, 14)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL BODEGA C/ARRIENDOS",
@@ -663,13 +663,13 @@
     },
     {
       "name": "VENTA: Costo Renta de Equipo Televenta Normal",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 12)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "VENTA: Costo Total Mercaderistas",
-      "type": "decimal(15",
-      "nullability": "NULL"
+      "type": "decimal(15, 11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "VENTA: Costo de Handheld Rutas Autoventa",
@@ -678,7 +678,7 @@
     },
     {
       "name": "VENTA: Costo de Handheld Rutas NCBs",
-      "type": "decimal(15",
+      "type": "decimal(15, 11)",
       "nullability": "NULL"
     },
     {
@@ -688,8 +688,8 @@
     },
     {
       "name": "VENTA: Costos EDI",
-      "type": "decimal(16",
-      "nullability": "NULL"
+      "type": "decimal(16, 10)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "VENTA: Descuentos Lista de Precios",

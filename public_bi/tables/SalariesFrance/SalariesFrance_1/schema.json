@@ -33,7 +33,7 @@
     },
     {
       "name": "ADECCO_NB_CANDIDATS",
-      "type": "decimal(4",
+      "type": "decimal(4, 0)",
       "nullability": "NULL"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "name": "ADECCO_SALAIRES_BRUTS",
-      "type": "decimal(18",
+      "type": "decimal(18, 14)",
       "nullability": "NULL"
     },
     {
@@ -198,7 +198,7 @@
     },
     {
       "name": "Latitude",
-      "type": "decimal(15",
+      "type": "decimal(15, 13)",
       "nullability": "NULL"
     },
     {

@@ -8,23 +8,23 @@
     },
     {
       "name": "ARPU_P1",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ARPU_P2",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ARPU_P3",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ARPU_P4",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ARPU_P6",
@@ -33,53 +33,53 @@
     },
     {
       "name": "BALANCE_END_P2",
-      "type": "decimal(7",
+      "type": "decimal(7, 2)",
       "nullability": "NULL"
     },
     {
       "name": "CHARGD_SMS_P1",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHARGD_SMS_P2",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHARGD_SMS_P3",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHARGD_SMS_P4",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHARGD_SMS_P6",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_CALLS_P1",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_CALLS_P2",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_CALLS_P3",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_CALLS_P4",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_CALLS_P6",
@@ -88,8 +88,8 @@
     },
     {
       "name": "CHRGD_MINS_P1",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_MINS_P2",
@@ -98,13 +98,13 @@
     },
     {
       "name": "CHRGD_MINS_P3",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_MINS_P4",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_MINS_P6",
@@ -123,13 +123,13 @@
     },
     {
       "name": "CHRGD_REV_P3",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_REV_P4",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CHRGD_REV_P6",
@@ -143,23 +143,23 @@
     },
     {
       "name": "FREE_CALLS_P1",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FREE_CALLS_P2",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FREE_CALLS_P3",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FREE_CALLS_P4",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FREE_CALLS_P6",
@@ -183,8 +183,8 @@
     },
     {
       "name": "FREE_MINS_P4",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FREE_MINS_P6",
@@ -218,53 +218,53 @@
     },
     {
       "name": "IDD_CALLS_P1",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_CALLS_P2",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_CALLS_P3",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_CALLS_P4",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_CALLS_P6",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_MINS_P1",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_MINS_P2",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_MINS_P3",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_MINS_P4",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_MINS_P6",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "IDD_REV_P1",
@@ -293,28 +293,28 @@
     },
     {
       "name": "INCOMING_INC_REV_P1",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_INC_REV_P2",
-      "type": "decimal(12",
-      "nullability": "NULL"
+      "type": "decimal(12, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_INC_REV_P3",
-      "type": "decimal(11",
-      "nullability": "NULL"
+      "type": "decimal(11, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_INC_REV_P4",
-      "type": "decimal(11",
-      "nullability": "NULL"
+      "type": "decimal(11, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_INC_REV_P6",
-      "type": "decimal(12",
-      "nullability": "NULL"
+      "type": "decimal(12, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P1",
@@ -328,13 +328,13 @@
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P3",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P4",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P6",
@@ -368,23 +368,23 @@
     },
     {
       "name": "OFFNET_CALLS_P1",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_CALLS_P2",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_CALLS_P3",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_CALLS_P4",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_CALLS_P6",
@@ -393,28 +393,28 @@
     },
     {
       "name": "OFFNET_MINS_P1",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_MINS_P2",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_MINS_P3",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_MINS_P4",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_MINS_P6",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_REV_P1",
@@ -428,13 +428,13 @@
     },
     {
       "name": "OFFNET_REV_P3",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_REV_P4",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OFFNET_REV_P6",
@@ -443,8 +443,8 @@
     },
     {
       "name": "ONNET_CALLS_P1",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_CALLS_P2",
@@ -453,13 +453,13 @@
     },
     {
       "name": "ONNET_CALLS_P3",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_CALLS_P4",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_CALLS_P6",
@@ -493,28 +493,28 @@
     },
     {
       "name": "ONNET_REV_P1",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_REV_P2",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_REV_P3",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_REV_P4",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ONNET_REV_P6",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PACKAGE_NAME",
@@ -538,13 +538,13 @@
     },
     {
       "name": "RECHRG_INC_MIN_USED_P3",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_INC_MIN_USED_P4",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_INC_MIN_USED_P6",
@@ -578,88 +578,88 @@
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P1",
-      "type": "decimal(1",
-      "nullability": "NULL"
+      "type": "decimal(1, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P2",
-      "type": "decimal(1",
-      "nullability": "NULL"
+      "type": "decimal(1, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P3",
-      "type": "decimal(1",
-      "nullability": "NULL"
+      "type": "decimal(1, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P4",
-      "type": "decimal(1",
-      "nullability": "NULL"
+      "type": "decimal(1, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P6",
-      "type": "decimal(1",
-      "nullability": "NULL"
+      "type": "decimal(1, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P1",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P2",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P3",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P4",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P6",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REVENUE_SMS_P1",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REVENUE_SMS_P2",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REVENUE_SMS_P3",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REVENUE_SMS_P4",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REVENUE_SMS_P6",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "STATUS_END_P2",
-      "type": "decimal(1",
+      "type": "decimal(1, 0)",
       "nullability": "NULL"
     },
     {
       "name": "TOTAL_CALLS_P1",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CALLS_P2",
@@ -668,13 +668,13 @@
     },
     {
       "name": "TOTAL_CALLS_P3",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CALLS_P4",
-      "type": "decimal(5",
-      "nullability": "NULL"
+      "type": "decimal(5, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CALLS_P6",
@@ -693,13 +693,13 @@
     },
     {
       "name": "TOTAL_CALLS_REV_P3",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CALLS_REV_P4",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CALLS_REV_P6",
@@ -713,18 +713,18 @@
     },
     {
       "name": "TOTAL_INCOMING_MIN_P2",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_MIN_P3",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_MIN_P4",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_MIN_P6",
@@ -733,28 +733,28 @@
     },
     {
       "name": "TOTAL_INCOMING_REV_P1",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_REV_P2",
-      "type": "decimal(12",
-      "nullability": "NULL"
+      "type": "decimal(12, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_REV_P3",
-      "type": "decimal(11",
-      "nullability": "NULL"
+      "type": "decimal(11, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_REV_P4",
-      "type": "decimal(11",
-      "nullability": "NULL"
+      "type": "decimal(11, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_INCOMING_REV_P6",
-      "type": "decimal(12",
-      "nullability": "NULL"
+      "type": "decimal(12, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_MINS_P1",
@@ -773,8 +773,8 @@
     },
     {
       "name": "TOTAL_MINS_P4",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_MINS_P6",
@@ -833,28 +833,28 @@
     },
     {
       "name": "TOTAL_VAS_REV_P1",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_VAS_REV_P2",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_VAS_REV_P3",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_VAS_REV_P4",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_VAS_REV_P6",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTA_OUTGOING_REV_P1",
@@ -863,13 +863,13 @@
     },
     {
       "name": "TOTA_OUTGOING_REV_P2",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTA_OUTGOING_REV_P3",
-      "type": "decimal(10",
-      "nullability": "NULL"
+      "type": "decimal(10, 5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTA_OUTGOING_REV_P4",

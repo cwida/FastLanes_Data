@@ -26,7 +26,7 @@ def find_sql_files(root_dir):
 # Step 3: Extract field name, type, and nullability from SQL definition
 def extract_field_info(line):
     # Regular expression to match the field definition in SQL
-    match = re.match(r'^\s*"(.+)"\s+([a-zA-Z0-9\(\)]+)\s*(NOT\sNULL|NULL)?', line)
+    match = re.match(r'^\s*"(.+)"\s+([a-zA-Z]+(?:\(\d+(?:,\s*\d+)?\))?)\s*(NOT\sNULL|NULL)?', line)
     if match:
         field_name = match.group(1)
         field_type = match.group(2)

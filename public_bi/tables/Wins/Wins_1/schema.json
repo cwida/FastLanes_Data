@@ -13,17 +13,17 @@
     },
     {
       "name": "nABL1",
-      "type": "decimal(4",
+      "type": "decimal(4, 2)",
       "nullability": "NULL"
     },
     {
       "name": "nABL2",
-      "type": "decimal(4",
+      "type": "decimal(4, 2)",
       "nullability": "NULL"
     },
     {
       "name": "nABLF",
-      "type": "decimal(4",
+      "type": "decimal(4, 2)",
       "nullability": "NULL"
     },
     {
@@ -53,7 +53,7 @@
     },
     {
       "name": "nAODD",
-      "type": "decimal(3",
+      "type": "decimal(3, 1)",
       "nullability": "NULL"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "name": "nDIST",
-      "type": "decimal(3",
+      "type": "decimal(3, 1)",
       "nullability": "NULL"
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "name": "nEEN",
-      "type": "decimal(4",
+      "type": "decimal(4, 2)",
       "nullability": "NULL"
     },
     {
@@ -213,7 +213,7 @@
     },
     {
       "name": "nEXA",
-      "type": "decimal(6",
+      "type": "decimal(6, 2)",
       "nullability": "NULL"
     },
     {
@@ -253,17 +253,17 @@
     },
     {
       "name": "nFR1",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nFR2",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nFR3",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
@@ -373,7 +373,7 @@
     },
     {
       "name": "nK2",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
@@ -393,7 +393,7 @@
     },
     {
       "name": "nKGAPX",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -403,17 +403,17 @@
     },
     {
       "name": "nKLINE",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nKMS",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nKMSeCHART",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
@@ -433,7 +433,7 @@
     },
     {
       "name": "nK",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -463,7 +463,7 @@
     },
     {
       "name": "nLDIST",
-      "type": "decimal(3",
+      "type": "decimal(3, 1)",
       "nullability": "NULL"
     },
     {
@@ -508,7 +508,7 @@
     },
     {
       "name": "nLODDS",
-      "type": "decimal(4",
+      "type": "decimal(4, 2)",
       "nullability": "NULL"
     },
     {
@@ -528,7 +528,7 @@
     },
     {
       "name": "nLPER",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -603,7 +603,7 @@
     },
     {
       "name": "nMLO",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
@@ -648,7 +648,7 @@
     },
     {
       "name": "nPDIF",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
@@ -688,7 +688,7 @@
     },
     {
       "name": "nPSCN",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -818,7 +818,7 @@
     },
     {
       "name": "nTOPPAC",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -828,7 +828,7 @@
     },
     {
       "name": "nTOPPER",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -838,7 +838,7 @@
     },
     {
       "name": "nTOPSHF",
-      "type": "decimal(3",
+      "type": "decimal(3, 1)",
       "nullability": "NULL"
     },
     {
@@ -878,7 +878,7 @@
     },
     {
       "name": "nTRN_ROIX",
-      "type": "decimal(5",
+      "type": "decimal(5, 4)",
       "nullability": "NULL"
     },
     {
@@ -893,12 +893,12 @@
     },
     {
       "name": "nVBET",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nVEL",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -933,12 +933,12 @@
     },
     {
       "name": "nWKSC",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nWMAR",
-      "type": "decimal(4",
+      "type": "decimal(4, 2)",
       "nullability": "NULL"
     },
     {
@@ -953,7 +953,7 @@
     },
     {
       "name": "nXBUY",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -963,12 +963,12 @@
     },
     {
       "name": "nXPROB",
-      "type": "decimal(6",
+      "type": "decimal(6, 4)",
       "nullability": "NULL"
     },
     {
       "name": "nXSELL",
-      "type": "decimal(7",
+      "type": "decimal(7, 4)",
       "nullability": "NULL"
     },
     {
@@ -1268,7 +1268,7 @@
     },
     {
       "name": "xPLA",
-      "type": "decimal(4",
+      "type": "decimal(4, 1)",
       "nullability": "NULL"
     },
     {
@@ -1278,12 +1278,12 @@
     },
     {
       "name": "xSHO",
-      "type": "decimal(4",
+      "type": "decimal(4, 1)",
       "nullability": "NULL"
     },
     {
       "name": "xWIN",
-      "type": "decimal(4",
+      "type": "decimal(4, 1)",
       "nullability": "NULL"
     }
   ]

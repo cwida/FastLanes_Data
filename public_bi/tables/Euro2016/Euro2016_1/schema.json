@@ -33,7 +33,7 @@
     },
     {
       "name": "polarity_confidence",
-      "type": "decimal(16",
+      "type": "decimal(16, 15)",
       "nullability": "NULL"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "name": "subjectivity_confidence",
-      "type": "decimal(16",
+      "type": "decimal(16, 15)",
       "nullability": "NULL"
     },
     {

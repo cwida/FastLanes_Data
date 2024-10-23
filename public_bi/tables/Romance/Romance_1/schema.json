@@ -28,7 +28,7 @@
     },
     {
       "name": "lat",
-      "type": "decimal(18",
+      "type": "decimal(18, 15)",
       "nullability": "NULL"
     },
     {
