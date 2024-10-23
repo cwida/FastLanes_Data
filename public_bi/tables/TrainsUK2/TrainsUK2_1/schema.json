@@ -3,7 +3,7 @@
   "columns": [
     {
       "name": "Actual Total Distance Miles",
-      "type": "decimal(5",
+      "type": "decimal(5, 2)",
       "nullability": "NULL"
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "name": "Planned Total Distance Miles",
-      "type": "decimal(5",
+      "type": "decimal(5, 2)",
       "nullability": "NULL"
     },
     {
@@ -113,7 +113,7 @@
     },
     {
       "name": "v_Dest Lateness (WTT)",
-      "type": "decimal(4",
+      "type": "decimal(4, 1)",
       "nullability": "NULL"
     },
     {

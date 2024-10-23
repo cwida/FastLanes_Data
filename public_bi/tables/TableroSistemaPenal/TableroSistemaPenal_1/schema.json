@@ -53,8 +53,8 @@
     },
     {
       "name": "Calculation_7430825124450529",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Cod. Tribunal",
@@ -73,13 +73,13 @@
     },
     {
       "name": "INGRESOS",
-      "type": "decimal(4",
-      "nullability": "NULL"
+      "type": "decimal(4, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Ingresos _ Garantia (copy)",
-      "type": "decimal(3",
-      "nullability": "NULL"
+      "type": "decimal(3, 0)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Jurisdicci\u00f3n",

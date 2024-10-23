@@ -23,13 +23,13 @@
     },
     {
       "name": "Date Joined",
-      "type": "decimal(15",
-      "nullability": "NULL"
+      "type": "decimal(15, 10)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FF Ratio",
-      "type": "decimal(6",
-      "nullability": "NULL"
+      "type": "decimal(6, 1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Favorites",
@@ -78,7 +78,7 @@
     },
     {
       "name": "Lat",
-      "type": "decimal(10",
+      "type": "decimal(10, 8)",
       "nullability": "NULL"
     },
     {
@@ -93,7 +93,7 @@
     },
     {
       "name": "Long",
-      "type": "decimal(11",
+      "type": "decimal(11, 8)",
       "nullability": "NULL"
     },
     {

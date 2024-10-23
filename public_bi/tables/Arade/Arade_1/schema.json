@@ -18,13 +18,13 @@
     },
     {
       "name": "F4",
-      "type": "decimal(8",
-      "nullability": "NULL"
+      "type": "decimal(8, 4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F5",
-      "type": "decimal(8",
-      "nullability": "NULL"
+      "type": "decimal(8, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F6",
@@ -38,13 +38,13 @@
     },
     {
       "name": "F8",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F9",
-      "type": "decimal(9",
-      "nullability": "NULL"
+      "type": "decimal(9, 6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",

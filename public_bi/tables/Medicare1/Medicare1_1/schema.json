@@ -18,8 +18,8 @@
     },
     {
       "name": "Calculation_3170826185336909",
-      "type": "decimal(18",
-      "nullability": "NULL"
+      "type": "decimal(18, 15)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_3170826185505725",

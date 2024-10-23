@@ -53,12 +53,12 @@
     },
     {
       "name": "interaction#geo#latitude",
-      "type": "decimal(11",
+      "type": "decimal(11, 9)",
       "nullability": "NULL"
     },
     {
       "name": "interaction#geo#longitude",
-      "type": "decimal(11",
+      "type": "decimal(11, 8)",
       "nullability": "NULL"
     },
     {
@@ -128,12 +128,12 @@
     },
     {
       "name": "twitter#geo#latitude",
-      "type": "decimal(11",
+      "type": "decimal(11, 9)",
       "nullability": "NULL"
     },
     {
       "name": "twitter#geo#longitude",
-      "type": "decimal(11",
+      "type": "decimal(11, 8)",
       "nullability": "NULL"
     },
     {

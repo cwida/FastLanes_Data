@@ -63,8 +63,8 @@
     },
     {
       "name": "Joined",
-      "type": "decimal(15",
-      "nullability": "NULL"
+      "type": "decimal(15, 10)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Keyword",
@@ -73,8 +73,8 @@
     },
     {
       "name": "LPF",
-      "type": "decimal(7",
-      "nullability": "NULL"
+      "type": "decimal(7, 2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Language",
@@ -83,7 +83,7 @@
     },
     {
       "name": "Lat",
-      "type": "decimal(11",
+      "type": "decimal(11, 8)",
       "nullability": "NULL"
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "name": "Long",
-      "type": "decimal(10",
+      "type": "decimal(10, 8)",
       "nullability": "NULL"
     },
     {

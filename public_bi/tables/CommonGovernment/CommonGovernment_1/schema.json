@@ -193,7 +193,7 @@
     },
     {
       "name": "obligatedamount_1",
-      "type": "decimal(1",
+      "type": "decimal(1, 0)",
       "nullability": "NULL"
     },
     {

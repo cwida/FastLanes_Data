@@ -8,7 +8,7 @@
     },
     {
       "name": "avg_sale_to_list",
-      "type": "decimal(16",
+      "type": "decimal(16, 15)",
       "nullability": "NULL"
     },
     {
@@ -58,17 +58,17 @@
     },
     {
       "name": "median_dom",
-      "type": "decimal(5",
+      "type": "decimal(5, 1)",
       "nullability": "NULL"
     },
     {
       "name": "median_dom_mom",
-      "type": "decimal(5",
+      "type": "decimal(5, 1)",
       "nullability": "NULL"
     },
     {
       "name": "median_dom_yoy",
-      "type": "decimal(5",
+      "type": "decimal(5, 1)",
       "nullability": "NULL"
     },
     {
