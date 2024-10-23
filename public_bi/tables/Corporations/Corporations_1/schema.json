@@ -1,112 +1,140 @@
 {
+  "table": "Corporations_1",
   "columns": [
     {
       "name": "Id1",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "angelco_account",
-      "type": "string"
+      "type": "varchar(95)",
+      "nullability": "NULL"
     },
     {
       "name": "business_model",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NULL"
     },
     {
       "name": "city",
-      "type": "string"
+      "type": "varchar(99)",
+      "nullability": "NULL"
     },
     {
       "name": "continent",
-      "type": "string"
+      "type": "varchar(26)",
+      "nullability": "NULL"
     },
     {
       "name": "country",
-      "type": "string"
+      "type": "varchar(32)",
+      "nullability": "NULL"
     },
     {
       "name": "crunchbase_account",
-      "type": "string"
+      "type": "varchar(137)",
+      "nullability": "NULL"
     },
     {
       "name": "facebook_account",
-      "type": "string"
+      "type": "varchar(776)",
+      "nullability": "NULL"
     },
     {
       "name": "financing_stage",
-      "type": "string"
+      "type": "varchar(16)",
+      "nullability": "NULL"
     },
     {
       "name": "founding_date",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NULL"
     },
     {
       "name": "id",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "industries",
-      "type": "string"
+      "type": "varchar(187)",
+      "nullability": "NULL"
     },
     {
       "name": "keywords",
-      "type": "string"
+      "type": "varchar(255)",
+      "nullability": "NULL"
     },
     {
       "name": "last_funding_date",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NULL"
     },
     {
       "name": "linkedin_account",
-      "type": "string"
+      "type": "varchar(324)",
+      "nullability": "NULL"
     },
     {
       "name": "location",
-      "type": "string"
+      "type": "varchar(100)",
+      "nullability": "NULL"
     },
     {
       "name": "long_description",
-      "type": "string"
+      "type": "varchar(562)",
+      "nullability": "NULL"
     },
     {
       "name": "name",
-      "type": "string"
+      "type": "varchar(338)",
+      "nullability": "NULL"
     },
     {
       "name": "num_employees",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "region",
-      "type": "string"
+      "type": "varchar(33)",
+      "nullability": "NULL"
     },
     {
       "name": "score",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "short_descriptiion",
-      "type": "string"
+      "type": "varchar(259)",
+      "nullability": "NULL"
     },
     {
       "name": "stage",
-      "type": "string"
+      "type": "varchar(18)",
+      "nullability": "NULL"
     },
     {
       "name": "total_funding",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter_account",
-      "type": "string"
+      "type": "varchar(194)",
+      "nullability": "NULL"
     },
     {
       "name": "website",
-      "type": "string"
+      "type": "varchar(255)",
+      "nullability": "NULL"
     }
   ]
 }

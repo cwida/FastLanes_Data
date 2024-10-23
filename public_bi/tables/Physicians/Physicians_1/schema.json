@@ -1,116 +1,145 @@
 {
+  "table": "Physicians_1",
   "columns": [
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "average_Medicare_allowed_amt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "average_Medicare_payment_amt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "average_submitted_chrg_amt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "bene_day_srvc_cnt",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "bene_unique_cnt",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "hcpcs_code",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "hcpcs_description",
-      "type": "string"
+      "type": "varchar(28)",
+      "nullability": "NULL"
     },
     {
       "name": "line_srvc_cnt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "medicare_participation_indicator",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "npi",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nppes_credentials",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_entity_code",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_city",
-      "type": "string"
+      "type": "varchar(28)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_country",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_first_name",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_gender",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_last_org_name",
-      "type": "string"
+      "type": "varchar(70)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_mi",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_state",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_street1",
-      "type": "string"
+      "type": "varchar(55)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_street2",
-      "type": "string"
+      "type": "varchar(55)",
+      "nullability": "NULL"
     },
     {
       "name": "nppes_provider_zip",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "place_of_service",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "provider_type",
-      "type": "string"
+      "type": "varchar(43)",
+      "nullability": "NULL"
     },
     {
       "name": "stdev_Medicare_allowed_amt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "stdev_Medicare_payment_amt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "stdev_submitted_chrg_amt",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     }
   ]
 }

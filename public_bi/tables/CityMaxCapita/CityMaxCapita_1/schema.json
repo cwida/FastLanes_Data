@@ -1,128 +1,160 @@
 {
+  "table": "CityMaxCapita_1",
   "columns": [
     {
-      "name": "City_Admin",
-      "type": "string"
+      "name": "City/Admin",
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
-      "name": "City_State",
-      "type": "string"
+      "name": "City/State",
+      "type": "varchar(39)",
+      "nullability": "NULL"
     },
     {
       "name": "City",
-      "type": "string"
+      "type": "varchar(49)",
+      "nullability": "NULL"
     },
     {
-      "name": "Created Date_Time",
-      "type": "double"
+      "name": "Created Date/Time",
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Date Joined",
-      "type": "double"
+      "type": "decimal(15",
+      "nullability": "NULL"
     },
     {
       "name": "FF Ratio",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "Favorites",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "First Link in Tweet",
-      "type": "string"
+      "type": "varchar(620)",
+      "nullability": "NULL"
     },
     {
       "name": "Followers",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Following",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Gender",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Influencer?",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Keyword",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "LPF",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Language",
-      "type": "string"
+      "type": "varchar(18)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Lat",
-      "type": "double"
+      "type": "decimal(10",
+      "nullability": "NULL"
     },
     {
       "name": "Listed Number",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Long Domain",
-      "type": "string"
+      "type": "varchar(69)",
+      "nullability": "NULL"
     },
     {
       "name": "Long",
-      "type": "double"
+      "type": "decimal(11",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Region",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NULL"
     },
     {
       "name": "Short Domain",
-      "type": "string"
+      "type": "varchar(63)",
+      "nullability": "NULL"
     },
     {
-      "name": "State_Country",
-      "type": "string"
+      "name": "State/Country",
+      "type": "varchar(74)",
+      "nullability": "NULL"
     },
     {
       "name": "State",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "Tweet Text",
-      "type": "string"
+      "type": "varchar(140)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Tweets",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Twitter Client",
-      "type": "string"
+      "type": "varchar(32)",
+      "nullability": "NULL"
     },
     {
       "name": "User Bio",
-      "type": "string"
+      "type": "varchar(160)",
+      "nullability": "NULL"
     },
     {
       "name": "User Loc",
-      "type": "string"
+      "type": "varchar(102)",
+      "nullability": "NULL"
     },
     {
       "name": "Username 1",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "Username",
-      "type": "string"
+      "type": "varchar(17)",
+      "nullability": "NOT NULL"
     }
   ]
 }

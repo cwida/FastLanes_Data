@@ -1,48 +1,60 @@
 {
+  "table": "Euro2016_1",
   "columns": [
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "id",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "lang",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "latitude",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "longitude",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NULL"
     },
     {
       "name": "polarity",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NULL"
     },
     {
       "name": "polarity_confidence",
-      "type": "double"
+      "type": "decimal(16",
+      "nullability": "NULL"
     },
     {
       "name": "subjectivity",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NULL"
     },
     {
       "name": "subjectivity_confidence",
-      "type": "double"
+      "type": "decimal(16",
+      "nullability": "NULL"
     },
     {
       "name": "tweet",
-      "type": "string"
+      "type": "varchar(402)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "tweeted_at",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     }
   ]
 }

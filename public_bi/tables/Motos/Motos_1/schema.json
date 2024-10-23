@@ -1,180 +1,225 @@
 {
+  "table": "Motos_1",
   "columns": [
     {
       "name": "Anunciante",
-      "type": "string"
+      "type": "varchar(37)",
+      "nullability": "NULL"
     },
     {
       "name": "Aviso",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NULL"
     },
     {
       "name": "A\ufffdo",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Cadena",
-      "type": "string"
+      "type": "varchar(22)",
+      "nullability": "NULL"
     },
     {
       "name": "Categoria",
-      "type": "string"
+      "type": "varchar(47)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Circulacion",
-      "type": "string"
+      "type": "varchar(21)",
+      "nullability": "NULL"
     },
     {
       "name": "Codigo",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Cols",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Concatenar 1",
-      "type": "string"
+      "type": "varchar(54)",
+      "nullability": "NULL"
     },
     {
       "name": "Concatenar 2",
-      "type": "string"
+      "type": "varchar(76)",
+      "nullability": "NULL"
     },
     {
       "name": "Corte",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "De_Npags",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Dia_Semana",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Disco",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Duracion",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Est",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "FECHA",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Franja",
-      "type": "string"
+      "type": "varchar(25)",
+      "nullability": "NULL"
     },
     {
       "name": "Genero",
-      "type": "string"
+      "type": "varchar(17)",
+      "nullability": "NULL"
     },
     {
       "name": "Holding",
-      "type": "string"
+      "type": "varchar(7)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Hora_Pagina",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "InversionQ",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "InversionUS",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Marca",
-      "type": "string"
+      "type": "varchar(37)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Medio",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Mes",
-      "type": "string"
+      "type": "varchar(7)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "NumAnuncios",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Plgs",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Posicion_Edicion",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PrimeraLinea",
-      "type": "string"
+      "type": "varchar(90)",
+      "nullability": "NULL"
     },
     {
       "name": "Producto",
-      "type": "string"
+      "type": "varchar(39)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SEMANA",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Sector",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Soporte",
-      "type": "string"
+      "type": "varchar(84)",
+      "nullability": "NULL"
     },
     {
       "name": "Subsector",
-      "type": "string"
+      "type": "varchar(39)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Unidad",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "VER ANUNCIO",
-      "type": "string"
+      "type": "varchar(54)",
+      "nullability": "NULL"
     },
     {
       "name": "Vehiculo",
-      "type": "string"
+      "type": "varchar(23)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "extencion",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "medio2",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "www1",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NULL"
     },
     {
       "name": "www2",
-      "type": "string"
+      "type": "varchar(57)",
+      "nullability": "NULL"
     },
     {
       "name": "Anunciante (grupo)",
-      "type": "string"
+      "type": "varchar(34)",
+      "nullability": "NULL"
     }
   ]
 }

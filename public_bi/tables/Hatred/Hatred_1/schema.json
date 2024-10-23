@@ -1,128 +1,160 @@
 {
+  "table": "Hatred_1",
   "columns": [
     {
       "name": "City",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NULL"
     },
     {
       "name": "Client",
-      "type": "string"
+      "type": "varchar(32)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Created Date",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F26",
-      "type": "string"
+      "type": "varchar(59)",
+      "nullability": "NULL"
     },
     {
       "name": "F27",
-      "type": "string"
+      "type": "varchar(65)",
+      "nullability": "NULL"
     },
     {
       "name": "F28",
-      "type": "string"
+      "type": "varchar(800)",
+      "nullability": "NULL"
     },
     {
       "name": "FF Ratio",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Favorites",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Followers",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Following",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Gender",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Influencer?",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Joined",
-      "type": "double"
+      "type": "decimal(15",
+      "nullability": "NULL"
     },
     {
       "name": "Keyword",
-      "type": "string"
+      "type": "varchar(24)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "LPF",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "Language",
-      "type": "string"
+      "type": "varchar(18)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Lat",
-      "type": "double"
+      "type": "decimal(11",
+      "nullability": "NULL"
     },
     {
       "name": "Listed",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Location Type",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Long",
-      "type": "double"
+      "type": "decimal(10",
+      "nullability": "NULL"
     },
     {
       "name": "Name",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Region",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Self Report Location",
-      "type": "string"
+      "type": "varchar(78)",
+      "nullability": "NULL"
     },
     {
       "name": "State ",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "StatePopName",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "StatePopNum",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Tweet Text",
-      "type": "string"
+      "type": "varchar(141)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Tweets",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Username",
-      "type": "string"
+      "type": "varchar(17)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "profile desc",
-      "type": "string"
+      "type": "varchar(160)",
+      "nullability": "NULL"
     }
   ]
 }

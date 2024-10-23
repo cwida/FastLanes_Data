@@ -1,28 +1,35 @@
 {
+  "table": "Food_1",
   "columns": [
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "activity_sec",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "application",
-      "type": "string"
+      "type": "varchar(28)",
+      "nullability": "NULL"
     },
     {
       "name": "device",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "subscribers",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "volume_total_bytes",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     }
   ]
 }

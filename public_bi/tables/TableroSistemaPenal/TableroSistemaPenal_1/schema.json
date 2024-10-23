@@ -1,112 +1,140 @@
 {
+  "table": "TableroSistemaPenal_1",
   "columns": [
     {
       "name": "AGRUPADOR",
-      "type": "string"
+      "type": "varchar(55)",
+      "nullability": "NULL"
     },
     {
       "name": "A\u00f1o Ingreso",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CLASE",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "COD DELITO",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "COD. REGI\u00d3N",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "COMUNA",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CORTE",
-      "type": "string"
+      "type": "varchar(17)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CREA RUC",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_0520821013255406",
-      "type": "string"
+      "type": "varchar(55)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_0640821194248948",
-      "type": "string"
+      "type": "varchar(55)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_7430825124450529",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "Cod. Tribunal",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DELITO",
-      "type": "string"
+      "type": "varchar(64)",
+      "nullability": "NULL"
     },
     {
       "name": "Forma Inicio",
-      "type": "string"
+      "type": "varchar(25)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "INGRESOS",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "Ingresos _ Garantia (copy)",
-      "type": "double"
+      "type": "decimal(3",
+      "nullability": "NULL"
     },
     {
       "name": "Jurisdicci\u00f3n",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "LATITUD",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "LONGITUD",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Mes Ingreso",
-      "type": "string"
+      "type": "varchar(7)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PA\u00cdS",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REGI\u00d3N",
-      "type": "string"
+      "type": "varchar(53)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RPA",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "TIPO",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TIP_TRIB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TRIBUNAL",
-      "type": "string"
+      "type": "varchar(30)",
+      "nullability": "NOT NULL"
     }
   ]
 }

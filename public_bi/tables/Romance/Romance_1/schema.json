@@ -1,52 +1,65 @@
 {
+  "table": "Romance_1",
   "columns": [
     {
       "name": "F1",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "caption",
-      "type": "string"
+      "type": "varchar(8160)",
+      "nullability": "NULL"
     },
     {
       "name": "created_time",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "id",
-      "type": "string"
+      "type": "varchar(55)",
+      "nullability": "NULL"
     },
     {
       "name": "lat",
-      "type": "double"
+      "type": "decimal(18",
+      "nullability": "NULL"
     },
     {
       "name": "link",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NULL"
     },
     {
       "name": "lng",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "location",
-      "type": "string"
+      "type": "varchar(213)",
+      "nullability": "NULL"
     },
     {
       "name": "tags",
-      "type": "string"
+      "type": "varchar(950)",
+      "nullability": "NULL"
     },
     {
       "name": "term",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "user",
-      "type": "skip"
+      "type": "bigint",
+      "nullability": "NULL"
     }
   ]
 }

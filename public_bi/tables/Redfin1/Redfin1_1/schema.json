@@ -1,180 +1,225 @@
 {
+  "table": "Redfin1_1",
   "columns": [
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "avg_sale_to_list",
-      "type": "double"
+      "type": "decimal(16",
+      "nullability": "NULL"
     },
     {
       "name": "avg_sale_to_list_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "avg_sale_to_list_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "city",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NULL"
     },
     {
       "name": "homes_sold",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "homes_sold_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "homes_sold_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "inventory",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "inventory_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "inventory_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_dom",
-      "type": "double"
+      "type": "decimal(5",
+      "nullability": "NULL"
     },
     {
       "name": "median_dom_mom",
-      "type": "double"
+      "type": "decimal(5",
+      "nullability": "NULL"
     },
     {
       "name": "median_dom_yoy",
-      "type": "double"
+      "type": "decimal(5",
+      "nullability": "NULL"
     },
     {
       "name": "median_list_ppsf",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_list_ppsf_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_list_ppsf_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_list_price",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_list_price_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_list_price_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_ppsf",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_ppsf_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_ppsf_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_sale_price",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_sale_price_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "median_sale_price_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "new_listings",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "new_listings_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "new_listings_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "period_begin",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NOT NULL"
     },
     {
       "name": "period_duration",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "period_end",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NOT NULL"
     },
     {
       "name": "price_drops",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "price_drops_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "price_drops_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "property_type",
-      "type": "string"
+      "type": "varchar(25)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "region",
-      "type": "string"
+      "type": "varchar(75)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "region_type",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "sold_above_list",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "sold_above_list_mom",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "sold_above_list_yoy",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "state",
-      "type": "string"
+      "type": "varchar(14)",
+      "nullability": "NULL"
     },
     {
       "name": "state_code",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "table_id",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     }
   ]
 }

@@ -1,408 +1,510 @@
 {
+  "table": "HashTags_1",
   "columns": [
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "demographic#gender",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#author#avatar",
-      "type": "string"
+      "type": "varchar(228)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#author#id",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#author#language",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#author#link",
-      "type": "string"
+      "type": "varchar(34)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#author#name",
-      "type": "string"
+      "type": "varchar(57)",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#author#username",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#content",
-      "type": "string"
+      "type": "varchar(505)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#created_at",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#geo#latitude",
-      "type": "double"
+      "type": "decimal(11",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#geo#longitude",
-      "type": "double"
+      "type": "decimal(11",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#hashtags",
-      "type": "string"
+      "type": "varchar(230)",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#id",
-      "type": "string"
+      "type": "varchar(32)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#link",
-      "type": "string"
+      "type": "varchar(60)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#mention_ids",
-      "type": "string"
+      "type": "varchar(104)",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#mentions",
-      "type": "string"
+      "type": "varchar(156)",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#received_at",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "interaction#schema#version",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#source",
-      "type": "string"
+      "type": "varchar(67)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "interaction#type",
-      "type": "string"
+      "type": "varchar(7)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#created_at",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#display_urls",
-      "type": "string"
+      "type": "varchar(129)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#domains",
-      "type": "string"
+      "type": "varchar(60)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#filter_level",
-      "type": "string"
+      "type": "varchar(6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#geo#latitude",
-      "type": "double"
+      "type": "decimal(11",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#geo#longitude",
-      "type": "double"
+      "type": "decimal(11",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#hashtags",
-      "type": "string"
+      "type": "varchar(230)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#id",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#in_reply_to_screen_name",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#in_reply_to_status_id",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#in_reply_to_user_id",
-      "type": "skip"
+      "type": "bigint",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#lang",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#links",
-      "type": "string"
+      "type": "varchar(255)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#media",
-      "type": "string"
+      "type": "varchar(255)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#mention_ids",
-      "type": "string"
+      "type": "varchar(104)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#mentions",
-      "type": "string"
+      "type": "varchar(156)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#country",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#country_code",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#full_name",
-      "type": "string"
+      "type": "varchar(61)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#id",
-      "type": "string"
+      "type": "varchar(16)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#name",
-      "type": "string"
+      "type": "varchar(49)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#place_type",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#place#url",
-      "type": "string"
+      "type": "varchar(56)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#possibly_sensitive",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#source",
-      "type": "string"
+      "type": "varchar(173)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#text",
-      "type": "string"
+      "type": "varchar(505)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#created_at",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#description",
-      "type": "string"
+      "type": "varchar(480)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#favourites_count",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#followers_count",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#friends_count",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#geo_enabled",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#id",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#id_str",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#lang",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#listed_count",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#location",
-      "type": "string"
+      "type": "varchar(80)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#name",
-      "type": "string"
+      "type": "varchar(57)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#profile_image_url",
-      "type": "string"
+      "type": "varchar(228)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#profile_image_url_https",
-      "type": "string"
+      "type": "varchar(229)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#screen_name",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#statuses_count",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "twitter#user#time_zone",
-      "type": "string"
+      "type": "varchar(30)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#url",
-      "type": "string"
+      "type": "varchar(255)",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#utc_offset",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "twitter#user#verified",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: suburgatory (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Castle (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: revenge (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: nashville (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: modernfamily (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: lastmanstanding (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: TheNeighbors (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: TheNeighbors (copy 3)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: TheNeighbors (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: suburgatory (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Scandal (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Scandal (copy 3)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Scandal (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: RookieBlue (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: RookieBlue (copy 6)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: RookieBlue (copy 5)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: RookieBlue (copy 4)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: RookieBlue (copy 3)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: RookieBlue (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: OnceUponATime (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Motive (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Motive (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: KillerWomen (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: KillerWomen (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: GreysAnatomy (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: GreysAnatomy (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_6220303224029615",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: Castle (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: AgentsofSHIELD (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: AFV (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: AFV (copy 2)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: ABC2020 (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_6610227171140491",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Contains: TheMiddle (copy)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     }
   ]
 }
