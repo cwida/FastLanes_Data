@@ -1,1032 +1,1290 @@
 {
+  "table": "Wins_1",
   "columns": [
     {
       "name": "Calculation_-2642768498522718196",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nABL1",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "nABL2",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "nABLF",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "nABOUT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nACL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nAE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nAFIN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nAGE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nAODD",
-      "type": "double"
+      "type": "decimal(3",
+      "nullability": "NULL"
     },
     {
       "name": "nBADCLASS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBADFAV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBARN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBEATCLM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBIGLOSER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBLOWOUT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBTL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nBUGBOY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nC90X",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nC90",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nCHAOS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nCHG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nCLASSFIT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nCLASSX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nCLASS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nCLA",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nCLCH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nCLMVALUE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nCLM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nCONT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nCOUPLED",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nCOURSE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nDIST",
-      "type": "double"
+      "type": "decimal(3",
+      "nullability": "NULL"
     },
     {
       "name": "nDS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nEDIF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nEEN",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "nEPR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nEPR_PAC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nEPS365D",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nEPSLIFE",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nESHOCK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nEXA",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nFAV1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nFAV2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nFC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nFIRST_TAG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nFIT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nFLD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nFPSX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nFR1",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nFR2",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nFR3",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nFTI",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nFTS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nGATEBRK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nGELDING",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nGOODIES",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nH4C",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nHAG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nHTR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nIDX",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "nIMP1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nIMP2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nIMP3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nIMP4",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nIMPROVE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nJ14ST",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nJ14WN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nJKCH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nJKYHST",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nJKYHW",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nJKY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nK2LINE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nK2",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nKAT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nKENTENDER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nKEY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nKGAPX",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nKGAP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nKLINE",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nKMS",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nKMSeCHART",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nKPROB1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nKPROB2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nKPROB3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nK",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nLAY90",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLAYZONE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLAY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLCLAS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLCSF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLDIST",
-      "type": "double"
+      "type": "decimal(3",
+      "nullability": "NULL"
     },
     {
       "name": "nLDR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLFIN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLFST",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLFWP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLIVEA",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLIVEL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLIVEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLIVES",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLODDS",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "nLONERAZOR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLONESP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLONG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLPER",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nLPOS1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLRACE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nLSHOCK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLSURF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nLTOP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLUCK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLWD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLWINF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLWINS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLoneDD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLoneKAT6",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nLoneLUCK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nMAXWINSX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nMLFAV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nMLO",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nNEG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nOD_PICK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nOD_SCORE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nOFFGRASS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nOTX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nOUTLOOK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPACE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPAC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPDIF",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nPED",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPFIG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPNT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nPPO",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPRICEPLAY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nPROB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nPSCN",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nPSF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nPURS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nQFIVES",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nQFLAG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nQPC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nQP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nQT3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nRACE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nRAZOR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nRS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nRULE50",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nRUNKS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nSCRATCHES",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nSEX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nSLASH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nSTB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nSTR",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "nSUPERF",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "nSUPERS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nSURF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nTAN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTJ",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTL30S",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTL30W",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTOPPACAGO",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTOPPAC",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nTOPPERAGO",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTOPPER",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nTOPSHFAGO",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTOPSHF",
-      "type": "double"
+      "type": "decimal(3",
+      "nullability": "NULL"
     },
     {
       "name": "nTOUR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTRCH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTRI",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "nTRNHST",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTRNHW",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTRN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nTRN_BUZZ",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nTRN_ROIX",
-      "type": "double"
+      "type": "decimal(5",
+      "nullability": "NULL"
     },
     {
       "name": "nTopKAT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nUNK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nVBET",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nVEL",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nVI",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nVK1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nWEIGHT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nWGTCH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nWINDAYSX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "nWINTYPE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nWKSC",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nWMAR",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "nWSR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nXADJ",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nXBUY",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "nXFAV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nXPROB",
-      "type": "double"
+      "type": "decimal(6",
+      "nullability": "NULL"
     },
     {
       "name": "nXSELL",
-      "type": "double"
+      "type": "decimal(7",
+      "nullability": "NULL"
     },
     {
       "name": "rACL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rAODD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rAP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rC90",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rCLASS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rEPS365D",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rEPSLIFE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rFC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rFR1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rFR2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rFR3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rFX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rHTR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rIMP1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rIMP2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rIMP3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rIMP4",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rJKY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rK2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rKMS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rLCSF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rMLO",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rOTX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rPAC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rPED",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rPER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rPFIG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rPROB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rPSCN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rTRN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "rVEL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "rWKSC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "tCLASS",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "tDATE",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "tFCID",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "tHOR",
-      "type": "string"
+      "type": "varchar(24)",
+      "nullability": "NULL"
     },
     {
       "name": "tJKY",
-      "type": "string"
+      "type": "varchar(25)",
+      "nullability": "NULL"
     },
     {
       "name": "tLCLASS",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "tLDATE",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "tLJKY",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "tLRACETEXT",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "tLTRIP",
-      "type": "string"
+      "type": "varchar(27)",
+      "nullability": "NULL"
     },
     {
       "name": "tLTRK",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "tLTRN",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "tOWNER",
-      "type": "string"
+      "type": "varchar(24)",
+      "nullability": "NULL"
     },
     {
       "name": "tPGM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "tPOST",
-      "type": "skip"
+      "type": "time",
+      "nullability": "NULL"
     },
     {
       "name": "tTPG",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "tTRK",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "tTRN",
-      "type": "string"
+      "type": "varchar(25)",
+      "nullability": "NULL"
     },
     {
       "name": "tWK1",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "tWK2",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "tWK3",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "tWK4",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "xFIN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "xPLA",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "xPL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "xSHO",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "xWIN",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     }
   ]
 }

@@ -1,48 +1,60 @@
 {
+  "table": "Arade_1",
   "columns": [
     {
       "name": "F1",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F2",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F3",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NOT NULL"
     },
     {
       "name": "F4",
-      "type": "double"
+      "type": "decimal(8",
+      "nullability": "NULL"
     },
     {
       "name": "F5",
-      "type": "double"
+      "type": "decimal(8",
+      "nullability": "NULL"
     },
     {
       "name": "F6",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "F7",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "F8",
-      "type": "double"
+      "type": "decimal(9",
+      "nullability": "NULL"
     },
     {
       "name": "F9",
-      "type": "double"
+      "type": "decimal(9",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "WNET (bin)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     }
   ]
 }

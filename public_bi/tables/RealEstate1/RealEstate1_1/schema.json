@@ -1,116 +1,145 @@
 {
+  "table": "RealEstate1_1",
   "columns": [
     {
       "name": "Address 1",
-      "type": "string"
+      "type": "varchar(50)",
+      "nullability": "NULL"
     },
     {
       "name": "Address 2",
-      "type": "string"
+      "type": "varchar(45)",
+      "nullability": "NULL"
     },
     {
       "name": "County",
-      "type": "string"
+      "type": "varchar(28)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Date of Transfer",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NOT NULL"
     },
     {
       "name": "District",
-      "type": "string"
+      "type": "varchar(38)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Duration",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Latitude",
-      "type": "double"
+      "type": "decimal(8",
+      "nullability": "NULL"
     },
     {
       "name": "Locality",
-      "type": "string"
+      "type": "varchar(34)",
+      "nullability": "NULL"
     },
     {
       "name": "Longitude",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "New Build?",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Postcode District",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Postcode Region",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Postcode Sector",
-      "type": "string"
+      "type": "varchar(6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Postcode",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Price",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Property Type",
-      "type": "string"
+      "type": "varchar(17)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Street",
-      "type": "string"
+      "type": "varchar(47)",
+      "nullability": "NULL"
     },
     {
-      "name": "Town_City",
-      "type": "string"
+      "name": "Town/City",
+      "type": "varchar(22)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Transaction ID",
-      "type": "string"
+      "type": "varchar(38)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Month",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_7270508194941839",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_5960512115909696",
-      "type": "string"
+      "type": "varchar(7)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_5480628224156393",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_2630509165701334",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_0390512122057182",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Year",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "average monthly price per km2 (copy)",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     }
   ]
 }

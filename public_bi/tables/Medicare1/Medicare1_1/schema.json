@@ -1,108 +1,135 @@
 {
+  "table": "Medicare1_1",
   "columns": [
     {
       "name": "BENE_COUNT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "BENE_COUNT_GE65",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "BENE_COUNT_GE65_REDACT_FLAG",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_3170826185336909",
-      "type": "double"
+      "type": "decimal(18",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_3170826185505725",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_7130826185400024",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_9030826185528129",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DESCRIPTION_FLAG",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DRUG_NAME",
-      "type": "string"
+      "type": "varchar(30)",
+      "nullability": "NULL"
     },
     {
       "name": "GE65_REDACT_FLAG",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "GENERIC_NAME",
-      "type": "string"
+      "type": "varchar(30)",
+      "nullability": "NULL"
     },
     {
       "name": "NPI",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "NPPES_PROVIDER_CITY",
-      "type": "string"
+      "type": "varchar(28)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "NPPES_PROVIDER_FIRST_NAME",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NULL"
     },
     {
       "name": "NPPES_PROVIDER_LAST_ORG_NAME",
-      "type": "string"
+      "type": "varchar(67)",
+      "nullability": "NULL"
     },
     {
       "name": "NPPES_PROVIDER_STATE",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SPECIALTY_DESC",
-      "type": "string"
+      "type": "varchar(65)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CLAIM_COUNT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_CLAIM_COUNT_GE65",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "TOTAL_DAY_SUPPLY",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_DAY_SUPPLY_GE65",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "TOTAL_DRUG_COST",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "TOTAL_DRUG_COST_GE65",
-      "type": "double"
+      "type": "double",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_6710826185428006",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
-      "name": "Avg Day Supply_Bene (bin)",
-      "type": "integer"
+      "name": "Avg Day Supply/Bene (bin)",
+      "type": "smallint",
+      "nullability": "NOT NULL"
     }
   ]
 }

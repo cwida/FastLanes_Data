@@ -1,124 +1,155 @@
 {
+  "table": "YaleLanguages_1",
   "columns": [
     {
       "name": "BEGIN_PUB_DATE",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "BIB_FORMAT",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "BIB_ID",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CALL_NO_TYPE",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "CHARGE_DATE",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NOT NULL"
     },
     {
       "name": "CLASS_BROAD",
-      "type": "string"
+      "type": "varchar(51)",
+      "nullability": "NULL"
     },
     {
       "name": "CLASS_GROUP",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NULL"
     },
     {
       "name": "CLASS_LETTER",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "CLASS_NARROW",
-      "type": "string"
+      "type": "varchar(99)",
+      "nullability": "NULL"
     },
     {
       "name": "DATE",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "DATE_RANGE_CENTURY",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NULL"
     },
     {
       "name": "DATE_RANGE_DECADE",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NULL"
     },
     {
       "name": "DISCHARGE_DATE",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "ID",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ID1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "LANGUAGE",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "LC_BROAD",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "LC_NARROW",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "MFHD_ID",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PATRON_GROUP_CODE",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NULL"
     },
     {
       "name": "PATRON_GROUP_DISPLAY",
-      "type": "string"
+      "type": "varchar(35)",
+      "nullability": "NULL"
     },
     {
       "name": "PATRON_GROUP_ID",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PATRON_GROUP_ID1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PATRON_GROUP_NAME",
-      "type": "string"
+      "type": "varchar(23)",
+      "nullability": "NULL"
     },
     {
       "name": "PATRON_TYPE (Pseudo vs Patron)",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "PLACE_CODE",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "Patron Group",
-      "type": "string"
+      "type": "varchar(16)",
+      "nullability": "NULL"
     },
     {
       "name": "RENEWAL_COUNT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_1810108111146429",
-      "type": "string"
+      "type": "varchar(51)",
+      "nullability": "NOT NULL"
     }
   ]
 }

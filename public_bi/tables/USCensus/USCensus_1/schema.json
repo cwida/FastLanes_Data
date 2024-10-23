@@ -1,2080 +1,2600 @@
 {
+  "table": "USCensus_1",
   "columns": [
     {
       "name": "ACCESS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ACR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ADJHSG",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ADJINC",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ADJINC1",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "AGEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "AGS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ANC1P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ANC2P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ANC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "BATH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "BDSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "BLD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "BROADBND",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "BUS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "CITWP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "CIT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "COMPOTHX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "CONP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "COW",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DDRS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DEAR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DECADE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DEYE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DIALUP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DIS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DIVISION",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "DOUT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DPHY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DRATX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DRAT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DREM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DRIVESP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "DSL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ELEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ENG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ESP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ESR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FACCESSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FACRP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FAGEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FAGSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FANCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FBATHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FBDSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FBLDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FBROADBNDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FBUSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FCITP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FCITWP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FCOMPOTHXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FCONP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FCOWP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDDRSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDEARP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDEYEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDIALUPP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FDISP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDOUTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDPHYP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDRATP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDRATXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDREMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FDSLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FELEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FENGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FESRP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FES",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FFERP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FFIBEROPP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FFINCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FFODP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FFSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FFULP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FGASP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FGCLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FGCMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FGCRP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FGRNTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHANDHELDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHFLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHINCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHINS1P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHINS2P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHINS3C",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHINS3P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHINS4C",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHINS4P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHINS5C",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FHINS5P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHINS6P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHINS7P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FHISP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FIBEROP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FINCP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "FINDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FINSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FINTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FJWDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FJWMNP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FJWRIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FJWTRP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FKITP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FLANP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FLANXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FLAPTOPP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMARHDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMARHMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMARHTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMARHWP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMARHYP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMARP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMIGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMIGSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMILPP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMILSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FMODEMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMRGIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMRGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMRGTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMRGXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FMVP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FOCCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FOD1P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FOD2P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FOIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FOTHSVCEXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FPAP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FPARC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FPERNP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FPINCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FPLMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FPOBP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FPOWSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FPRIVCOVP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FPUBCOVP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FRACP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FREFRP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FRELP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FRETP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FRMSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FRNTMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FRNTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FRWATPRP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FRWATP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSATELLITEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSCHGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSCHLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSCHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSEMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSEXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSINKP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSMOCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSMXHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSMXSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FSSIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FSTOVP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FTAXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FTELP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FTENP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FTOILP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FULP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FVACSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FVALP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FVEHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FWAGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FWATP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FWKHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FWKLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FWKWP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FWRKP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "FYBLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "FYOEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "GASP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "GCL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "GCM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "GCR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "GRNTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "GRPIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HANDHELD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HFL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HHL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HHT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HICOV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINCP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "HINS1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINS2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINS3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINS4",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINS5",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINS6",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HINS7",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HISP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "HUGCL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HUPAC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HUPAOC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "HUPARC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "INDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "INSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "INTP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "JWAP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "JWDP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "JWMNP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "JWRIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "JWTR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "KIT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "LANP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "LANX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "LAPTOP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "LNGI",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MARHD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MARHM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MARHT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MARHW",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MARHYP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MAR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "MHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MIGPUMA",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "MIGSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MIG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MIL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPA",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPCD",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPFG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPI",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPJ",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MLPK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MODEM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MRGI",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MRGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MRGT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MRGX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MULTG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "MV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NAICSP",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NULL"
     },
     {
       "name": "NATIVITY",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "NOC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NOP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NPF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NPP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "NRC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NWAB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NWAV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NWLA",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NWLK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "NWRE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OCCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "OCPIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "OC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "OIP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "OTHSVCEX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PAOC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PAP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PARTNER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PERNP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "PINCP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "PLM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "POBP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "POVPIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "POWPUMA",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "POWSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PRIVCOV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PSF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "PUBCOV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PUMA",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PUMA1",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "PWGTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "QTRBIR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "R18",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "R60",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "R65",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "RAC1P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RAC2P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RAC3P",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACAIAN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACASN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACBLK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACNH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACNUM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACPI",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACSOR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RACWHT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "REFR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "REGION",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RELP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RESMODE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "RETP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "RMSP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "RNTM",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "RNTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "RT",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RT1",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "RWATPR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "RWAT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SATELLITE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SCHG",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SCHL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SCH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SCIENGP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SCIENGRLP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SEMP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "SERIALNO",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SERIALNO1",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SEX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SFN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SFR",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SINK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SMOCP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SMP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SMX",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SOCP",
-      "type": "string"
+      "type": "varchar(6)",
+      "nullability": "NULL"
     },
     {
       "name": "SPORDER",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SRNT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SSIP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SSMC",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "SSP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "ST",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "STOV",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ST1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "SVAL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "TAXP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "TEL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "TEN",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "TOIL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "TYPE",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Table Name",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Table Name1",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "VACS",
-      "type": "skip"
+      "type": "bigint",
+      "nullability": "NULL"
     },
     {
       "name": "VALP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "VEH",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "VPS",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WAGP",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "WAOB",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "WATP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WGTP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "WIF",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WKEXREL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WKHP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WKL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WKW",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WORKSTAT",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "WRK",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "YBL",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "YOEP",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "pwgtp10",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp11",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp12",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp13",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp14",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp15",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp16",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp17",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp18",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp19",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp20",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp21",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp22",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp23",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp24",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp25",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp26",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp27",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp28",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp29",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp30",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp31",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp32",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp33",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp34",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp35",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp36",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp37",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp38",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp39",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp40",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp41",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp42",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp43",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp44",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp45",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp46",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp47",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp48",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp49",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp4",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp50",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp51",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp52",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp53",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp54",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp55",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp56",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp57",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp58",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp59",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp5",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp60",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp61",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp62",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp63",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp64",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp65",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp66",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp67",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp68",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp69",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp6",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp70",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp71",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp72",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp73",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp74",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp75",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp76",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp77",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp78",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp79",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp7",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp80",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp8",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pwgtp9",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp10",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp11",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp12",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp13",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp14",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp15",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp16",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp17",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp18",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp19",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp1",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp20",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp21",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp22",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp23",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp24",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp25",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp26",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp27",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp28",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp29",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp2",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp30",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp31",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp32",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp33",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp34",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp35",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp36",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp37",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp38",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp39",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp3",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp40",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp41",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp42",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp43",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp44",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp45",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp46",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp47",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp48",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp49",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp4",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp50",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp51",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp52",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp53",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp54",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp55",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp56",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp57",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp58",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp59",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp5",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp60",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp61",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp62",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp63",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp64",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp65",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp66",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp67",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp68",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp69",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp6",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp70",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp71",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp72",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp73",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp74",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp75",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp76",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp77",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp78",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp79",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp7",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp80",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp8",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "wgtp9",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Wagp (bin)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Agep (bin)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     }
   ]
 }

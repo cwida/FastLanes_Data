@@ -1,152 +1,190 @@
 {
+  "table": "TrainsUK2_1",
   "columns": [
     {
       "name": "Actual Total Distance Miles",
-      "type": "double"
+      "type": "decimal(5",
+      "nullability": "NULL"
     },
     {
       "name": "Date",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Financial Year & Period",
-      "type": "string"
+      "type": "varchar(23)",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Operator",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Dest Actual Datetime",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Dest GBTT Datetime",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Dest Stanox Description",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Dest Stanox",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Dest WTT Datetime",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Orig Stanox Description",
-      "type": "string"
+      "type": "varchar(31)",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Orig Stanox",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Origin Actual Datetime",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Origin GBTT Datetime",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Origin WTT Datetime",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Planned Total Distance Miles",
-      "type": "double"
+      "type": "decimal(5",
+      "nullability": "NULL"
     },
     {
       "name": "Service Group Code",
-      "type": "string"
+      "type": "varchar(18)",
+      "nullability": "NULL"
     },
     {
       "name": "Service Group Description",
-      "type": "string"
+      "type": "varchar(42)",
+      "nullability": "NULL"
     },
     {
       "name": "TSC",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Train ID",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NULL"
     },
     {
       "name": "v_CaSL Flag",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "v_Dest Lateness (GBTT)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "v_Dest Lateness (WTT)",
-      "type": "double"
+      "type": "decimal(4",
+      "nullability": "NULL"
     },
     {
       "name": "v_Full Cancellation Flag",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "v_Origin Lateness (GBTT)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "v_Origin Lateness (WTT)",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "v_PPM Pass Flag",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "v_RT Flag",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "v_Sector",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NULL"
     },
     {
       "name": "v_Unique Train ID",
-      "type": "string"
+      "type": "varchar(24)",
+      "nullability": "NULL"
     },
     {
       "name": "c_Origin Time (GBTT) (copy)",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_2510610113130467",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_4220604162631191",
-      "type": "string"
+      "type": "varchar(71)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_5580608170646388",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_6080608165132814",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_9230610113105724",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "Date (group)",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     }
   ]
 }

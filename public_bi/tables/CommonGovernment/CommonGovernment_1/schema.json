@@ -1,228 +1,285 @@
 {
+  "table": "CommonGovernment_1",
   "columns": [
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "a_aid_acontid_agencyid",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "a_aid_acontid_piid",
-      "type": "string"
+      "type": "varchar(50)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ag_name",
-      "type": "string"
+      "type": "varchar(50)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "agency_code",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ase_rowid",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "award_type",
-      "type": "string"
+      "type": "varchar(21)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "award_type_code",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "award_type_key",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "baseandalloptionsvalue",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "baseandexercisedoptionsvalue",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "bureau_code",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "bureau_name",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "cd_contactiontype",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "co_name",
-      "type": "string"
+      "type": "varchar(44)",
+      "nullability": "NULL"
     },
     {
       "name": "co_state",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "code",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "contract_num",
-      "type": "string"
+      "type": "varchar(50)",
+      "nullability": "NULL"
     },
     {
       "name": "contract_signeddate",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "contractingofficeagencyid",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "count_fetched",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "count_total",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "description",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "fk_epa_des_prod",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "fk_rec_mat",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ftsdollar",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "funding_agency",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NULL"
     },
     {
       "name": "funding_agency_key",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "funding_agency_name",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "gsadollar",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "gsaotherdollar",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "gwacs",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "level1_category",
-      "type": "string"
+      "type": "varchar(37)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "level2_category",
-      "type": "string"
+      "type": "varchar(57)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "naics_code",
-      "type": "string"
+      "type": "varchar(6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "naics_name",
-      "type": "string"
+      "type": "varchar(35)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nongsadollar",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "obligatedamount",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "obligatedamount_1",
-      "type": "double"
+      "type": "decimal(1",
+      "nullability": "NULL"
     },
     {
       "name": "pbsdollar",
-      "type": "double"
+      "type": "double",
+      "nullability": "NOT NULL"
     },
     {
       "name": "primary_contract_piid",
-      "type": "string"
+      "type": "varchar(51)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "prod_or_serv_code",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "prod_or_serv_code_desc",
-      "type": "string"
+      "type": "varchar(35)",
+      "nullability": "NULL"
     },
     {
       "name": "psc_code",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "psc_code_description",
-      "type": "string"
+      "type": "varchar(100)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "psc_key",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "quarter",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "refidvid_agencyid",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "refidvid_piid",
-      "type": "string"
+      "type": "varchar(34)",
+      "nullability": "NULL"
     },
     {
       "name": "short_name",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "signeddate",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "vend_contoffbussizedeterm",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "vend_dunsnumber",
-      "type": "string"
+      "type": "varchar(9)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "vend_vendorname",
-      "type": "string"
+      "type": "varchar(108)",
+      "nullability": "NULL"
     },
     {
       "name": "whocanuse",
-      "type": "string"
+      "type": "varchar(50)",
+      "nullability": "NULL"
     },
     {
       "name": "year",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     }
   ]
 }

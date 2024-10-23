@@ -1,220 +1,275 @@
 {
+  "table": "NYC_1",
   "columns": [
     {
       "name": "Address Type",
-      "type": "string"
+      "type": "varchar(12)",
+      "nullability": "NULL"
     },
     {
       "name": "Agency Name",
-      "type": "string"
+      "type": "varchar(91)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Agency",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Borough",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Bridge Highway Direction",
-      "type": "string"
+      "type": "varchar(30)",
+      "nullability": "NULL"
     },
     {
       "name": "Bridge Highway Name",
-      "type": "string"
+      "type": "varchar(42)",
+      "nullability": "NULL"
     },
     {
       "name": "Bridge Highway Segment",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "City",
-      "type": "string"
+      "type": "varchar(32)",
+      "nullability": "NULL"
     },
     {
       "name": "Closed Date",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Community Board",
-      "type": "string"
+      "type": "varchar(25)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Complaint Type",
-      "type": "string"
+      "type": "varchar(41)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Created Date",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Cross Street 1",
-      "type": "string"
+      "type": "varchar(36)",
+      "nullability": "NULL"
     },
     {
       "name": "Cross Street 2",
-      "type": "string"
+      "type": "varchar(36)",
+      "nullability": "NULL"
     },
     {
       "name": "Descriptor",
-      "type": "string"
+      "type": "varchar(82)",
+      "nullability": "NULL"
     },
     {
       "name": "Due Date",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Facility Type",
-      "type": "string"
+      "type": "varchar(15)",
+      "nullability": "NULL"
     },
     {
       "name": "Ferry Direction",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NULL"
     },
     {
       "name": "Ferry Terminal Name",
-      "type": "string"
+      "type": "varchar(95)",
+      "nullability": "NULL"
     },
     {
       "name": "Garage Lot Name",
-      "type": "string"
+      "type": "varchar(27)",
+      "nullability": "NULL"
     },
     {
       "name": "Incident Address",
-      "type": "string"
+      "type": "varchar(96)",
+      "nullability": "NULL"
     },
     {
       "name": "Incident Zip",
-      "type": "skip"
+      "type": "bigint",
+      "nullability": "NULL"
     },
     {
       "name": "Intersection Street 1",
-      "type": "string"
+      "type": "varchar(38)",
+      "nullability": "NULL"
     },
     {
       "name": "Intersection Street 2",
-      "type": "string"
+      "type": "varchar(47)",
+      "nullability": "NULL"
     },
     {
       "name": "Landmark",
-      "type": "string"
+      "type": "varchar(33)",
+      "nullability": "NULL"
     },
     {
       "name": "Latitude",
-      "type": "double"
+      "type": "decimal(15",
+      "nullability": "NULL"
     },
     {
       "name": "Location Type",
-      "type": "string"
+      "type": "varchar(36)",
+      "nullability": "NULL"
     },
     {
       "name": "Location",
-      "type": "string"
+      "type": "varchar(40)",
+      "nullability": "NULL"
     },
     {
       "name": "Longitude",
-      "type": "double"
+      "type": "decimal(15",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Park Borough",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Park Facility Name",
-      "type": "string"
+      "type": "varchar(95)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Resolution Action Updated Date",
-      "type": "skip"
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Resolution Description",
-      "type": "string"
+      "type": "varchar(500)",
+      "nullability": "NULL"
     },
     {
       "name": "Road Ramp",
-      "type": "string"
+      "type": "varchar(7)",
+      "nullability": "NULL"
     },
     {
       "name": "School Address",
-      "type": "string"
+      "type": "varchar(120)",
+      "nullability": "NULL"
     },
     {
       "name": "School City",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "School Code",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NULL"
     },
     {
       "name": "School Name",
-      "type": "string"
+      "type": "varchar(95)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "School Not Found",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "School Number",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NULL"
     },
     {
       "name": "School Phone Number",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "School Region",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NULL"
     },
     {
       "name": "School State",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "School Zip",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "School or Citywide Complaint",
-      "type": "string"
+      "type": "varchar(18)",
+      "nullability": "NULL"
     },
     {
       "name": "Status",
-      "type": "string"
+      "type": "varchar(28)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Street Name",
-      "type": "string"
+      "type": "varchar(96)",
+      "nullability": "NULL"
     },
     {
       "name": "Taxi Company Borough",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NULL"
     },
     {
       "name": "Taxi Pick Up Location",
-      "type": "string"
+      "type": "varchar(27)",
+      "nullability": "NULL"
     },
     {
       "name": "Unique Key",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Vehicle Type",
-      "type": "string"
+      "type": "varchar(23)",
+      "nullability": "NULL"
     },
     {
       "name": "X Coordinate (State Plane)",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "Y Coordinate (State Plane)",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     }
   ]
 }

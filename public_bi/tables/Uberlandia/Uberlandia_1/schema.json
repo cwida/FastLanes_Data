@@ -1,328 +1,410 @@
 {
+  "table": "Uberlandia_1",
   "columns": [
     {
       "name": "Calculation_838513981443702785",
-      "type": "string"
+      "type": "varchar(8)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "Calculation_838513981462429699",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NULL"
     },
     {
-      "name": "Codigo Diploma_Certificado",
-      "type": "string"
+      "name": "Codigo Diploma/Certificado",
+      "type": "varchar(15)",
+      "nullability": "NULL"
     },
     {
       "name": "Cor da Pele",
-      "type": "string"
+      "type": "varchar(21)",
+      "nullability": "NULL"
     },
     {
-      "name": "Data Diploma_Certificado",
-      "type": "skip"
+      "name": "Data Diploma/Certificado",
+      "type": "timestamp",
+      "nullability": "NULL"
     },
     {
       "name": "Data Pr\u00e9-Matricula",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "Number of Records",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ch_catalogo_guia",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ch_da_oferta",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ch_max_financiavel",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ch_maxima_permitida",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ch_min_financiavel",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "ch_minima_do_curso",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "co_matricula_estudante",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NULL"
     },
     {
       "name": "cod_da_unidade_de_ensino",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "cod_ibge_da_ue",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "cod_ibge_do_local_da_oferta",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "codigo_da_oferta",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "codigo_do_curso",
-      "type": "integer"
+      "type": "integer",
+      "nullability": "NOT NULL"
     },
     {
       "name": "comunidade_quilombola",
-      "type": "string"
+      "type": "varchar(89)",
+      "nullability": "NULL"
     },
     {
       "name": "cpf aluno",
-      "type": "string"
+      "type": "varchar(11)",
+      "nullability": "NULL"
     },
     {
       "name": "data de confirmacao",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "data de nascimento aluno",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "data_da_publicacao",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "data_de_conclusao",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NULL"
     },
     {
       "name": "data_de_inicio",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "data_de_previsaode_termino",
-      "type": "skip"
+      "type": "date",
+      "nullability": "NULL"
     },
     {
       "name": "desempregado",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "ds_email",
-      "type": "string"
+      "type": "varchar(129)",
+      "nullability": "NULL"
     },
     {
       "name": "ds_identificador_turma",
-      "type": "string"
+      "type": "varchar(121)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ds_tipo_beneficiario",
-      "type": "string"
+      "type": "varchar(293)",
+      "nullability": "NULL"
     },
     {
       "name": "dt_cadastro",
-      "type": "string"
+      "type": "varchar(26)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "ead",
-      "type": "string"
+      "type": "varchar(19)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "edicao_catalogo_guia",
-      "type": "string"
+      "type": "varchar(14)",
+      "nullability": "NULL"
     },
     {
       "name": "edital",
-      "type": "string"
+      "type": "varchar(21)",
+      "nullability": "NULL"
     },
     {
       "name": "eixo_tecnologico_catalogo_guia",
-      "type": "string"
+      "type": "varchar(36)",
+      "nullability": "NULL"
     },
     {
       "name": "eixo_tecnol\u00f3gico",
-      "type": "string"
+      "type": "varchar(36)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "escolaridade do aluno",
-      "type": "string"
+      "type": "varchar(47)",
+      "nullability": "NULL"
     },
     {
       "name": "escolaridade_catalogo_guia",
-      "type": "string"
+      "type": "varchar(47)",
+      "nullability": "NULL"
     },
     {
       "name": "forma_ingresso",
-      "type": "string"
+      "type": "varchar(22)",
+      "nullability": "NULL"
     },
     {
       "name": "instituicao",
-      "type": "string"
+      "type": "varchar(14)",
+      "nullability": "NULL"
     },
     {
       "name": "mantenedora",
-      "type": "string"
+      "type": "varchar(117)",
+      "nullability": "NULL"
     },
     {
       "name": "municipio_da_ue",
-      "type": "string"
+      "type": "varchar(29)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "municipio_do_local_da_oferta",
-      "type": "string"
+      "type": "varchar(33)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "no_dependencia_admin",
-      "type": "string"
+      "type": "varchar(22)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "no_modalidade",
-      "type": "string"
+      "type": "varchar(77)",
+      "nullability": "NULL"
     },
     {
       "name": "no_parceiro_demandante",
-      "type": "string"
+      "type": "varchar(83)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "no_programa",
-      "type": "string"
+      "type": "varchar(151)",
+      "nullability": "NULL"
     },
     {
       "name": "no_sistema_ensino",
-      "type": "string"
+      "type": "varchar(20)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "no_subdependencia_admin",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "nome aluno",
-      "type": "string"
+      "type": "varchar(69)",
+      "nullability": "NULL"
     },
     {
       "name": "nome da sit matricula (situacao detalhada)",
-      "type": "string"
+      "type": "varchar(21)",
+      "nullability": "NULL"
     },
     {
       "name": "nome_curso_catalogo_guia",
-      "type": "string"
+      "type": "varchar(94)",
+      "nullability": "NULL"
     },
     {
       "name": "nome_da_ue",
-      "type": "string"
+      "type": "varchar(154)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nome_da_uer",
-      "type": "string"
+      "type": "varchar(126)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nome_do_curso",
-      "type": "string"
+      "type": "varchar(94)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "nu_telefone",
-      "type": "string"
+      "type": "varchar(14)",
+      "nullability": "NULL"
     },
     {
       "name": "nu_telefone_celular",
-      "type": "string"
+      "type": "varchar(14)",
+      "nullability": "NULL"
     },
     {
       "name": "oferta_cadastro_online",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "pcd",
-      "type": "string"
+      "type": "varchar(116)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "populacao_campo",
-      "type": "string"
+      "type": "varchar(113)",
+      "nullability": "NULL"
     },
     {
       "name": "povo_indigena",
-      "type": "string"
+      "type": "varchar(58)",
+      "nullability": "NULL"
     },
     {
       "name": "seguro_desenprego",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NULL"
     },
     {
       "name": "sexo do aluno",
-      "type": "string"
+      "type": "varchar(1)",
+      "nullability": "NULL"
     },
     {
       "name": "situacao_da_turma",
-      "type": "string"
+      "type": "varchar(10)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "st_extemporaneo_matricula",
-      "type": "skip"
+      "type": "boolean",
+      "nullability": "NULL"
     },
     {
       "name": "st_extemporaneo_turma",
-      "type": "skip"
+      "type": "boolean",
+      "nullability": "NOT NULL"
     },
     {
       "name": "st_financiavel",
-      "type": "string"
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "subtipo_curso",
-      "type": "string"
+      "type": "varchar(21)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "tipo_da_oferta",
-      "type": "string"
+      "type": "varchar(13)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "tipo_do_local_da_oferta",
-      "type": "string"
+      "type": "varchar(3)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "total_conf_freq_aluno",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NULL"
     },
     {
       "name": "total_freq_aluno",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NULL"
     },
     {
       "name": "transferencia_renda",
-      "type": "string"
+      "type": "varchar(69)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "turno",
-      "type": "string"
+      "type": "varchar(6)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "uf_da_ue",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "uf_do_local_da_oferta",
-      "type": "string"
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
     },
     {
       "name": "unidade_demandante",
-      "type": "string"
+      "type": "varchar(151)",
+      "nullability": "NULL"
     },
     {
       "name": "vagas",
-      "type": "integer"
+      "type": "smallint",
+      "nullability": "NOT NULL"
     },
     {
       "name": "valor_hora_aula_proposto",
-      "type": "string"
+      "type": "varchar(5)",
+      "nullability": "NULL"
     },
     {
       "name": "Calculation_838513978982854656",
-      "type": "string"
+      "type": "varchar(117)",
+      "nullability": "NULL"
     }
   ]
 }
