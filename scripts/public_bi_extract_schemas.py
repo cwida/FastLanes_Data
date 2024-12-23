@@ -1,4 +1,5 @@
 import os
+import shutil
 import subprocess
 import json
 import re
@@ -98,6 +99,16 @@ def process_sql_files(sql_files):
                     write_json_to_file(json_schema, table_name)
 
 
+# Step 7: Remove the cloned directory
+def cleanup_directory(clone_dir):
+    if os.path.exists(clone_dir):
+        print(f"Removing cloned directory: {clone_dir}")
+        shutil.rmtree(clone_dir)
+        print("Directory removed successfully.")
+    else:
+        print(f"Directory '{clone_dir}' does not exist. No cleanup required.")
+
+
 # Main function to execute the tasks
 def main():
     repo_url = "https://github.com/cwida/public_bi_benchmark"
@@ -112,6 +123,9 @@ def main():
 
     # Process and convert each SQL file to JSON and write it to the desired path
     process_sql_files(sql_files)
+
+    # Remove the cloned directory
+    cleanup_directory(clone_dir)
 
 
 if __name__ == "__main__":

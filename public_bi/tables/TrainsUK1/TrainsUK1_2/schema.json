@@ -1,0 +1,145 @@
+{
+  "table": "TrainsUK1_2",
+  "columns": [
+    {
+      "name": "Average Lateness",
+      "type": "double",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Calculation_2040623161253421",
+      "type": "decimal(4, 2)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Calculation_2890421151640665",
+      "type": "varchar(18)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Calculation_3330422103625946",
+      "type": "decimal(17, 16)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Engineering Allowance (mins)",
+      "type": "smallint",
+      "nullability": "NULL"
+    },
+    {
+      "name": "Headcode",
+      "type": "varchar(4)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Median Lateness",
+      "type": "decimal(4, 2)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Operator Name",
+      "type": "varchar(24)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Operator",
+      "type": "varchar(2)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Pathing Allowance (mins)",
+      "type": "decimal(3, 1)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Performance Allowance (mins)",
+      "type": "decimal(2, 1)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Planned Dest Location Full Name",
+      "type": "varchar(30)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Planned Origin Location Full Name",
+      "type": "varchar(30)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Punctuality Threshold",
+      "type": "smallint",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "RT%",
+      "type": "decimal(18, 17)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Ranking",
+      "type": "smallint",
+      "nullability": "NULL"
+    },
+    {
+      "name": "Section Start Location Full Name",
+      "type": "varchar(31)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Section Start Location Name",
+      "type": "varchar(31)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Time-to-10%",
+      "type": "decimal(17, 16)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Time-to-2%",
+      "type": "decimal(18, 17)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Time-to-5%",
+      "type": "decimal(17, 16)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Timetable",
+      "type": "varchar(3)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Train Count",
+      "type": "smallint",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "v_Headcode Description",
+      "type": "varchar(77)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "v_Section_WTT_Time",
+      "type": "time",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "v_WTT and Section Name and Timing Event",
+      "type": "varchar(43)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Calculation_2480421151322357",
+      "type": "varchar(1)",
+      "nullability": "NOT NULL"
+    },
+    {
+      "name": "Calculation_0430624152715434",
+      "type": "varchar(69)",
+      "nullability": "NOT NULL"
+    }
+  ]
+}
