@@ -4,147 +4,176 @@
     {
       "name": "AVERAGE_MEDICARE_ALLOWED_AMT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "AVERAGE_MEDICARE_PAYMENT_AMT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 1
     },
     {
       "name": "AVERAGE_SUBMITTED_CHRG_AMT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 2
     },
     {
       "name": "BENE_DAY_SRVC_CNT",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 3
     },
     {
       "name": "BENE_UNIQUE_CNT",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 4
     },
     {
       "name": "HCPCS_CODE",
       "type": "varchar(5)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "HCPCS_DESCRIPTION",
       "type": "varchar(255)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "HCPCS_DRUG_INDICATOR",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 7
     },
     {
       "name": "LINE_SRVC_CNT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 8
     },
     {
       "name": "MEDICARE_PARTICIPATION_INDICATOR",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 9
     },
     {
       "name": "NPI",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "NPPES_CREDENTIALS",
       "type": "varchar(20)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 11
     },
     {
       "name": "NPPES_ENTITY_CODE",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "NPPES_PROVIDER_CITY",
       "type": "varchar(28)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 13
     },
     {
       "name": "NPPES_PROVIDER_COUNTRY",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 14
     },
     {
       "name": "NPPES_PROVIDER_FIRST_NAME",
       "type": "varchar(20)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 15
     },
     {
       "name": "NPPES_PROVIDER_GENDER",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "NPPES_PROVIDER_LAST_ORG_NAME",
       "type": "varchar(70)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "NPPES_PROVIDER_MI",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 18
     },
     {
       "name": "NPPES_PROVIDER_STATE",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 19
     },
     {
       "name": "NPPES_PROVIDER_STREET1",
       "type": "varchar(55)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 20
     },
     {
       "name": "NPPES_PROVIDER_STREET2",
       "type": "varchar(55)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 21
     },
     {
       "name": "NPPES_PROVIDER_ZIP",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 22
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 23
     },
     {
       "name": "PLACE_OF_SERVICE",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 24
     },
     {
       "name": "PROVIDER_TYPE",
       "type": "varchar(43)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "STDEV_MEDICARE_ALLOWED_AMT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "STDEV_MEDICARE_PAYMENT_AMT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "STDEV_SUBMITTED_CHRG_AMT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 28
     }
   ]
 }

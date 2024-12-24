@@ -4,272 +4,326 @@
     {
       "name": "Address Type",
       "type": "varchar(12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "Agency Name",
       "type": "varchar(91)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "Agency",
       "type": "varchar(10)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "Borough",
       "type": "varchar(13)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "Bridge Highway Direction",
       "type": "varchar(30)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 4
     },
     {
       "name": "Bridge Highway Name",
       "type": "varchar(42)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "Bridge Highway Segment",
       "type": "date",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "City",
       "type": "varchar(32)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 7
     },
     {
       "name": "Closed Date",
       "type": "timestamp",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 8
     },
     {
       "name": "Community Board",
       "type": "varchar(25)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "Complaint Type",
       "type": "varchar(41)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "Created Date",
       "type": "timestamp",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "Cross Street 1",
       "type": "varchar(36)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "Cross Street 2",
       "type": "varchar(36)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 13
     },
     {
       "name": "Descriptor",
       "type": "varchar(82)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 14
     },
     {
       "name": "Due Date",
       "type": "timestamp",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 15
     },
     {
       "name": "Facility Type",
       "type": "varchar(15)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "Ferry Direction",
       "type": "varchar(19)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "Ferry Terminal Name",
       "type": "varchar(95)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 18
     },
     {
       "name": "Garage Lot Name",
       "type": "varchar(27)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 19
     },
     {
       "name": "Incident Address",
       "type": "varchar(96)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 20
     },
     {
       "name": "Incident Zip",
       "type": "bigint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 21
     },
     {
       "name": "Intersection Street 1",
       "type": "varchar(38)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 22
     },
     {
       "name": "Intersection Street 2",
       "type": "varchar(47)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "Landmark",
       "type": "varchar(33)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 24
     },
     {
       "name": "Latitude",
       "type": "decimal(15, 13)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "Location Type",
       "type": "varchar(36)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "Location",
       "type": "varchar(40)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "Longitude",
       "type": "decimal(15, 13)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 28
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 29
     },
     {
       "name": "Park Borough",
       "type": "varchar(13)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 30
     },
     {
       "name": "Park Facility Name",
       "type": "varchar(95)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 31
     },
     {
       "name": "Resolution Action Updated Date",
       "type": "timestamp",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 32
     },
     {
       "name": "Resolution Description",
       "type": "varchar(500)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 33
     },
     {
       "name": "Road Ramp",
       "type": "varchar(7)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 34
     },
     {
       "name": "School Address",
       "type": "varchar(120)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 35
     },
     {
       "name": "School City",
       "type": "varchar(19)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 36
     },
     {
       "name": "School Code",
       "type": "varchar(11)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 37
     },
     {
       "name": "School Name",
       "type": "varchar(95)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 38
     },
     {
       "name": "School Not Found",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 39
     },
     {
       "name": "School Number",
       "type": "varchar(11)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 40
     },
     {
       "name": "School Phone Number",
       "type": "varchar(11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 41
     },
     {
       "name": "School Region",
       "type": "varchar(11)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 42
     },
     {
       "name": "School State",
       "type": "varchar(11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 43
     },
     {
       "name": "School Zip",
       "type": "varchar(11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 44
     },
     {
       "name": "School or Citywide Complaint",
       "type": "varchar(18)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 45
     },
     {
       "name": "Status",
       "type": "varchar(28)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "Street Name",
       "type": "varchar(96)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 47
     },
     {
       "name": "Taxi Company Borough",
       "type": "varchar(13)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 48
     },
     {
       "name": "Taxi Pick Up Location",
       "type": "varchar(27)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 49
     },
     {
       "name": "Unique Key",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 50
     },
     {
       "name": "Vehicle Type",
       "type": "varchar(23)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 51
     },
     {
       "name": "X Coordinate (State Plane)",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 52
     },
     {
       "name": "Y Coordinate (State Plane)",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 53
     }
   ]
 }

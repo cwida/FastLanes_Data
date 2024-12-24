@@ -4,707 +4,848 @@
     {
       "name": "AUTOPREVENTA: Costo Fijo",
       "type": "decimal(18, 12)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "AUTOPREVENTA: Costo Variable",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "AUTOPREVENTA: Costo de Devoluciones",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "AUTOPREVENTA: Tiempos de Venta + Traslado Autopreventa Normal",
       "type": "decimal(18, 14)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "AUTOVENTA: Carga Paseante",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "AUTOVENTA: Costo Fijo",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "AUTOVENTA: Costo Variable",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "AUTOVENTA: Tiempos de Venta + Traslado Autoventa Normal",
       "type": "decimal(17, 14)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "BODEGA: CEDIS Propio- Costos Bodega",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "BODEGA: Costo Arriendo Terceros",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "BODEGA: Costo Especialistas de Operaciones",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 10
     },
     {
       "name": "BODEGA: Distribuidores- Costos Fijos y Variables",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "BODEGA: Mermas",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "CF",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "CU",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "Calculation_1880818214638259",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "Calle",
       "type": "varchar(62)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "Canal de Ventas",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 17
     },
     {
       "name": "Ciudad UO",
       "type": "varchar(15)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "Descripci\u00f3n de Canal",
       "type": "varchar(47)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 19
     },
     {
       "name": "Deudor NCB",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 20
     },
     {
       "name": "Deudor",
       "type": "varchar(10)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "Dias de Visita CO",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 22
     },
     {
       "name": "Dias de Visita TA NCB",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "Dias de Visita TA",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 24
     },
     {
       "name": "D\u00edas de Entrega",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "D\u00edas de Visita PR NCB",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "D\u00edas de Visita PR",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "D\u00efas de Entrega NCB",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 28
     },
     {
       "name": "Figura Especifica",
       "type": "varchar(27)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 29
     },
     {
       "name": "Figura",
       "type": "varchar(29)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 30
     },
     {
       "name": "Fijo / Din\u00e1mica",
       "type": "varchar(8)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 31
     },
     {
       "name": "Fx CO",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 32
     },
     {
       "name": "Fx Entrega Total NCB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 33
     },
     {
       "name": "Fx Entrega Total",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 34
     },
     {
       "name": "Fx PR NCB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 35
     },
     {
       "name": "Fx PR",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 36
     },
     {
       "name": "Fx TA NCB",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 37
     },
     {
       "name": "Fx TA",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 38
     },
     {
       "name": "FxED",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 39
     },
     {
       "name": "GEC NCB",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 40
     },
     {
       "name": "GEC",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 41
     },
     {
       "name": "GERENTES VENTA: Coordinadores Bronces",
       "type": "decimal(17, 11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 42
     },
     {
       "name": "GERENTES VENTA: Costo Gerente de Ventas Normal",
       "type": "decimal(18, 11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 43
     },
     {
       "name": "GUC",
       "type": "varchar(3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 44
     },
     {
       "name": "Gerencia",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 45
     },
     {
       "name": "IN",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "Implementaci\u00f3n Venta",
       "type": "varchar(12)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 47
     },
     {
       "name": "Jefatura de Reparto NCB",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 48
     },
     {
       "name": "Jefatura de Reparto",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 49
     },
     {
       "name": "Jefe de Ventas NCB",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 50
     },
     {
       "name": "Jefe de Ventas",
       "type": "varchar(3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 51
     },
     {
       "name": "Latitud AUTO PREV",
       "type": "decimal(16, 14)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 52
     },
     {
       "name": "Latitud",
       "type": "bigint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 53
     },
     {
       "name": "Locaci\u00f3n",
       "type": "varchar(15)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 54
     },
     {
       "name": "Locaci\u00f3n (copy)",
       "type": "varchar(15)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 55
     },
     {
       "name": "Longitud AUTO PREV",
       "type": "decimal(15, 13)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 56
     },
     {
       "name": "Longitud",
       "type": "bigint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 57
     },
     {
       "name": "MATCH PR con NCB",
       "type": "varchar(5)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 58
     },
     {
       "name": "MERCADEO: Costo Refrigeraci\u00f3n",
       "type": "decimal(18, 11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 59
     },
     {
       "name": "MERCADEO: PDE",
       "type": "decimal(17, 11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 60
     },
     {
       "name": "MERCADEO: PDV- Descuentos Habituales",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 61
     },
     {
       "name": "MERCADEO: PDV- Descuentos No Habituales",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 62
     },
     {
       "name": "MERCADEO: Prorrateo Mercaderistas",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 63
     },
     {
       "name": "Modalidad de Venta",
       "type": "varchar(18)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 64
     },
     {
       "name": "Modalidad reparto",
       "type": "varchar(18)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 65
     },
     {
       "name": "Municipio",
       "type": "varchar(49)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 66
     },
     {
       "name": "NCB",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 67
     },
     {
       "name": "NIT",
       "type": "varchar(16)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 68
     },
     {
       "name": "Nombre del Cliente",
       "type": "varchar(48)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 69
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 70
     },
     {
       "name": "ON-OFF",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 71
     },
     {
       "name": "OP. DISTRIBUIDORES: Costo Fijo",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 72
     },
     {
       "name": "OP. DISTRIBUIDORES: Costo Variable",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 73
     },
     {
       "name": "OP. DISTRIBUIDORES: Filtro de Validaci\u00f3n Costo Variable",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 74
     },
     {
       "name": "OP. DISTRIBUIDORES: Mayoristas",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 75
     },
     {
       "name": "OP. DISTRIBUIDORES: NO GVF",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 76
     },
     {
       "name": "OP. DISTRIBUIDORES: Prorrateo Visitas",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 77
     },
     {
       "name": "OTROS VENTA: Costo de Rotaci\u00f3n Pre/Televendedores",
       "type": "decimal(16, 12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 78
     },
     {
       "name": "PREVENTA NCB: Costo de Prevendedor NCB",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 79
     },
     {
       "name": "PREVENTA NCB: Tiempos de Venta + Traslado Preventa NCB",
       "type": "decimal(16, 14)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 80
     },
     {
       "name": "PREVENTA: Costo de Prevendedor Normal",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 81
     },
     {
       "name": "PREVENTA: Tiempos de Venta + Traslado Preventa Normal",
       "type": "decimal(17, 14)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 82
     },
     {
       "name": "Poblaci\u00f3n Distribuidor GVF/GVI",
       "type": "varchar(21)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 83
     },
     {
       "name": "Precio Prom. CF",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 84
     },
     {
       "name": "Precio Prom. CU",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 85
     },
     {
       "name": "REPARTO: Costo Supervisores",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 86
     },
     {
       "name": "REPARTO: Costo de Bodegas Secundarias",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 87
     },
     {
       "name": "REPARTO: Costo de Depreciaci\u00f3n",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 88
     },
     {
       "name": "REPARTO: Costo de Mantenimiento",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 89
     },
     {
       "name": "REPARTO: Devoluciones",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 90
     },
     {
       "name": "REPARTO: Merma de Ruta",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 91
     },
     {
       "name": "REPARTO: Rutas Dinamicas- Costos Fijos",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 92
     },
     {
       "name": "REPARTO: Rutas Dinamicas- Costos Variables",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 93
     },
     {
       "name": "REPARTO: Rutas Fijas- Costos Fijos",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 94
     },
     {
       "name": "REPARTO: Rutas Fijas- Costos Variables",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 95
     },
     {
       "name": "REPARTO: Tiempos de Reparto Fijo + Variable",
       "type": "decimal(18, 13)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 96
     },
     {
       "name": "REPARTO: Visitas de Reparto Acumulado Ene-May",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 97
     },
     {
       "name": "Raz\u00f3n Social",
       "type": "varchar(40)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 98
     },
     {
       "name": "Rentabilidad",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 99
     },
     {
       "name": "Ruta CO",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 100
     },
     {
       "name": "Ruta ED",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 101
     },
     {
       "name": "Ruta PR NCB",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 102
     },
     {
       "name": "Ruta PR",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 103
     },
     {
       "name": "Ruta TA NCB",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 104
     },
     {
       "name": "Ruta TA",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 105
     },
     {
       "name": "Ruta de Reparto NCB",
       "type": "varchar(8)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 106
     },
     {
       "name": "Ruta de Reparto",
       "type": "varchar(6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 107
     },
     {
       "name": "Ruta de Venta NCB",
       "type": "varchar(6)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 108
     },
     {
       "name": "Ruta de Venta",
       "type": "varchar(6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 109
     },
     {
       "name": "Sede Foraneo Sintec",
       "type": "varchar(7)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 110
     },
     {
       "name": "Sede/For\u00e1neo",
       "type": "varchar(7)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 111
     },
     {
       "name": "T1: Cedis Propio",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 112
     },
     {
       "name": "T1: Distruidor Tercero",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 113
     },
     {
       "name": "TELEVENTA OFIC: Costo Televendedor Normal",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 114
     },
     {
       "name": "TELEVENTA OFIC: Tiempos de Venta",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 115
     },
     {
       "name": "TELEVENTA: Costo Televendedor NCB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 116
     },
     {
       "name": "TELEVENTA: Costo de Televendedor Normal",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 117
     },
     {
       "name": "TELEVENTA: Tiempos de Venta Televenta NCB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 118
     },
     {
       "name": "TELEVENTA: Tiempos de Venta Televenta Normal",
       "type": "decimal(16, 14)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 119
     },
     {
       "name": "TOTAL BODEGA C/ARRIENDOS",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 120
     },
     {
       "name": "TOTAL MERCADEO",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 121
     },
     {
       "name": "TOTAL REPARTO",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 122
     },
     {
       "name": "TOTAL T1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 123
     },
     {
       "name": "TOTAL VENTA",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 124
     },
     {
       "name": "Total CdS",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 125
     },
     {
       "name": "Tradicional/ Moderno",
       "type": "varchar(11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 126
     },
     {
       "name": "UO",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 127
     },
     {
       "name": "Util. Bruta",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 128
     },
     {
       "name": "VENTA:  MERMA DE VENTA",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 129
     },
     {
       "name": "VENTA: Coord, OL, Merc. 14",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 130
     },
     {
       "name": "VENTA: Costo Renta Equipo Televenta NCB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 131
     },
     {
       "name": "VENTA: Costo Renta de Equipo Televenta Normal",
       "type": "decimal(18, 12)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 132
     },
     {
       "name": "VENTA: Costo Total Mercaderistas",
       "type": "decimal(15, 11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 133
     },
     {
       "name": "VENTA: Costo de Handheld Rutas Autoventa",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 134
     },
     {
       "name": "VENTA: Costo de Handheld Rutas NCBs",
       "type": "decimal(15, 11)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 135
     },
     {
       "name": "VENTA: Costo de Handheld Rutas Preventa",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 136
     },
     {
       "name": "VENTA: Costos EDI",
       "type": "decimal(16, 10)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 137
     },
     {
       "name": "VENTA: Descuentos Lista de Precios",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 138
     },
     {
       "name": "Zona",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 139
     },
     {
       "name": "GEC (group)",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 140
     }
   ]
 }

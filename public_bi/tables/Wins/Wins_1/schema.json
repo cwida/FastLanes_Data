@@ -4,1287 +4,1544 @@
     {
       "name": "Calculation_-2642768498522718196",
       "type": "varchar(10)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "nABL1",
       "type": "decimal(4, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 2
     },
     {
       "name": "nABL2",
       "type": "decimal(4, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 3
     },
     {
       "name": "nABLF",
       "type": "decimal(4, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 4
     },
     {
       "name": "nABOUT",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "nACL",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "nAE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 7
     },
     {
       "name": "nAFIN",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "nAGE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 9
     },
     {
       "name": "nAODD",
       "type": "decimal(3, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 10
     },
     {
       "name": "nBADCLASS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "nBADFAV",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 12
     },
     {
       "name": "nBARN",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "nBEATCLM",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "nBIGLOSER",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "nBLOWOUT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 16
     },
     {
       "name": "nBTL",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 17
     },
     {
       "name": "nBUGBOY",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 18
     },
     {
       "name": "nC90X",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "nC90",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 20
     },
     {
       "name": "nCHAOS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 21
     },
     {
       "name": "nCHG",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 22
     },
     {
       "name": "nCLASSFIT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 23
     },
     {
       "name": "nCLASSX",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 24
     },
     {
       "name": "nCLASS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "nCLA",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "nCLCH",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "nCLMVALUE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 28
     },
     {
       "name": "nCLM",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 29
     },
     {
       "name": "nCONT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 30
     },
     {
       "name": "nCOUPLED",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 31
     },
     {
       "name": "nCOURSE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 32
     },
     {
       "name": "nDIST",
       "type": "decimal(3, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 33
     },
     {
       "name": "nDS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 34
     },
     {
       "name": "nEDIF",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 35
     },
     {
       "name": "nEEN",
       "type": "decimal(4, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 36
     },
     {
       "name": "nEPR",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 37
     },
     {
       "name": "nEPR_PAC",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 38
     },
     {
       "name": "nEPS365D",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 39
     },
     {
       "name": "nEPSLIFE",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 40
     },
     {
       "name": "nESHOCK",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 41
     },
     {
       "name": "nEXA",
       "type": "decimal(6, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 42
     },
     {
       "name": "nFAV1",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 43
     },
     {
       "name": "nFAV2",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 44
     },
     {
       "name": "nFC",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 45
     },
     {
       "name": "nFIRST_TAG",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "nFIT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 47
     },
     {
       "name": "nFLD",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 48
     },
     {
       "name": "nFPSX",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 49
     },
     {
       "name": "nFR1",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 50
     },
     {
       "name": "nFR2",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 51
     },
     {
       "name": "nFR3",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 52
     },
     {
       "name": "nFTI",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 53
     },
     {
       "name": "nFTS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 54
     },
     {
       "name": "nGATEBRK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 55
     },
     {
       "name": "nGELDING",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 56
     },
     {
       "name": "nGOODIES",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 57
     },
     {
       "name": "nH4C",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 58
     },
     {
       "name": "nHAG",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 59
     },
     {
       "name": "nHTR",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 60
     },
     {
       "name": "nIDX",
       "type": "varchar(5)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 61
     },
     {
       "name": "nIMP1",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 62
     },
     {
       "name": "nIMP2",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 63
     },
     {
       "name": "nIMP3",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 64
     },
     {
       "name": "nIMP4",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 65
     },
     {
       "name": "nIMPROVE",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 66
     },
     {
       "name": "nJ14ST",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 67
     },
     {
       "name": "nJ14WN",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 68
     },
     {
       "name": "nJKCH",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 69
     },
     {
       "name": "nJKYHST",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 70
     },
     {
       "name": "nJKYHW",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 71
     },
     {
       "name": "nJKY",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 72
     },
     {
       "name": "nK2LINE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 73
     },
     {
       "name": "nK2",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 74
     },
     {
       "name": "nKAT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 75
     },
     {
       "name": "nKENTENDER",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 76
     },
     {
       "name": "nKEY",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 77
     },
     {
       "name": "nKGAPX",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 78
     },
     {
       "name": "nKGAP",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 79
     },
     {
       "name": "nKLINE",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 80
     },
     {
       "name": "nKMS",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 81
     },
     {
       "name": "nKMSeCHART",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 82
     },
     {
       "name": "nKPROB1",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 83
     },
     {
       "name": "nKPROB2",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 84
     },
     {
       "name": "nKPROB3",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 85
     },
     {
       "name": "nK",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 86
     },
     {
       "name": "nLAY90",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 87
     },
     {
       "name": "nLAYZONE",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 88
     },
     {
       "name": "nLAY",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 89
     },
     {
       "name": "nLCLAS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 90
     },
     {
       "name": "nLCSF",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 91
     },
     {
       "name": "nLDIST",
       "type": "decimal(3, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 92
     },
     {
       "name": "nLDR",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 93
     },
     {
       "name": "nLFIN",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 94
     },
     {
       "name": "nLFST",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 95
     },
     {
       "name": "nLFWP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 96
     },
     {
       "name": "nLIVEA",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 97
     },
     {
       "name": "nLIVEL",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 98
     },
     {
       "name": "nLIVEP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 99
     },
     {
       "name": "nLIVES",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 100
     },
     {
       "name": "nLODDS",
       "type": "decimal(4, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 101
     },
     {
       "name": "nLONERAZOR",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 102
     },
     {
       "name": "nLONESP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 103
     },
     {
       "name": "nLONG",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 104
     },
     {
       "name": "nLPER",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 105
     },
     {
       "name": "nLPOS1",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 106
     },
     {
       "name": "nLRACE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 107
     },
     {
       "name": "nLSHOCK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 108
     },
     {
       "name": "nLSURF",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 109
     },
     {
       "name": "nLTOP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 110
     },
     {
       "name": "nLUCK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 111
     },
     {
       "name": "nLWD",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 112
     },
     {
       "name": "nLWINF",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 113
     },
     {
       "name": "nLWINS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 114
     },
     {
       "name": "nLoneDD",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 115
     },
     {
       "name": "nLoneKAT6",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 116
     },
     {
       "name": "nLoneLUCK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 117
     },
     {
       "name": "nMAXWINSX",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 118
     },
     {
       "name": "nMLFAV",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 119
     },
     {
       "name": "nMLO",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 120
     },
     {
       "name": "nNEG",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 121
     },
     {
       "name": "nOD_PICK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 122
     },
     {
       "name": "nOD_SCORE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 123
     },
     {
       "name": "nOFFGRASS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 124
     },
     {
       "name": "nOTX",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 125
     },
     {
       "name": "nOUTLOOK",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 126
     },
     {
       "name": "nPACE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 127
     },
     {
       "name": "nPAC",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 128
     },
     {
       "name": "nPDIF",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 129
     },
     {
       "name": "nPED",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 130
     },
     {
       "name": "nPER",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 131
     },
     {
       "name": "nPFIG",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 132
     },
     {
       "name": "nPNT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 133
     },
     {
       "name": "nPPO",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 134
     },
     {
       "name": "nPRICEPLAY",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 135
     },
     {
       "name": "nPROB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 136
     },
     {
       "name": "nPSCN",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 137
     },
     {
       "name": "nPSF",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 138
     },
     {
       "name": "nPURS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 139
     },
     {
       "name": "nQFIVES",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 140
     },
     {
       "name": "nQFLAG",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 141
     },
     {
       "name": "nQPC",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 142
     },
     {
       "name": "nQP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 143
     },
     {
       "name": "nQT3",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 144
     },
     {
       "name": "nRACE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 145
     },
     {
       "name": "nRAZOR",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 146
     },
     {
       "name": "nRS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 147
     },
     {
       "name": "nRULE50",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 148
     },
     {
       "name": "nRUNKS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 149
     },
     {
       "name": "nSCRATCHES",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 150
     },
     {
       "name": "nSEX",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 151
     },
     {
       "name": "nSLASH",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 152
     },
     {
       "name": "nSTB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 153
     },
     {
       "name": "nSTR",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 154
     },
     {
       "name": "nSUPERF",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 155
     },
     {
       "name": "nSUPERS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 156
     },
     {
       "name": "nSURF",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 157
     },
     {
       "name": "nTAN",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 158
     },
     {
       "name": "nTJ",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 159
     },
     {
       "name": "nTL30S",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 160
     },
     {
       "name": "nTL30W",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 161
     },
     {
       "name": "nTOPPACAGO",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 162
     },
     {
       "name": "nTOPPAC",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 163
     },
     {
       "name": "nTOPPERAGO",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 164
     },
     {
       "name": "nTOPPER",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 165
     },
     {
       "name": "nTOPSHFAGO",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 166
     },
     {
       "name": "nTOPSHF",
       "type": "decimal(3, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 167
     },
     {
       "name": "nTOUR",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 168
     },
     {
       "name": "nTRCH",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 169
     },
     {
       "name": "nTRI",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 170
     },
     {
       "name": "nTRNHST",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 171
     },
     {
       "name": "nTRNHW",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 172
     },
     {
       "name": "nTRN",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 173
     },
     {
       "name": "nTRN_BUZZ",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 174
     },
     {
       "name": "nTRN_ROIX",
       "type": "decimal(5, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 175
     },
     {
       "name": "nTopKAT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 176
     },
     {
       "name": "nUNK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 177
     },
     {
       "name": "nVBET",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 178
     },
     {
       "name": "nVEL",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 179
     },
     {
       "name": "nVI",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 180
     },
     {
       "name": "nVK1",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 181
     },
     {
       "name": "nWEIGHT",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 182
     },
     {
       "name": "nWGTCH",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 183
     },
     {
       "name": "nWINDAYSX",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 184
     },
     {
       "name": "nWINTYPE",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 185
     },
     {
       "name": "nWKSC",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 186
     },
     {
       "name": "nWMAR",
       "type": "decimal(4, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 187
     },
     {
       "name": "nWSR",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 188
     },
     {
       "name": "nXADJ",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 189
     },
     {
       "name": "nXBUY",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 190
     },
     {
       "name": "nXFAV",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 191
     },
     {
       "name": "nXPROB",
       "type": "decimal(6, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 192
     },
     {
       "name": "nXSELL",
       "type": "decimal(7, 4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 193
     },
     {
       "name": "rACL",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 194
     },
     {
       "name": "rAODD",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 195
     },
     {
       "name": "rAP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 196
     },
     {
       "name": "rC90",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 197
     },
     {
       "name": "rCLASS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 198
     },
     {
       "name": "rEPS365D",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 199
     },
     {
       "name": "rEPSLIFE",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 200
     },
     {
       "name": "rEP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 201
     },
     {
       "name": "rFC",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 202
     },
     {
       "name": "rFR1",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 203
     },
     {
       "name": "rFR2",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 204
     },
     {
       "name": "rFR3",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 205
     },
     {
       "name": "rFX",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 206
     },
     {
       "name": "rHTR",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 207
     },
     {
       "name": "rIMP1",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 208
     },
     {
       "name": "rIMP2",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 209
     },
     {
       "name": "rIMP3",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 210
     },
     {
       "name": "rIMP4",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 211
     },
     {
       "name": "rJKY",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 212
     },
     {
       "name": "rK2",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 213
     },
     {
       "name": "rKMS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 214
     },
     {
       "name": "rK",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 215
     },
     {
       "name": "rLCSF",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 216
     },
     {
       "name": "rLP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 217
     },
     {
       "name": "rMLO",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 218
     },
     {
       "name": "rOTX",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 219
     },
     {
       "name": "rPAC",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 220
     },
     {
       "name": "rPED",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 221
     },
     {
       "name": "rPER",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 222
     },
     {
       "name": "rPFIG",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 223
     },
     {
       "name": "rPROB",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 224
     },
     {
       "name": "rPSCN",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 225
     },
     {
       "name": "rSP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 226
     },
     {
       "name": "rTRN",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 227
     },
     {
       "name": "rVEL",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 228
     },
     {
       "name": "rWKSC",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 229
     },
     {
       "name": "tCLASS",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 230
     },
     {
       "name": "tDATE",
       "type": "date",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 231
     },
     {
       "name": "tFCID",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 232
     },
     {
       "name": "tHOR",
       "type": "varchar(24)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 233
     },
     {
       "name": "tJKY",
       "type": "varchar(25)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 234
     },
     {
       "name": "tLCLASS",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 235
     },
     {
       "name": "tLDATE",
       "type": "date",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 236
     },
     {
       "name": "tLJKY",
       "type": "varchar(12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 237
     },
     {
       "name": "tLRACETEXT",
       "type": "varchar(12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 238
     },
     {
       "name": "tLTRIP",
       "type": "varchar(27)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 239
     },
     {
       "name": "tLTRK",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 240
     },
     {
       "name": "tLTRN",
       "type": "varchar(20)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 241
     },
     {
       "name": "tOWNER",
       "type": "varchar(24)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 242
     },
     {
       "name": "tPGM",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 243
     },
     {
       "name": "tPOST",
       "type": "time",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 244
     },
     {
       "name": "tTPG",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 245
     },
     {
       "name": "tTRK",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 246
     },
     {
       "name": "tTRN",
       "type": "varchar(25)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 247
     },
     {
       "name": "tWK1",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 248
     },
     {
       "name": "tWK2",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 249
     },
     {
       "name": "tWK3",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 250
     },
     {
       "name": "tWK4",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 251
     },
     {
       "name": "xFIN",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 252
     },
     {
       "name": "xPLA",
       "type": "decimal(4, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 253
     },
     {
       "name": "xPL",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 254
     },
     {
       "name": "xSHO",
       "type": "decimal(4, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 255
     },
     {
       "name": "xWIN",
       "type": "decimal(4, 1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 256
     }
   ]
 }

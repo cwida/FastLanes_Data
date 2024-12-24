@@ -47,6 +47,8 @@ def convert_sql_to_json(sql_text):
     inside_create_table = False
     table_name = None
 
+    column_index = 0  # Initialize column index
+
     for line in lines:
         # Start capturing when we hit CREATE TABLE
         if 'CREATE TABLE' in line and not inside_create_table:
@@ -64,7 +66,10 @@ def convert_sql_to_json(sql_text):
         if inside_create_table:
             field_info = extract_field_info(line)
             if field_info:
+                # Add column index to the field information
+                field_info['index'] = column_index
                 columns.append(field_info)
+                column_index += 1  # Increment the column index
 
     if columns and table_name:
         return {"table": table_name, "columns": columns}

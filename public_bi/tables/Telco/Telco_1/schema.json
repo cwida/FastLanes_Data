@@ -4,907 +4,1088 @@
     {
       "name": "ACTIVATION_DATE",
       "type": "timestamp",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "ARPU_P1",
       "type": "decimal(10, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "ARPU_P2",
       "type": "decimal(10, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "ARPU_P3",
       "type": "decimal(10, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "ARPU_P4",
       "type": "decimal(10, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "ARPU_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "BALANCE_END_P2",
       "type": "decimal(7, 2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "CHARGD_SMS_P1",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "CHARGD_SMS_P2",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "CHARGD_SMS_P3",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "CHARGD_SMS_P4",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "CHARGD_SMS_P6",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "CHRGD_CALLS_P1",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 12
     },
     {
       "name": "CHRGD_CALLS_P2",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "CHRGD_CALLS_P3",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "CHRGD_CALLS_P4",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "CHRGD_CALLS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 16
     },
     {
       "name": "CHRGD_MINS_P1",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 17
     },
     {
       "name": "CHRGD_MINS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "CHRGD_MINS_P3",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "CHRGD_MINS_P4",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 20
     },
     {
       "name": "CHRGD_MINS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "CHRGD_REV_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 22
     },
     {
       "name": "CHRGD_REV_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 23
     },
     {
       "name": "CHRGD_REV_P3",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 24
     },
     {
       "name": "CHRGD_REV_P4",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 25
     },
     {
       "name": "CHRGD_REV_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 26
     },
     {
       "name": "CHURN",
       "type": "boolean",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 27
     },
     {
       "name": "FREE_CALLS_P1",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 28
     },
     {
       "name": "FREE_CALLS_P2",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 29
     },
     {
       "name": "FREE_CALLS_P3",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 30
     },
     {
       "name": "FREE_CALLS_P4",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 31
     },
     {
       "name": "FREE_CALLS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 32
     },
     {
       "name": "FREE_MINS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 33
     },
     {
       "name": "FREE_MINS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 34
     },
     {
       "name": "FREE_MINS_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 35
     },
     {
       "name": "FREE_MINS_P4",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 36
     },
     {
       "name": "FREE_MINS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 37
     },
     {
       "name": "FREE_SMS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 38
     },
     {
       "name": "FREE_SMS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 39
     },
     {
       "name": "FREE_SMS_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 40
     },
     {
       "name": "FREE_SMS_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 41
     },
     {
       "name": "FREE_SMS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 42
     },
     {
       "name": "IDD_CALLS_P1",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 43
     },
     {
       "name": "IDD_CALLS_P2",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 44
     },
     {
       "name": "IDD_CALLS_P3",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 45
     },
     {
       "name": "IDD_CALLS_P4",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "IDD_CALLS_P6",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 47
     },
     {
       "name": "IDD_MINS_P1",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 48
     },
     {
       "name": "IDD_MINS_P2",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 49
     },
     {
       "name": "IDD_MINS_P3",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 50
     },
     {
       "name": "IDD_MINS_P4",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 51
     },
     {
       "name": "IDD_MINS_P6",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 52
     },
     {
       "name": "IDD_REV_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 53
     },
     {
       "name": "IDD_REV_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 54
     },
     {
       "name": "IDD_REV_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 55
     },
     {
       "name": "IDD_REV_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 56
     },
     {
       "name": "IDD_REV_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 57
     },
     {
       "name": "INCOMING_INC_REV_P1",
       "type": "decimal(9, 3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 58
     },
     {
       "name": "INCOMING_INC_REV_P2",
       "type": "decimal(12, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 59
     },
     {
       "name": "INCOMING_INC_REV_P3",
       "type": "decimal(11, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 60
     },
     {
       "name": "INCOMING_INC_REV_P4",
       "type": "decimal(11, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 61
     },
     {
       "name": "INCOMING_INC_REV_P6",
       "type": "decimal(12, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 62
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 63
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 64
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P3",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 65
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P4",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 66
     },
     {
       "name": "INCOMING_TOTAL_CALLS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 67
     },
     {
       "name": "LAST_RCHRG_AMT",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 68
     },
     {
       "name": "LST_ACTVTY_DT",
       "type": "timestamp",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 69
     },
     {
       "name": "LST_RCHRG_DATE",
       "type": "timestamp",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 70
     },
     {
       "name": "MSISDN",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 71
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 72
     },
     {
       "name": "OFFNET_CALLS_P1",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 73
     },
     {
       "name": "OFFNET_CALLS_P2",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 74
     },
     {
       "name": "OFFNET_CALLS_P3",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 75
     },
     {
       "name": "OFFNET_CALLS_P4",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 76
     },
     {
       "name": "OFFNET_CALLS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 77
     },
     {
       "name": "OFFNET_MINS_P1",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 78
     },
     {
       "name": "OFFNET_MINS_P2",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 79
     },
     {
       "name": "OFFNET_MINS_P3",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 80
     },
     {
       "name": "OFFNET_MINS_P4",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 81
     },
     {
       "name": "OFFNET_MINS_P6",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 82
     },
     {
       "name": "OFFNET_REV_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 83
     },
     {
       "name": "OFFNET_REV_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 84
     },
     {
       "name": "OFFNET_REV_P3",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 85
     },
     {
       "name": "OFFNET_REV_P4",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 86
     },
     {
       "name": "OFFNET_REV_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 87
     },
     {
       "name": "ONNET_CALLS_P1",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 88
     },
     {
       "name": "ONNET_CALLS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 89
     },
     {
       "name": "ONNET_CALLS_P3",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 90
     },
     {
       "name": "ONNET_CALLS_P4",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 91
     },
     {
       "name": "ONNET_CALLS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 92
     },
     {
       "name": "ONNET_MINS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 93
     },
     {
       "name": "ONNET_MINS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 94
     },
     {
       "name": "ONNET_MINS_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 95
     },
     {
       "name": "ONNET_MINS_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 96
     },
     {
       "name": "ONNET_MINS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 97
     },
     {
       "name": "ONNET_REV_P1",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 98
     },
     {
       "name": "ONNET_REV_P2",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 99
     },
     {
       "name": "ONNET_REV_P3",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 100
     },
     {
       "name": "ONNET_REV_P4",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 101
     },
     {
       "name": "ONNET_REV_P6",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 102
     },
     {
       "name": "PACKAGE_NAME",
       "type": "varchar(22)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 103
     },
     {
       "name": "RCHRG_AMT_EXP_DATE",
       "type": "timestamp",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 104
     },
     {
       "name": "RECHRG_INC_MIN_USED_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 105
     },
     {
       "name": "RECHRG_INC_MIN_USED_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 106
     },
     {
       "name": "RECHRG_INC_MIN_USED_P3",
       "type": "decimal(9, 4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 107
     },
     {
       "name": "RECHRG_INC_MIN_USED_P4",
       "type": "decimal(9, 4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 108
     },
     {
       "name": "RECHRG_INC_MIN_USED_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 109
     },
     {
       "name": "RECHRG_TOTAL_LOAD_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 110
     },
     {
       "name": "RECHRG_TOTAL_LOAD_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 111
     },
     {
       "name": "RECHRG_TOTAL_LOAD_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 112
     },
     {
       "name": "RECHRG_TOTAL_LOAD_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 113
     },
     {
       "name": "RECHRG_TOTAL_LOAD_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 114
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P1",
       "type": "decimal(1, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 115
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P2",
       "type": "decimal(1, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 116
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P3",
       "type": "decimal(1, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 117
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P4",
       "type": "decimal(1, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 118
     },
     {
       "name": "RECHRG_TOTAL_SUBS_P6",
       "type": "decimal(1, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 119
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P1",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 120
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P2",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 121
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P3",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 122
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P4",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 123
     },
     {
       "name": "RECHRG_TOTAL_TRANS_P6",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 124
     },
     {
       "name": "REVENUE_SMS_P1",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 125
     },
     {
       "name": "REVENUE_SMS_P2",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 126
     },
     {
       "name": "REVENUE_SMS_P3",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 127
     },
     {
       "name": "REVENUE_SMS_P4",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 128
     },
     {
       "name": "REVENUE_SMS_P6",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 129
     },
     {
       "name": "STATUS_END_P2",
       "type": "decimal(1, 0)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 130
     },
     {
       "name": "TOTAL_CALLS_P1",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 131
     },
     {
       "name": "TOTAL_CALLS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 132
     },
     {
       "name": "TOTAL_CALLS_P3",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 133
     },
     {
       "name": "TOTAL_CALLS_P4",
       "type": "decimal(5, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 134
     },
     {
       "name": "TOTAL_CALLS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 135
     },
     {
       "name": "TOTAL_CALLS_REV_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 136
     },
     {
       "name": "TOTAL_CALLS_REV_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 137
     },
     {
       "name": "TOTAL_CALLS_REV_P3",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 138
     },
     {
       "name": "TOTAL_CALLS_REV_P4",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 139
     },
     {
       "name": "TOTAL_CALLS_REV_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 140
     },
     {
       "name": "TOTAL_INCOMING_MIN_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 141
     },
     {
       "name": "TOTAL_INCOMING_MIN_P2",
       "type": "decimal(10, 4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 142
     },
     {
       "name": "TOTAL_INCOMING_MIN_P3",
       "type": "decimal(9, 4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 143
     },
     {
       "name": "TOTAL_INCOMING_MIN_P4",
       "type": "decimal(9, 4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 144
     },
     {
       "name": "TOTAL_INCOMING_MIN_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 145
     },
     {
       "name": "TOTAL_INCOMING_REV_P1",
       "type": "decimal(9, 3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 146
     },
     {
       "name": "TOTAL_INCOMING_REV_P2",
       "type": "decimal(12, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 147
     },
     {
       "name": "TOTAL_INCOMING_REV_P3",
       "type": "decimal(11, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 148
     },
     {
       "name": "TOTAL_INCOMING_REV_P4",
       "type": "decimal(11, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 149
     },
     {
       "name": "TOTAL_INCOMING_REV_P6",
       "type": "decimal(12, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 150
     },
     {
       "name": "TOTAL_MINS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 151
     },
     {
       "name": "TOTAL_MINS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 152
     },
     {
       "name": "TOTAL_MINS_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 153
     },
     {
       "name": "TOTAL_MINS_P4",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 154
     },
     {
       "name": "TOTAL_MINS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 155
     },
     {
       "name": "TOTAL_OUTGOING_MIN_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 156
     },
     {
       "name": "TOTAL_OUTGOING_MIN_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 157
     },
     {
       "name": "TOTAL_OUTGOING_MIN_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 158
     },
     {
       "name": "TOTAL_OUTGOING_MIN_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 159
     },
     {
       "name": "TOTAL_OUTGOING_MIN_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 160
     },
     {
       "name": "TOTAL_SMS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 161
     },
     {
       "name": "TOTAL_SMS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 162
     },
     {
       "name": "TOTAL_SMS_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 163
     },
     {
       "name": "TOTAL_SMS_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 164
     },
     {
       "name": "TOTAL_SMS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 165
     },
     {
       "name": "TOTAL_VAS_REV_P1",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 166
     },
     {
       "name": "TOTAL_VAS_REV_P2",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 167
     },
     {
       "name": "TOTAL_VAS_REV_P3",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 168
     },
     {
       "name": "TOTAL_VAS_REV_P4",
       "type": "decimal(6, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 169
     },
     {
       "name": "TOTAL_VAS_REV_P6",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 170
     },
     {
       "name": "TOTA_OUTGOING_REV_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 171
     },
     {
       "name": "TOTA_OUTGOING_REV_P2",
       "type": "decimal(10, 5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 172
     },
     {
       "name": "TOTA_OUTGOING_REV_P3",
       "type": "decimal(10, 5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 173
     },
     {
       "name": "TOTA_OUTGOING_REV_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 174
     },
     {
       "name": "TOTA_OUTGOING_REV_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 175
     },
     {
       "name": "UNIQUE_SUBS_SMS_P1",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 176
     },
     {
       "name": "UNIQUE_SUBS_SMS_P2",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 177
     },
     {
       "name": "UNIQUE_SUBS_SMS_P3",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 178
     },
     {
       "name": "UNIQUE_SUBS_SMS_P4",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 179
     },
     {
       "name": "UNIQUE_SUBS_SMS_P6",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 180
     }
   ]
 }
