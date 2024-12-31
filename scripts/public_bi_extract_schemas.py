@@ -92,16 +92,46 @@ def write_json_to_file(json_data, table_name):
 
 # Step 6: Process each SQL file
 def process_sql_files(sql_files):
+    """
+    Process SQL files and convert them to JSON schemas.
+    Returns a list of JSON schemas.
+    """
+    schemas = []
     for sql_file in sql_files:
         with open(sql_file, 'r') as f:
             sql_text = f.read()
 
-            # Only process if the SQL starts with "CREATE TABLE"
             if sql_text.strip().upper().startswith("CREATE TABLE"):
                 json_schema = convert_sql_to_json(sql_text)
                 if json_schema:
-                    table_name = json_schema['table']
-                    write_json_to_file(json_schema, table_name)
+                    schemas.append(json_schema)
+    return schemas
+
+
+def summarize_column_types(schemas):
+    """
+    Traverse multiple JSON schemas of tables and summarize the percentages of all column types.
+    """
+    total_columns = 0
+    type_counts = {}
+
+    for json_schema in schemas:
+        table_name = json_schema.get('table', 'UnknownTable')
+        print(f"Table: {table_name}")
+
+        for column in json_schema.get('columns', []):
+            total_columns += 1
+            column_type = column['type'].lower()
+            if column_type not in type_counts:
+                type_counts[column_type] = 0
+            type_counts[column_type] += 1
+
+    print(f"\nSummary:")
+    print(f"Total columns: {total_columns}")
+
+    for column_type, count in type_counts.items():
+        percentage = (count / total_columns) * 100
+        print(f"{column_type}: {count} ({percentage:.2f}%)")
 
 
 # Step 7: Remove the cloned directory
@@ -126,8 +156,11 @@ def main():
     sql_files = find_sql_files(clone_dir)
     print(f"Found {len(sql_files)} SQL files with '1' in their name.")
 
-    # Process and convert each SQL file to JSON and write it to the desired path
-    process_sql_files(sql_files)
+    # Process SQL files to generate JSON schemas
+    schemas = process_sql_files(sql_files)
+
+    # Find and print boolean columns
+    summarize_column_types(schemas)
 
     # Remove the cloned directory
     cleanup_directory(clone_dir)
