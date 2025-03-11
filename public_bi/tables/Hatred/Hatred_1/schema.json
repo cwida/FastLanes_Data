@@ -4,157 +4,188 @@
     {
       "name": "City",
       "type": "varchar(31)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "Client",
       "type": "varchar(32)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "Created Date",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "F26",
       "type": "varchar(59)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 3
     },
     {
       "name": "F27",
       "type": "varchar(65)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 4
     },
     {
       "name": "F28",
       "type": "varchar(800)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "FF Ratio",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "Favorites",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "Followers",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "Following",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "Gender",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "Influencer?",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "Joined",
       "type": "decimal(15, 10)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 12
     },
     {
       "name": "Keyword",
       "type": "varchar(24)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "LPF",
       "type": "decimal(7, 2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "Language",
       "type": "varchar(18)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "Lat",
       "type": "decimal(11, 8)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "Listed",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "Location Type",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "Long",
       "type": "decimal(10, 8)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 19
     },
     {
       "name": "Name",
       "type": "varchar(20)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 20
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "Region",
       "type": "varchar(9)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 22
     },
     {
       "name": "Self Report Location",
       "type": "varchar(78)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "State ",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 24
     },
     {
       "name": "StatePopName",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 25
     },
     {
       "name": "StatePopNum",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 26
     },
     {
       "name": "Tweet Text",
       "type": "varchar(141)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 27
     },
     {
       "name": "Tweets",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 28
     },
     {
       "name": "Username",
       "type": "varchar(17)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 29
     },
     {
       "name": "profile desc",
       "type": "varchar(160)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 30
     }
   ]
 }

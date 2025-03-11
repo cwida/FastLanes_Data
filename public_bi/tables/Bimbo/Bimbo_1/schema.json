@@ -4,62 +4,74 @@
     {
       "name": "Agencia_ID",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "Canal_ID",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "Cliente_ID",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "Demanda_uni_equil",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "Dev_proxima",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "Dev_uni_proxima",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "Producto_ID",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "Ruta_SAK",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "Semana",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "Venta_hoy",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "Venta_uni_hoy",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     }
   ]
 }

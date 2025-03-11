@@ -4,282 +4,338 @@
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "a_aid_acontid_agencyid",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "a_aid_acontid_piid",
       "type": "varchar(50)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "ag_name",
       "type": "varchar(50)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "agency_code",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "ase_rowid",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "award_type",
       "type": "varchar(21)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "award_type_code",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "award_type_key",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "baseandalloptionsvalue",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "baseandexercisedoptionsvalue",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "bureau_code",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "bureau_name",
       "type": "varchar(40)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 12
     },
     {
       "name": "cd_contactiontype",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 13
     },
     {
       "name": "co_name",
       "type": "varchar(44)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 14
     },
     {
       "name": "co_state",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 15
     },
     {
       "name": "code",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 16
     },
     {
       "name": "contract_num",
       "type": "varchar(50)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "contract_signeddate",
       "type": "varchar(20)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "contractingofficeagencyid",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "count_fetched",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 20
     },
     {
       "name": "count_total",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "description",
       "type": "varchar(40)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 22
     },
     {
       "name": "fk_epa_des_prod",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "fk_rec_mat",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 24
     },
     {
       "name": "ftsdollar",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 25
     },
     {
       "name": "funding_agency",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "funding_agency_key",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 27
     },
     {
       "name": "funding_agency_name",
       "type": "varchar(40)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 28
     },
     {
       "name": "gsadollar",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 29
     },
     {
       "name": "gsaotherdollar",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 30
     },
     {
       "name": "gwacs",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 31
     },
     {
       "name": "level1_category",
       "type": "varchar(37)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 32
     },
     {
       "name": "level2_category",
       "type": "varchar(57)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 33
     },
     {
       "name": "naics_code",
       "type": "varchar(6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 34
     },
     {
       "name": "naics_name",
       "type": "varchar(35)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 35
     },
     {
       "name": "nongsadollar",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 36
     },
     {
       "name": "obligatedamount",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 37
     },
     {
       "name": "obligatedamount_1",
       "type": "decimal(1, 0)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 38
     },
     {
       "name": "pbsdollar",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 39
     },
     {
       "name": "primary_contract_piid",
       "type": "varchar(51)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 40
     },
     {
       "name": "prod_or_serv_code",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 41
     },
     {
       "name": "prod_or_serv_code_desc",
       "type": "varchar(35)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 42
     },
     {
       "name": "psc_code",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 43
     },
     {
       "name": "psc_code_description",
       "type": "varchar(100)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 44
     },
     {
       "name": "psc_key",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 45
     },
     {
       "name": "quarter",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "refidvid_agencyid",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 47
     },
     {
       "name": "refidvid_piid",
       "type": "varchar(34)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 48
     },
     {
       "name": "short_name",
       "type": "varchar(11)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 49
     },
     {
       "name": "signeddate",
       "type": "varchar(19)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 50
     },
     {
       "name": "vend_contoffbussizedeterm",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 51
     },
     {
       "name": "vend_dunsnumber",
       "type": "varchar(9)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 52
     },
     {
       "name": "vend_vendorname",
       "type": "varchar(108)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 53
     },
     {
       "name": "whocanuse",
       "type": "varchar(50)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 54
     },
     {
       "name": "year",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 55
     }
   ]
 }

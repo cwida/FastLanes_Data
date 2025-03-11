@@ -4,507 +4,608 @@
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "demographic#gender",
       "type": "varchar(13)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 1
     },
     {
       "name": "interaction#author#avatar",
       "type": "varchar(228)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "interaction#author#id",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 3
     },
     {
       "name": "interaction#author#language",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "interaction#author#link",
       "type": "varchar(34)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "interaction#author#name",
       "type": "varchar(57)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "interaction#author#username",
       "type": "varchar(15)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "interaction#content",
       "type": "varchar(505)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "interaction#created_at",
       "type": "varchar(31)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "interaction#geo#latitude",
       "type": "decimal(11, 9)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 10
     },
     {
       "name": "interaction#geo#longitude",
       "type": "decimal(11, 8)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 11
     },
     {
       "name": "interaction#hashtags",
       "type": "varchar(230)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "interaction#id",
       "type": "varchar(32)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "interaction#link",
       "type": "varchar(60)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "interaction#mention_ids",
       "type": "varchar(104)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 15
     },
     {
       "name": "interaction#mentions",
       "type": "varchar(156)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "interaction#received_at",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "interaction#schema#version",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "interaction#source",
       "type": "varchar(67)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "interaction#type",
       "type": "varchar(7)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 20
     },
     {
       "name": "twitter#created_at",
       "type": "varchar(31)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "twitter#display_urls",
       "type": "varchar(129)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 22
     },
     {
       "name": "twitter#domains",
       "type": "varchar(60)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "twitter#filter_level",
       "type": "varchar(6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 24
     },
     {
       "name": "twitter#geo#latitude",
       "type": "decimal(11, 9)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "twitter#geo#longitude",
       "type": "decimal(11, 8)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "twitter#hashtags",
       "type": "varchar(230)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "twitter#id",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 28
     },
     {
       "name": "twitter#in_reply_to_screen_name",
       "type": "varchar(15)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 29
     },
     {
       "name": "twitter#in_reply_to_status_id",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 30
     },
     {
       "name": "twitter#in_reply_to_user_id",
       "type": "bigint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 31
     },
     {
       "name": "twitter#lang",
       "type": "varchar(3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 32
     },
     {
       "name": "twitter#links",
       "type": "varchar(255)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 33
     },
     {
       "name": "twitter#media",
       "type": "varchar(255)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 34
     },
     {
       "name": "twitter#mention_ids",
       "type": "varchar(104)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 35
     },
     {
       "name": "twitter#mentions",
       "type": "varchar(156)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 36
     },
     {
       "name": "twitter#place#country",
       "type": "varchar(20)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 37
     },
     {
       "name": "twitter#place#country_code",
       "type": "varchar(2)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 38
     },
     {
       "name": "twitter#place#full_name",
       "type": "varchar(61)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 39
     },
     {
       "name": "twitter#place#id",
       "type": "varchar(16)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 40
     },
     {
       "name": "twitter#place#name",
       "type": "varchar(49)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 41
     },
     {
       "name": "twitter#place#place_type",
       "type": "varchar(12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 42
     },
     {
       "name": "twitter#place#url",
       "type": "varchar(56)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 43
     },
     {
       "name": "twitter#possibly_sensitive",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 44
     },
     {
       "name": "twitter#source",
       "type": "varchar(173)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 45
     },
     {
       "name": "twitter#text",
       "type": "varchar(505)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "twitter#user#created_at",
       "type": "varchar(31)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 47
     },
     {
       "name": "twitter#user#description",
       "type": "varchar(480)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 48
     },
     {
       "name": "twitter#user#favourites_count",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 49
     },
     {
       "name": "twitter#user#followers_count",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 50
     },
     {
       "name": "twitter#user#friends_count",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 51
     },
     {
       "name": "twitter#user#geo_enabled",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 52
     },
     {
       "name": "twitter#user#id",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 53
     },
     {
       "name": "twitter#user#id_str",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 54
     },
     {
       "name": "twitter#user#lang",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 55
     },
     {
       "name": "twitter#user#listed_count",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 56
     },
     {
       "name": "twitter#user#location",
       "type": "varchar(80)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 57
     },
     {
       "name": "twitter#user#name",
       "type": "varchar(57)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 58
     },
     {
       "name": "twitter#user#profile_image_url",
       "type": "varchar(228)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 59
     },
     {
       "name": "twitter#user#profile_image_url_https",
       "type": "varchar(229)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 60
     },
     {
       "name": "twitter#user#screen_name",
       "type": "varchar(15)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 61
     },
     {
       "name": "twitter#user#statuses_count",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 62
     },
     {
       "name": "twitter#user#time_zone",
       "type": "varchar(30)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 63
     },
     {
       "name": "twitter#user#url",
       "type": "varchar(255)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 64
     },
     {
       "name": "twitter#user#utc_offset",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 65
     },
     {
       "name": "twitter#user#verified",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 66
     },
     {
       "name": "Contains: suburgatory (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 67
     },
     {
       "name": "Contains: Castle (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 68
     },
     {
       "name": "Contains: revenge (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 69
     },
     {
       "name": "Contains: nashville (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 70
     },
     {
       "name": "Contains: modernfamily (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 71
     },
     {
       "name": "Contains: lastmanstanding (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 72
     },
     {
       "name": "Contains: TheNeighbors (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 73
     },
     {
       "name": "Contains: TheNeighbors (copy 3)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 74
     },
     {
       "name": "Contains: TheNeighbors (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 75
     },
     {
       "name": "Contains: suburgatory (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 76
     },
     {
       "name": "Contains: Scandal (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 77
     },
     {
       "name": "Contains: Scandal (copy 3)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 78
     },
     {
       "name": "Contains: Scandal (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 79
     },
     {
       "name": "Contains: RookieBlue (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 80
     },
     {
       "name": "Contains: RookieBlue (copy 6)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 81
     },
     {
       "name": "Contains: RookieBlue (copy 5)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 82
     },
     {
       "name": "Contains: RookieBlue (copy 4)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 83
     },
     {
       "name": "Contains: RookieBlue (copy 3)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 84
     },
     {
       "name": "Contains: RookieBlue (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 85
     },
     {
       "name": "Contains: OnceUponATime (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 86
     },
     {
       "name": "Contains: Motive (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 87
     },
     {
       "name": "Contains: Motive (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 88
     },
     {
       "name": "Contains: KillerWomen (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 89
     },
     {
       "name": "Contains: KillerWomen (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 90
     },
     {
       "name": "Contains: GreysAnatomy (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 91
     },
     {
       "name": "Contains: GreysAnatomy (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 92
     },
     {
       "name": "Calculation_6220303224029615",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 93
     },
     {
       "name": "Contains: Castle (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 94
     },
     {
       "name": "Contains: AgentsofSHIELD (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 95
     },
     {
       "name": "Contains: AFV (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 96
     },
     {
       "name": "Contains: AFV (copy 2)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 97
     },
     {
       "name": "Contains: ABC2020 (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 98
     },
     {
       "name": "Calculation_6610227171140491",
       "type": "timestamp",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 99
     },
     {
       "name": "Contains: TheMiddle (copy)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 100
     }
   ]
 }

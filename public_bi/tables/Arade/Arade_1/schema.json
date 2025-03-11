@@ -4,57 +4,68 @@
     {
       "name": "F1",
       "type": "varchar(3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "F2",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "F3",
       "type": "timestamp",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "F4",
       "type": "decimal(8, 4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "F5",
       "type": "decimal(8, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "F6",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "F7",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "F8",
       "type": "decimal(9, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "F9",
       "type": "decimal(9, 6)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "WNET (bin)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     }
   ]
 }

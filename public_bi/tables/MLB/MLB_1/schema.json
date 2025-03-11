@@ -4,242 +4,290 @@
     {
       "name": "AB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "AVG",
       "type": "decimal(4, 3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 1
     },
     {
       "name": "BABIP",
       "type": "decimal(4, 3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 2
     },
     {
       "name": "BB.",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "BB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "BIP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "FB.",
       "type": "decimal(4, 1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "FB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "GB.",
       "type": "decimal(4, 1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "GB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "GIDP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "HBP",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "HR",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 12
     },
     {
       "name": "H",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "ISO",
       "type": "decimal(4, 3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 14
     },
     {
       "name": "K.",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 15
     },
     {
       "name": "LD.",
       "type": "decimal(4, 1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 16
     },
     {
       "name": "LD",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 17
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "OBP",
       "type": "decimal(4, 3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 19
     },
     {
       "name": "PA",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 20
     },
     {
       "name": "PU.",
       "type": "decimal(4, 1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "PU",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 22
     },
     {
       "name": "SF",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 23
     },
     {
       "name": "SH",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 24
     },
     {
       "name": "SLG",
       "type": "decimal(4, 3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "SOL",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 26
     },
     {
       "name": "SOS",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 27
     },
     {
       "name": "SO",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 28
     },
     {
       "name": "TB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 29
     },
     {
       "name": "X1B",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 30
     },
     {
       "name": "X2B",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 31
     },
     {
       "name": "X3B",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 32
     },
     {
       "name": "batter_name",
       "type": "varchar(26)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 33
     },
     {
       "name": "field",
       "type": "varchar(8)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 34
     },
     {
       "name": "iBB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 35
     },
     {
       "name": "league",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 36
     },
     {
       "name": "parentteam",
       "type": "varchar(3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 37
     },
     {
       "name": "pwRC.",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 38
     },
     {
       "name": "stand",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 39
     },
     {
       "name": "teamname",
       "type": "varchar(27)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 40
     },
     {
       "name": "wOBA",
       "type": "decimal(4, 3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 41
     },
     {
       "name": "wRAA",
       "type": "decimal(3, 1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 42
     },
     {
       "name": "wRC.",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 43
     },
     {
       "name": "wRC",
       "type": "decimal(3, 1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 44
     },
     {
       "name": "year",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 45
     },
     {
       "name": "Calculation_40532458112880653",
       "type": "decimal(17, 14)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 46
     },
     {
       "name": "Calculation_40532458117070874",
       "type": "decimal(17, 14)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 47
     }
   ]
 }

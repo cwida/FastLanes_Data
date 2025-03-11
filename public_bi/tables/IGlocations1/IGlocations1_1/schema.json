@@ -4,92 +4,110 @@
     {
       "name": "CENSUS2010POP",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "CONCIT",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "COUSUB",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "City",
       "type": "varchar(57)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "County Code",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "ESTIMATESBASE2010",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "FUNCSTAT",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "PLACE",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 8
     },
     {
       "name": "POPESTIMATE2010",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 9
     },
     {
       "name": "POPESTIMATE2011",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "POPESTIMATE2012",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "POPESTIMATE2013",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 12
     },
     {
       "name": "POPESTIMATE2014",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "PRIMGEO_FLAG",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "SUMLEV",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "State code",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 16
     },
     {
       "name": "State",
       "type": "varchar(20)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 17
     }
   ]
 }

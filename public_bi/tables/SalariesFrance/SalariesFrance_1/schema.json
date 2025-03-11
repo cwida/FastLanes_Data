@@ -4,287 +4,344 @@
     {
       "name": "A129",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 0
     },
     {
       "name": "A129_LIBCOURT",
       "type": "varchar(46)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "A129_LIBCOURT_PJ",
       "type": "varchar(40)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 2
     },
     {
       "name": "A129_LIB",
       "type": "varchar(162)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "A88",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "A88_LIB",
       "type": "varchar(138)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "ADECCO_NB_CANDIDATS",
       "type": "decimal(4, 0)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "ADECCO_NB_CAND_METIERS_PROCHES",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 7
     },
     {
       "name": "ADECCO_SALAIRES_BRUTS",
       "type": "decimal(18, 14)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 8
     },
     {
       "name": "AG_25_29",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 9
     },
     {
       "name": "AG_30_39",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 10
     },
     {
       "name": "AG_40_49",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 11
     },
     {
       "name": "AG_50_54",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "AG_M25",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 13
     },
     {
       "name": "AG_P55",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 14
     },
     {
       "name": "APPRENTI",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 15
     },
     {
       "name": "BMO_DIFFICILE",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "BMO_INTENTIONS",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "BMO_SAISON",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 18
     },
     {
       "name": "CODGEO_PRINCIPAL",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "CP_PRINCIPAL",
       "type": "varchar(5)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 20
     },
     {
       "name": "Calculation_163536984210948109",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "Calculation_392657618632466432",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 22
     },
     {
       "name": "Calculation_393783518250995712",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "EMBAUCHES_GLOBAL",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 24
     },
     {
       "name": "EMBAUCHES_NM1",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "EMBAUCHES_NP1",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "EMBAUCHE_CDD",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "EMBAUCHE_CDI",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 28
     },
     {
       "name": "EMPSAL_NM1",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 29
     },
     {
       "name": "EMPSAL_NP1",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 30
     },
     {
       "name": "FEMMES",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 31
     },
     {
       "name": "HOMMES",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 32
     },
     {
       "name": "INTERIM_NM1",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 33
     },
     {
       "name": "INTERIM_NP1",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 34
     },
     {
       "name": "LIBDOM1",
       "type": "varchar(74)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 35
     },
     {
       "name": "LIBDOM2",
       "type": "varchar(77)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 36
     },
     {
       "name": "LIBELLES_ROME_BONNE_FORMATION",
       "type": "varchar(92)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 37
     },
     {
       "name": "LIBROME_MINUSCULE",
       "type": "varchar(95)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 38
     },
     {
       "name": "Latitude",
       "type": "decimal(15, 13)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 39
     },
     {
       "name": "Longitude",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 40
     },
     {
       "name": "NB_DE_PE",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 41
     },
     {
       "name": "NB_ETS",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 42
     },
     {
       "name": "NOM_PAGES_JAUNES",
       "type": "varchar(33)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 43
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 44
     },
     {
       "name": "REG_LIB",
       "type": "varchar(27)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 45
     },
     {
       "name": "RENSEIGNE",
       "type": "varchar(1)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 46
     },
     {
       "name": "REPERE1 (copie)",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 47
     },
     {
       "name": "ROME",
       "type": "varchar(5)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 48
     },
     {
       "name": "ROME_LIB",
       "type": "varchar(95)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 49
     },
     {
       "name": "SALAIRE_BRUT",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 50
     },
     {
       "name": "SALAIRE_VF",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 51
     },
     {
       "name": "TK_SIRET",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 52
     },
     {
       "name": "UIMM_FAMILLES",
       "type": "varchar(38)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 53
     },
     {
       "name": "ZE2010",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 54
     },
     {
       "name": "ZE2010_LIB",
       "type": "varchar(35)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 55
     },
     {
       "name": "Calculation_490892384732147714",
       "type": "varchar(46)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 56
     }
   ]
 }

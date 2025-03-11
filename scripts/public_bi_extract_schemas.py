@@ -1,6 +1,8 @@
 import os
+import shutil
 import subprocess
 import json
+import yaml
 import re
 
 
@@ -39,12 +41,14 @@ def extract_field_info(line):
     return None
 
 
-# Step 4: Convert the SQL table definition to JSON
-def convert_sql_to_json(sql_text):
+# Step 4: Convert the SQL table definition to JSON and YAML
+def convert_sql_to_json_and_yaml(sql_text):
     lines = sql_text.splitlines()
     columns = []
     inside_create_table = False
     table_name = None
+
+    column_index = 0  # Initialize column index
 
     for line in lines:
         # Start capturing when we hit CREATE TABLE
@@ -63,42 +67,105 @@ def convert_sql_to_json(sql_text):
         if inside_create_table:
             field_info = extract_field_info(line)
             if field_info:
+                # Add column index to the field information
+                field_info['index'] = column_index
                 columns.append(field_info)
+                column_index += 1  # Increment the column index
 
     if columns and table_name:
-        return {"table": table_name, "columns": columns}
-    return None
+        json_schema = {"table": table_name, "columns": columns}
+
+        # Convert JSON schema to YAML format
+        yaml_schema = {"columns": [{"name": col["name"], "type": map_sql_to_yaml_type(col["type"])} for col in columns]}
+
+        return json_schema, yaml_schema
+    return None, None
 
 
-# Step 5: Write the JSON schema to the appropriate directory
-def write_json_to_file(json_data, table_name):
-    # Create directory structure: ../public_bi/tables/X/X_1/schema.json
-    base_table_name = table_name.split("_")[0]  # Extract base table name (e.g., "Arade" from "Arade_1")
+# Step 5: Write JSON and YAML schema to the appropriate directory
+def write_schema_files(json_data, yaml_data, table_name):
+    base_table_name = table_name.split("_")[0]
     output_dir = f"../public_bi/tables/{base_table_name}/{table_name}/"
     os.makedirs(output_dir, exist_ok=True)
 
-    # Write JSON to schema.json file
-    output_file = os.path.join(output_dir, "schema.json")
-    with open(output_file, 'w') as json_file:
+    json_output_file = os.path.join(output_dir, "schema.json")
+    yaml_output_file = os.path.join(output_dir, "schema.yaml")
+
+    with open(json_output_file, 'w') as json_file:
         json.dump(json_data, json_file, indent=2)
-    print(f"Written JSON schema to {output_file}")
+    print(f"✅ JSON schema written to {json_output_file}")
+
+    with open(yaml_output_file, 'w') as yaml_file:
+        yaml.dump(yaml_data, yaml_file, default_flow_style=False)
+    print(f"✅ YAML schema written to {yaml_output_file}")
 
 
-# Step 6: Process each SQL file
+# Helper function: Map SQL data types to YAML-friendly types
+def map_sql_to_yaml_type(sql_type):
+    sql_type = sql_type.lower()
+    if "int" in sql_type:
+        return "integer"
+    elif "varchar" in sql_type or "char" in sql_type or "text" in sql_type:
+        return "string"
+    elif "decimal" in sql_type or "double" in sql_type or "float" in sql_type:
+        return "double"
+    elif "timestamp" in sql_type or "date" in sql_type:
+        return "string"
+    else:
+        return "string"  # Default to string
+
+
+# Step 6: Process each SQL file for JSON & YAML
 def process_sql_files(sql_files):
+    schemas = []
     for sql_file in sql_files:
         with open(sql_file, 'r') as f:
             sql_text = f.read()
 
-            # Only process if the SQL starts with "CREATE TABLE"
             if sql_text.strip().upper().startswith("CREATE TABLE"):
-                json_schema = convert_sql_to_json(sql_text)
-                if json_schema:
-                    table_name = json_schema['table']
-                    write_json_to_file(json_schema, table_name)
+                json_schema, yaml_schema = convert_sql_to_json_and_yaml(sql_text)
+                if json_schema and yaml_schema:
+                    schemas.append(json_schema)
+                    write_schema_files(json_schema, yaml_schema, json_schema["table"])
+
+    return schemas
 
 
-# Main function to execute the tasks
+# Step 7: Summarize column types
+def summarize_column_types(schemas):
+    total_columns = 0
+    type_counts = {}
+
+    for json_schema in schemas:
+        table_name = json_schema.get('table', 'UnknownTable')
+        print(f"📌 Table: {table_name}")
+
+        for column in json_schema.get('columns', []):
+            total_columns += 1
+            column_type = column['type'].lower()
+            if column_type not in type_counts:
+                type_counts[column_type] = 0
+            type_counts[column_type] += 1
+
+    print(f"\n🔹 Summary:")
+    print(f"Total columns: {total_columns}")
+
+    for column_type, count in type_counts.items():
+        percentage = (count / total_columns) * 100
+        print(f"{column_type}: {count} ({percentage:.2f}%)")
+
+
+# Step 8: Remove the cloned directory
+def cleanup_directory(clone_dir):
+    if os.path.exists(clone_dir):
+        print(f"Removing cloned directory: {clone_dir}")
+        shutil.rmtree(clone_dir)
+        print("Directory removed successfully.")
+    else:
+        print(f"Directory '{clone_dir}' does not exist. No cleanup required.")
+
+
+# Step 9: Main function
 def main():
     repo_url = "https://github.com/cwida/public_bi_benchmark"
     clone_dir = "./public_bi_benchmark"
@@ -106,12 +173,18 @@ def main():
     # Clone the repository
     clone_repo(repo_url, clone_dir)
 
-    # Find SQL files in the cloned directory that contain "1" in their name
+    # Find SQL files
     sql_files = find_sql_files(clone_dir)
-    print(f"Found {len(sql_files)} SQL files with '1' in their name.")
+    print(f"📂 Found {len(sql_files)} SQL files with '1' in their name.")
 
-    # Process and convert each SQL file to JSON and write it to the desired path
-    process_sql_files(sql_files)
+    # Process SQL files into JSON & YAML
+    schemas = process_sql_files(sql_files)
+
+    # Summarize column types
+    summarize_column_types(schemas)
+
+    # Remove the cloned directory
+    cleanup_directory(clone_dir)
 
 
 if __name__ == "__main__":

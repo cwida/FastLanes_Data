@@ -4,62 +4,74 @@
     {
       "name": "F1",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "caption",
       "type": "varchar(8160)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 2
     },
     {
       "name": "created_time",
       "type": "integer",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 3
     },
     {
       "name": "id",
       "type": "varchar(55)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 4
     },
     {
       "name": "lat",
       "type": "decimal(18, 15)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "link",
       "type": "varchar(40)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "lng",
       "type": "double",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 7
     },
     {
       "name": "location",
       "type": "varchar(213)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 8
     },
     {
       "name": "tags",
       "type": "varchar(950)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 9
     },
     {
       "name": "term",
       "type": "varchar(12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 10
     },
     {
       "name": "user",
       "type": "bigint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 11
     }
   ]
 }

@@ -4,137 +4,164 @@
     {
       "name": "AGRUPADOR",
       "type": "varchar(55)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "A\u00f1o Ingreso",
       "type": "varchar(4)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "CLASE",
       "type": "varchar(13)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "COD DELITO",
       "type": "double",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 3
     },
     {
       "name": "COD. REGI\u00d3N",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "COMUNA",
       "type": "varchar(19)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 5
     },
     {
       "name": "CORTE",
       "type": "varchar(17)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 6
     },
     {
       "name": "CREA RUC",
       "type": "varchar(9)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 7
     },
     {
       "name": "Calculation_0520821013255406",
       "type": "varchar(55)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 8
     },
     {
       "name": "Calculation_0640821194248948",
       "type": "varchar(55)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 9
     },
     {
       "name": "Calculation_7430825124450529",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 10
     },
     {
       "name": "Cod. Tribunal",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 11
     },
     {
       "name": "DELITO",
       "type": "varchar(64)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "Forma Inicio",
       "type": "varchar(25)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 13
     },
     {
       "name": "INGRESOS",
       "type": "decimal(4, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 14
     },
     {
       "name": "Ingresos _ Garantia (copy)",
       "type": "decimal(3, 0)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "Jurisdicci\u00f3n",
       "type": "varchar(9)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 16
     },
     {
       "name": "LATITUD",
       "type": "varchar(19)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 17
     },
     {
       "name": "LONGITUD",
       "type": "varchar(19)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "Mes Ingreso",
       "type": "varchar(7)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 20
     },
     {
       "name": "PA\u00cdS",
       "type": "varchar(5)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 21
     },
     {
       "name": "REGI\u00d3N",
       "type": "varchar(53)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 22
     },
     {
       "name": "RPA",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 23
     },
     {
       "name": "TIPO",
       "type": "varchar(9)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 24
     },
     {
       "name": "TIP_TRIB",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 25
     },
     {
       "name": "TRIBUNAL",
       "type": "varchar(30)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 26
     }
   ]
 }

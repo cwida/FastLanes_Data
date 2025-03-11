@@ -4,152 +4,182 @@
     {
       "name": "BEGIN_PUB_DATE",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 0
     },
     {
       "name": "BIB_FORMAT",
       "type": "varchar(2)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 1
     },
     {
       "name": "BIB_ID",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 2
     },
     {
       "name": "CALL_NO_TYPE",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 3
     },
     {
       "name": "CHARGE_DATE",
       "type": "timestamp",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 4
     },
     {
       "name": "CLASS_BROAD",
       "type": "varchar(51)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 5
     },
     {
       "name": "CLASS_GROUP",
       "type": "varchar(15)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 6
     },
     {
       "name": "CLASS_LETTER",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 7
     },
     {
       "name": "CLASS_NARROW",
       "type": "varchar(99)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 8
     },
     {
       "name": "DATE",
       "type": "varchar(4)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 9
     },
     {
       "name": "DATE_RANGE_CENTURY",
       "type": "varchar(9)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 10
     },
     {
       "name": "DATE_RANGE_DECADE",
       "type": "varchar(9)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 11
     },
     {
       "name": "DISCHARGE_DATE",
       "type": "timestamp",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 12
     },
     {
       "name": "ID",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 13
     },
     {
       "name": "ID1",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 14
     },
     {
       "name": "LANGUAGE",
       "type": "varchar(3)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 15
     },
     {
       "name": "LC_BROAD",
       "type": "varchar(1)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 16
     },
     {
       "name": "LC_NARROW",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 17
     },
     {
       "name": "MFHD_ID",
       "type": "integer",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 18
     },
     {
       "name": "Number of Records",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 19
     },
     {
       "name": "PATRON_GROUP_CODE",
       "type": "varchar(9)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 20
     },
     {
       "name": "PATRON_GROUP_DISPLAY",
       "type": "varchar(35)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 21
     },
     {
       "name": "PATRON_GROUP_ID",
       "type": "smallint",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 22
     },
     {
       "name": "PATRON_GROUP_ID1",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 23
     },
     {
       "name": "PATRON_GROUP_NAME",
       "type": "varchar(23)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 24
     },
     {
       "name": "PATRON_TYPE (Pseudo vs Patron)",
       "type": "varchar(12)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 25
     },
     {
       "name": "PLACE_CODE",
       "type": "varchar(3)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 26
     },
     {
       "name": "Patron Group",
       "type": "varchar(16)",
-      "nullability": "NULL"
+      "nullability": "NULL",
+      "index": 27
     },
     {
       "name": "RENEWAL_COUNT",
       "type": "smallint",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 28
     },
     {
       "name": "Calculation_1810108111146429",
       "type": "varchar(51)",
-      "nullability": "NOT NULL"
+      "nullability": "NOT NULL",
+      "index": 29
     }
   ]
 }
