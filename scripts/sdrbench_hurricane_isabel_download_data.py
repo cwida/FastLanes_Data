@@ -67,7 +67,7 @@ def main():
     df = df[sorted(df.columns)]
 
     # Define the output directory (sdrbench/Hurricane_ISABEL) and ensure it exists
-    output_dir = Path("sdrbench/Hurricane_ISABEL")
+    output_dir = Path("../sdrbench/Hurricane_ISABEL")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_csv = output_dir / "output.csv"
 
