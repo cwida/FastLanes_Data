@@ -66,13 +66,13 @@ def main():
     df = pd.DataFrame(data)
     df = df[sorted(df.columns)]
 
-    # Define the output directory (sdrbench/Hurricane_ISABEL) and ensure it exists
+    # Define the output directory (../sdrbench/Hurricane_ISABEL) and ensure it exists
     output_dir = Path("../sdrbench/Hurricane_ISABEL")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_csv = output_dir / "output.csv"
 
-    # Write the DataFrame to a CSV file
-    df.to_csv(output_csv, index=False)
+    # Write the DataFrame to a CSV file without header row
+    df.to_csv(output_csv, index=False, header=False)
     print(f"CSV file written to {output_csv}")
 
     # Step 5: Generate a JSON schema file capturing the column names and types
