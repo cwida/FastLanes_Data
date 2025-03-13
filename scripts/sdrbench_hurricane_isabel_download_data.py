@@ -71,8 +71,8 @@ def main():
     output_dir.mkdir(parents=True, exist_ok=True)
     output_csv = output_dir / "output.csv"
 
-    # Write the DataFrame to a CSV file without header row
-    df.to_csv(output_csv, index=False, header=False)
+    # Write the DataFrame to a CSV file without a header row, using "|" as the delimiter
+    df.to_csv(output_csv, index=False, header=False, sep="|")
     print(f"CSV file written to {output_csv}")
 
     # Step 5: Generate a JSON schema file capturing the column names and types
