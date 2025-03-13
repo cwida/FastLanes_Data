@@ -1,0 +1,125 @@
+{
+  "table": "Bimbo_1",
+  "columns": [
+    {
+      "name": "CLOUDf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 0
+    },
+    {
+      "name": "CLOUDf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 1
+    },
+    {
+      "name": "PRECIPf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 2
+    },
+    {
+      "name": "PRECIPf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 3
+    },
+    {
+      "name": "Pf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 4
+    },
+    {
+      "name": "QCLOUDf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 5
+    },
+    {
+      "name": "QCLOUDf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 6
+    },
+    {
+      "name": "QGRAUPf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 7
+    },
+    {
+      "name": "QGRAUPf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 8
+    },
+    {
+      "name": "QICEf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 9
+    },
+    {
+      "name": "QICEf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 10
+    },
+    {
+      "name": "QRAINf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 11
+    },
+    {
+      "name": "QRAINf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 12
+    },
+    {
+      "name": "QSNOWf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 13
+    },
+    {
+      "name": "QSNOWf48.log10.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 14
+    },
+    {
+      "name": "QVAPORf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 15
+    },
+    {
+      "name": "TCf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 16
+    },
+    {
+      "name": "Uf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 17
+    },
+    {
+      "name": "Vf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 18
+    },
+    {
+      "name": "Wf48.bin.f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 19
+    }
+  ]
+}
