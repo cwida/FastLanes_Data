@@ -1,0 +1,203 @@
+{
+  "table": "CombinedData",
+  "columns": [
+    {
+      "name": "HPC_TS_OBS_acs_wht_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 0
+    },
+    {
+      "name": "HPC_TS_OBS_astro_mhd_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 1
+    },
+    {
+      "name": "HPC_TS_OBS_astro_pt_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 2
+    },
+    {
+      "name": "HPC_TS_OBS_citytemp_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 3
+    },
+    {
+      "name": "HPC_TS_OBS_g24_78_usb2_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 4
+    },
+    {
+      "name": "HPC_TS_OBS_h3d_temp_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 5
+    },
+    {
+      "name": "HPC_TS_OBS_hdr_night_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 6
+    },
+    {
+      "name": "HPC_TS_OBS_hdr_palermo_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 7
+    },
+    {
+      "name": "HPC_TS_OBS_hst_wfc3_ir_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 8
+    },
+    {
+      "name": "HPC_TS_OBS_hst_wfc3_uvis_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 9
+    },
+    {
+      "name": "HPC_TS_OBS_jane_street_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 10
+    },
+    {
+      "name": "HPC_TS_OBS_jw_mirimage_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 11
+    },
+    {
+      "name": "HPC_TS_OBS_miranda3d_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 12
+    },
+    {
+      "name": "HPC_TS_OBS_msg_bt_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 13
+    },
+    {
+      "name": "HPC_TS_OBS_num_brain_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 14
+    },
+    {
+      "name": "HPC_TS_OBS_num_control_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 15
+    },
+    {
+      "name": "HPC_TS_OBS_nyc_taxi2015_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 16
+    },
+    {
+      "name": "HPC_TS_OBS_phone_gyro_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 17
+    },
+    {
+      "name": "HPC_TS_OBS_rsim_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 18
+    },
+    {
+      "name": "HPC_TS_OBS_solar_wind_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 19
+    },
+    {
+      "name": "HPC_TS_OBS_spain_gas_price_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 20
+    },
+    {
+      "name": "HPC_TS_OBS_spitzer_irac_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 21
+    },
+    {
+      "name": "HPC_TS_OBS_ts_gas_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 22
+    },
+    {
+      "name": "HPC_TS_OBS_turbulence_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 23
+    },
+    {
+      "name": "HPC_TS_OBS_wave_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 24
+    },
+    {
+      "name": "HPC_TS_OBS_wesad_chest_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 25
+    },
+    {
+      "name": "DB_tpcds_catalog_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 26
+    },
+    {
+      "name": "DB_tpcds_store_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 27
+    },
+    {
+      "name": "DB_tpcds_web_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 28
+    },
+    {
+      "name": "DB_tpch_lineitem_f32",
+      "type": "float",
+      "nullability": "NOT NULL",
+      "index": 29
+    },
+    {
+      "name": "DB_tpch_order_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 30
+    },
+    {
+      "name": "DB_tpcxbb_store_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 31
+    },
+    {
+      "name": "DB_tpcxbb_web_f64",
+      "type": "double",
+      "nullability": "NOT NULL",
+      "index": 32
+    }
+  ]
+}
