@@ -1,52 +1,74 @@
 import os
 import gdown
+import subprocess
+import numpy as np
 
-def download_file(file_id, file_name, output_dir):
+def download_folder(folder_url, output_dir):
     """
-    Downloads a single file from Google Drive using its file ID if it doesn't exist already.
+    Downloads an entire folder from Google Drive using gdown's command-line interface.
 
     Parameters:
-    - file_id: The file's unique Google Drive ID.
-    - file_name: The name under which the file will be saved.
-    - output_dir: Local directory to save the file.
+    - folder_url: URL of the Google Drive folder.
+    - output_dir: Local directory where the folder will be saved.
     """
-    # Ensure the output directory exists
+    os.makedirs(output_dir, exist_ok=True)
+    command = ["gdown", folder_url, "--folder", "-O", output_dir]
+    print(f"Downloading folder from {folder_url} to {output_dir}...")
+    subprocess.run(command, check=True)
+    print("Folder download completed.\n")
+
+def process_binary_files(input_dir, output_dir):
+    """
+    Reads each binary file in the input directory and saves the first 64*1024 values
+    to a CSV file. The file type is determined by its name:
+      - Files with '_f32' are interpreted as 32-bit floats.
+      - Files with '_f64' are interpreted as 64-bit floats.
+
+    Parameters:
+    - input_dir: Directory containing the binary files.
+    - output_dir: Directory to store the CSV output files.
+    """
     os.makedirs(output_dir, exist_ok=True)
 
-    # Construct the output file path
-    output_path = os.path.join(output_dir, file_name)
+    for file_name in os.listdir(input_dir):
+        # Determine data type from the filename
+        if "_f32" in file_name:
+            dtype = np.float32
+        elif "_f64" in file_name:
+            dtype = np.float64
+        else:
+            print(f"Skipping {file_name}: unrecognized file type.")
+            continue
 
-    # Check if file already exists
-    if os.path.exists(output_path):
-        print(f"File '{file_name}' already exists in {output_dir}. Skipping download.\n")
-        return
+        input_file = os.path.join(input_dir, file_name)
 
-    # Construct the download URL
-    url = f"https://drive.google.com/uc?id={file_id}"
+        # Read the first 64*1024 (65536) values from the binary file
+        try:
+            data = np.fromfile(input_file, dtype=dtype, count=64 * 1024)
+        except Exception as e:
+            print(f"Error reading {file_name}: {e}")
+            continue
 
-    print(f"Downloading '{file_name}' from {url} to {output_path}...")
-    # Download the file
-    gdown.download(url, output_path, quiet=False)
-    print(f"Download of '{file_name}' completed.\n")
+        # Generate the output CSV file name
+        base_name, _ = os.path.splitext(file_name)
+        output_file = os.path.join(output_dir, base_name + ".csv")
+
+        # Save data to CSV (each value separated by a comma)
+        np.savetxt(output_file, data, delimiter=",", fmt="%f")
+        print(f"Saved first 64*1024 values from {file_name} to {output_file}")
 
 if __name__ == "__main__":
-    # Dictionary of HPC files with their corresponding Google Drive file IDs
-    hpc_files = {
-        "msg-bt": "15S7iTr_Yoo6oVv5TOemah0wP1K7VX5R1",
-        "num-brain": "1D2WEJonO3GWQwAQxSokO6Pn4kffalhCy",
-        "num-control": "13Lpx_S0W4K5hBMOvyW61PFUOv9BXGOMN",
-        "rsim": "1C6opL2ZyJyU4074uc9T9eJBnyTvhW16-",
-        "astro-mhd": "1gp2pUEtr8FP3g7hbu4EhDYtTyg2eVoBr",
-        "astro-pt": "1ZI6h-8OOW2h7DG9L4P9tIGrUo_KBMH2R",
-        "miranda3d": "1jTCH1i_1w_zGvfBydT1Ac-kJK-H4DZHS",
-        "turbulance": "11MNFi9pGpU9IDw1QSZrA-y2oY5xPNyzs",
-        "wave": "1jokNzOoEHOrXpCw8glhGzA_1lJxedKx2",
-        "hurricane": "1h48gO2JNCNWMVaEPsIHPBkNllgtHDzcf"
-    }
+    # Recommendation: We recommend using gdown to download large files from Google Drive.
+    # Install it with: pip install gdown
 
-    # Set the output directory for HPC files
-    output_directory = "Hpc"
+    # Step 1: Download the HPC, TS, and OBS datasets folder if it doesn't exist.
+    folder_url = "https://drive.google.com/drive/folders/1jdnzwvT1hya8XYdEJ7QuqUw3ALbQozc7"
+    input_folder = "HPC_TS_OBS"
+    if not os.path.exists(input_folder):
+        download_folder(folder_url, input_folder)
+    else:
+        print(f"Folder '{input_folder}' already exists. Skipping download.\n")
 
-    # Download each HPC file individually if it doesn't exist
-    for name, file_id in hpc_files.items():
-        download_file(file_id, name, output_directory)
+    # Step 2: Process the binary files in the downloaded folder.
+    csv_output_folder = "HPC_TS_OBS_csv"
+    process_binary_files(input_folder, csv_output_folder)
