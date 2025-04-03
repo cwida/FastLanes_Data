@@ -57,13 +57,21 @@ def combine_and_save_csv_ordered(hpc_data, db_data, output_csv):
     The HPC/TS/OBS columns (sorted alphabetically) appear first,
     followed by the DB columns (sorted alphabetically).
     Uses the pipe character '|' as the delimiter and does not write any header.
+    Replaces any NaN with "Null".
     """
     hpc_keys = sorted(hpc_data.keys())
     db_keys = sorted(db_data.keys())
     combined_keys = hpc_keys + db_keys
     arrays = [hpc_data[k] for k in hpc_keys] + [db_data[k] for k in db_keys]
     combined = np.column_stack(arrays)
-    np.savetxt(output_csv, combined, delimiter="|", fmt="%f")
+
+    # Replace any NaN with "Null" while converting numbers to strings.
+    combined_str = np.where(np.isnan(combined), "Null", np.char.mod("%f", combined))
+
+    with open(output_csv, "w") as f:
+        for row in combined_str:
+            f.write("|".join(row) + "\n")
+
     print(f"Combined CSV file saved to {output_csv}")
     return combined_keys
 
