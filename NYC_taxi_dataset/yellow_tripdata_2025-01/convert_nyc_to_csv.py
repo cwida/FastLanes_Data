@@ -6,11 +6,14 @@ import sys
 import json
 import subprocess
 
-# Hardcoded file paths
-parquet_file = 'yellow_tripdata_2025-01.parquet'
-csv_file = 'yellow_tripdata_2025-01.csv'
-schema_txt_file = 'yellow_tripdata_2025-01.schema.txt'
-schema_json_file = 'yellow_tripdata_2025-01.schema.json'
+# Base directory is the script's location
+base_dir = os.path.dirname(os.path.abspath(__file__))
+
+# File paths relative to the script directory
+parquet_file = os.path.join(base_dir, 'yellow_tripdata_2025-01.parquet')
+csv_file = os.path.join(base_dir, 'yellow_tripdata_2025-01.csv')
+schema_txt_file = os.path.join(base_dir, 'yellow_tripdata_2025-01.schema.txt')
+schema_json_file = os.path.join(base_dir, 'schema.json')  # <- as requested
 
 def save_schema(parquet_file, txt_file, json_file):
     try:
@@ -51,7 +54,6 @@ def convert_parquet_to_csv(parquet_file, csv_file):
         """)
         print(f"✅ Wrote first 65536 rows of '{parquet_file}' to '{csv_file}' (no header)")
 
-        # Run wc -l to count lines
         result = subprocess.run(['wc', '-l', csv_file], capture_output=True, text=True)
         print(f"📏 Line count: {result.stdout.strip()}")
 
