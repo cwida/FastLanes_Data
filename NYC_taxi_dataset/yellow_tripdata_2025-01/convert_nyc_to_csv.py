@@ -50,9 +50,9 @@ def convert_parquet_to_csv(parquet_file, csv_file):
                 SELECT * FROM read_parquet('{parquet_file}') LIMIT 65536
             )
             TO '{csv_file}'
-            WITH (HEADER FALSE, DELIMITER ',');
+            WITH (HEADER FALSE, DELIMITER '|');
         """)
-        print(f"✅ Wrote first 65536 rows of '{parquet_file}' to '{csv_file}' (no header)")
+        print(f"✅ Wrote first 65536 rows of '{parquet_file}' to '{csv_file}' (no header, pipe-delimited)")
 
         result = subprocess.run(['wc', '-l', csv_file], capture_output=True, text=True)
         print(f"📏 Line count: {result.stdout.strip()}")
