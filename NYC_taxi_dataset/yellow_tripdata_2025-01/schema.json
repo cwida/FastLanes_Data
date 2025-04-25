@@ -1,0 +1,80 @@
+{
+  "columns": [
+    {
+      "name": "VendorID",
+      "type": "INTEGER"
+    },
+    {
+      "name": "tpep_pickup_datetime",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "tpep_dropoff_datetime",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "passenger_count",
+      "type": "BIGINT"
+    },
+    {
+      "name": "trip_distance",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "RatecodeID",
+      "type": "BIGINT"
+    },
+    {
+      "name": "store_and_fwd_flag",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "PULocationID",
+      "type": "INTEGER"
+    },
+    {
+      "name": "DOLocationID",
+      "type": "INTEGER"
+    },
+    {
+      "name": "payment_type",
+      "type": "BIGINT"
+    },
+    {
+      "name": "fare_amount",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "extra",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "mta_tax",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "tip_amount",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "tolls_amount",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "improvement_surcharge",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "total_amount",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "congestion_surcharge",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "Airport_fee",
+      "type": "DOUBLE"
+    }
+  ]
+}
