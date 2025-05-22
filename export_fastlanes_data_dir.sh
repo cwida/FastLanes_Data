@@ -1,39 +1,79 @@
 #!/usr/bin/env bash
-# export_fastlanes_data_dir.sh — export FASTLANES_DATA_DIR for local FastLanes_Data usage
+# install_fastlanes_env.sh
+# ─────────────────────────────────────────────────────────────
+# Sets FASTLANES_DATA_DIR for:
+#   • this shell
+#   • every future shell (bash/zsh)
+#   • all GUI apps (via LaunchAgent) – e.g. CLion
+# ─────────────────────────────────────────────────────────────
 
-# Resolve this script’s directory
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+set -euo pipefail
 
-# Figure out the “default” FastLanes_Data path:
-#  • if there's a ./data subfolder, assume SCRIPT_DIR is your FastLanes root
-#    and data lives in SCRIPT_DIR/data
-#  • otherwise assume SCRIPT_DIR *is* the FastLanes_Data clone itself
-if [ -d "${SCRIPT_DIR}/data" ]; then
-    DEFAULT_DIR="${SCRIPT_DIR}/data"
-else
-    DEFAULT_DIR="${SCRIPT_DIR}"
+# 0) Hard-coded canonical path to your FastLanes_Data clone
+DATA_DIR="$HOME/CLionProjects/FastLanes_Data"
+if [[ ! -d "$DATA_DIR" ]]; then
+  echo "❌  Expected FastLanes_Data at: $DATA_DIR" >&2
+  echo "    Clone or move the repo there, then rerun this installer." >&2
+  exit 1
 fi
 
-# Let the user override by pre-setting FASTLANES_DATA_DIR, otherwise pick DEFAULT_DIR
-DATA_DIR="${FASTLANES_DATA_DIR:-$DEFAULT_DIR}"
+# 1) Export for **this** shell so you can build immediately
+export FASTLANES_DATA_DIR="$DATA_DIR"
+echo "FASTLANES_DATA_DIR set for current shell → $FASTLANES_DATA_DIR"
 
-# If it still doesn’t exist, bail with actionable error
-if [ ! -d "${DATA_DIR}" ]; then
-    cat <<EOF >&2
-Error: directory '${DATA_DIR}' not found.
+# 2) Install a silent helper into ~/.local/bin and source it from rc files
+HELPER_DIR="$HOME/.local/bin"
+HELPER_PATH="$HELPER_DIR/export_fastlanes_data_dir.sh"
+mkdir -p "$HELPER_DIR"
 
-Options:
-  1) Clone FastLanes_Data into the expected place:
-       git clone https://github.com/cwida/FastLanes_Data.git ${SCRIPT_DIR}/data
-  2) Or point to any other copy by doing:
-       export FASTLANES_DATA_DIR=/path/to/your/FastLanes_Data
+cat >"$HELPER_PATH" <<'EOSH'
+#!/usr/bin/env bash
+# silent helper – just export the var if not already
+FASTLANES_DATA_DIR_DEFAULT="$HOME/CLionProjects/FastLanes_Data"
+export FASTLANES_DATA_DIR="${FASTLANES_DATA_DIR:-$FASTLANES_DATA_DIR_DEFAULT}"
+EOSH
+chmod +x "$HELPER_PATH"
 
-Then re-run:
-    source export_fastlanes_data_dir.sh
+add_source_line() {
+  local rcfile="$1"
+  local marker="# >>> FastLanes_Data export >>>"
+  local line="source \"$HELPER_PATH\" >/dev/null 2>&1"
+  if ! grep -Fq "$marker" "$rcfile" 2>/dev/null; then
+    printf "\n%s\n%s\n# <<< FastLanes_Data export <<<\n" "$marker" "$line" >>"$rcfile"
+    echo "✓ Added helper source to $rcfile"
+  fi
+}
+
+# Pick the correct rc file
+case "${SHELL##*/}" in
+  zsh)  RC_FILE="$HOME/.zshrc" ;;
+  bash) RC_FILE="${HOME}/.bash_profile"; [[ -f "$HOME/.bashrc" ]] && RC_FILE="$HOME/.bashrc" ;;
+  *)    RC_FILE="$HOME/.profile" ;;
+esac
+add_source_line "$RC_FILE"
+
+# 3) Create a LaunchAgent so GUI apps inherit the var at login
+PLIST="$HOME/Library/LaunchAgents/com.fastlanes.setenv.plist"
+cat >"$PLIST" <<EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>            <string>com.fastlanes.setenv</string>
+  <key>ProgramArguments</key> <array>
+                                <string>launchctl</string>
+                                <string>setenv</string>
+                                <string>FASTLANES_DATA_DIR</string>
+                                <string>$DATA_DIR</string>
+                              </array>
+  <key>RunAtLoad</key>        <true/>
+</dict>
+</plist>
 EOF
-    return 1
-fi
 
-# Export & confirm
-export FASTLANES_DATA_DIR="${DATA_DIR}"
-echo "FASTLANES_DATA_DIR set to '${FASTLANES_DATA_DIR}'"
+# Load (or reload) the agent right away
+launchctl unload "$PLIST" 2>/dev/null || true
+launchctl load  "$PLIST"
+echo "✓ LaunchAgent installed & loaded (GUI apps will now see FASTLANES_DATA_DIR)"
+
+echo -e "\n✅  Done.  Log out and back in once (or reboot) so CLion started from the Dock inherits the variable."
