@@ -35,3 +35,41 @@ clean:
 	rm -rf $(VENV_DIR)
 	rm -rf ./public_bi_benchmark
 	rm -rf ../public_bi/tables
+
+# ────────────────────────────────────────────────────────────────
+# Makefile for FastLanes (with FASTLANES_DATA_DIR setup)
+# ────────────────────────────────────────────────────────────────
+
+# Path to the helper script
+ENV_SCRIPT := ./export_fastlanes_data_dir.sh
+
+# Build directory
+BUILD_DIR := build
+
+# Default target
+.PHONY: all
+all: configure build
+
+# Source env script so FASTLANES_DATA_DIR is set for later targets
+# Note: each make recipe runs in its own shell, so we re-source in each.
+.PHONY: env
+env:
+	@. $(ENV_SCRIPT)
+
+# Run CMake configure
+.PHONY: configure
+configure: env
+	@echo "Configuring in $(BUILD_DIR)..."
+	@cmake -B $(BUILD_DIR)
+
+# Build the project
+.PHONY: build
+build: env
+	@echo "Building in $(BUILD_DIR)..."
+	@cmake --build $(BUILD_DIR)
+
+# Clean out the build directory
+.PHONY: clean
+clean:
+	@echo "Removing $(BUILD_DIR)..."
+	@rm -rf $(BUILD_DIR)
