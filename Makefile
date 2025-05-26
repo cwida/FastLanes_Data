@@ -1,75 +1,39 @@
-# Variables
 PYTHON := python3
 SCRIPT := public_bi_extract_schemas.py
 VENV_DIR := venv
+ENV_SCRIPT := export_fastlanes_data_dir.sh
 
-# Targets
-.PHONY: all clean get_public_bi_schemas install
+.PHONY: all env install get_public_bi_schemas clean
 
-# Default target: install and run the script
-all: install get_public_bi_schemas
+# Default: load env, create venv, and run schema extraction
+all: env install get_public_bi_schemas
 
-# Set up the virtual environment
+# Load FASTLANES_DATA_DIR and other env vars
+env:
+	@echo "Loading environment variables..."
+	. $(ENV_SCRIPT)
+
+# Set up and activate virtual environment
 install: $(VENV_DIR)
 
 $(VENV_DIR):
 	@echo "Creating virtual environment..."
 	$(PYTHON) -m venv $(VENV_DIR)
-	@echo "Activating virtual environment and upgrading pip..."
+	@echo "Upgrading pip..."
 	. $(VENV_DIR)/bin/activate && pip install --upgrade pip
+	@echo "Installing required Python packages..."
+	. $(VENV_DIR)/bin/activate && pip install pyyaml
 	@if [ -f requirements.txt ]; then \
-	    echo "Installing dependencies from requirements.txt..."; \
-	    . $(VENV_DIR)/bin/activate && pip install -r requirements.txt; \
-	else \
-	    echo "No requirements.txt found. Skipping dependency installation."; \
+		echo "Installing dependencies from requirements.txt..."; \
+		. $(VENV_DIR)/bin/activate && pip install -r requirements.txt; \
 	fi
 
-# Run the Python script from the scripts directory
-get_public_bi_schemas: $(VENV_DIR)
-	@echo "Running the Python script from the scripts directory..."
+# Run the BI schema extraction script
+get_public_bi_schemas: install env
+	@echo "Extracting public BI schemas..."
 	cd scripts && . ../$(VENV_DIR)/bin/activate && $(PYTHON) $(SCRIPT)
 
-# Clean up generated files and directories
+# Clean up generated files and virtual environment
 clean:
 	@echo "Cleaning up..."
-	rm -rf $(VENV_DIR)
-	rm -rf ./public_bi_benchmark
-	rm -rf ../public_bi/tables
-
-# ────────────────────────────────────────────────────────────────
-# Makefile for FastLanes (with FASTLANES_DATA_DIR setup)
-# ────────────────────────────────────────────────────────────────
-
-# Path to the helper script
-ENV_SCRIPT := ./export_fastlanes_data_dir.sh
-
-# Build directory
-BUILD_DIR := build
-
-# Default target
-.PHONY: all
-all: configure build
-
-# Source env script so FASTLANES_DATA_DIR is set for later targets
-# Note: each make recipe runs in its own shell, so we re-source in each.
-.PHONY: env
-env:
-	@. $(ENV_SCRIPT)
-
-# Run CMake configure
-.PHONY: configure
-configure: env
-	@echo "Configuring in $(BUILD_DIR)..."
-	@cmake -B $(BUILD_DIR)
-
-# Build the project
-.PHONY: build
-build: env
-	@echo "Building in $(BUILD_DIR)..."
-	@cmake --build $(BUILD_DIR)
-
-# Clean out the build directory
-.PHONY: clean
-clean:
-	@echo "Removing $(BUILD_DIR)..."
-	@rm -rf $(BUILD_DIR)
+	rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables
