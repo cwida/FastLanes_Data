@@ -41,6 +41,21 @@ def extract_field_info(line):
     return None
 
 
+# Helper function: Map SQL data types to YAML-friendly types
+def map_sql_to_yaml_type(sql_type):
+    sql_type = sql_type.lower()
+    if "int" in sql_type:
+        return "integer"
+    elif "varchar" in sql_type or "char" in sql_type or "text" in sql_type:
+        return "string"
+    elif "decimal" in sql_type or "double" in sql_type or "float" in sql_type:
+        return "double"
+    elif "timestamp" in sql_type or "date" in sql_type:
+        return "string"
+    else:
+        return "string"  # Default to string
+
+
 # Step 4: Convert the SQL table definition to JSON and YAML
 def convert_sql_to_json_and_yaml(sql_text):
     lines = sql_text.splitlines()
@@ -82,7 +97,7 @@ def convert_sql_to_json_and_yaml(sql_text):
     return None, None
 
 
-# Step 5: Write JSON and YAML schema to the appropriate directory
+# Step 5: Write JSON and YAML schema to the appropriate directory, using CRLF line endings
 def write_schema_files(json_data, yaml_data, table_name):
     base_table_name = table_name.split("_")[0]
     output_dir = f"../public_bi/tables/{base_table_name}/{table_name}/"
@@ -91,28 +106,14 @@ def write_schema_files(json_data, yaml_data, table_name):
     json_output_file = os.path.join(output_dir, "schema.json")
     yaml_output_file = os.path.join(output_dir, "schema.yaml")
 
-    with open(json_output_file, 'w') as json_file:
+    # Open with newline='\r\n' so that every '\n' in your data is written as CRLF
+    with open(json_output_file, 'w', newline='\r\n', encoding='utf-8') as json_file:
         json.dump(json_data, json_file, indent=2)
-    print(f"✅ JSON schema written to {json_output_file}")
+    print(f"✅ JSON schema written to {json_output_file} (CRLF endings)")
 
-    with open(yaml_output_file, 'w') as yaml_file:
+    with open(yaml_output_file, 'w', newline='\r\n', encoding='utf-8') as yaml_file:
         yaml.dump(yaml_data, yaml_file, default_flow_style=False)
-    print(f"✅ YAML schema written to {yaml_output_file}")
-
-
-# Helper function: Map SQL data types to YAML-friendly types
-def map_sql_to_yaml_type(sql_type):
-    sql_type = sql_type.lower()
-    if "int" in sql_type:
-        return "integer"
-    elif "varchar" in sql_type or "char" in sql_type or "text" in sql_type:
-        return "string"
-    elif "decimal" in sql_type or "double" in sql_type or "float" in sql_type:
-        return "double"
-    elif "timestamp" in sql_type or "date" in sql_type:
-        return "string"
-    else:
-        return "string"  # Default to string
+    print(f"✅ YAML schema written to {yaml_output_file} (CRLF endings)")
 
 
 # Step 6: Process each SQL file for JSON & YAML
