@@ -106,12 +106,12 @@ def write_schema_files(json_data, yaml_data, table_name):
     json_output_file = os.path.join(output_dir, "schema.json")
     yaml_output_file = os.path.join(output_dir, "schema.yaml")
 
-    # Open with newline='\r\n' so that every '\n' in your data is written as CRLF
-    with open(json_output_file, 'w', newline='\r\n', encoding='utf-8') as json_file:
+    # Open with newline='\n' so that every '\n' in your data is written as CRLF
+    with open(json_output_file, 'w', newline='\n', encoding='utf-8') as json_file:
         json.dump(json_data, json_file, indent=2)
     print(f"✅ JSON schema written to {json_output_file} (CRLF endings)")
 
-    with open(yaml_output_file, 'w', newline='\r\n', encoding='utf-8') as yaml_file:
+    with open(yaml_output_file, 'w', newline='\n', encoding='utf-8') as yaml_file:
         yaml.dump(yaml_data, yaml_file, default_flow_style=False)
     print(f"✅ YAML schema written to {yaml_output_file} (CRLF endings)")
 
