@@ -1,2 +1,11 @@
-# enforce LF-only line endings for all CSVs
-*.csv text eol=crlf
+# auto-detect text files and normalize them
+*               text=auto
+
+# force LF for everything (even .sh, .js, .py, etc.)
+*               eol=lf
+
+# mark binary files so Git won’t try to change their line endings
+*.png           binary
+*.jpg           binary
+*.zip           binary
+# …add any others your project uses…
