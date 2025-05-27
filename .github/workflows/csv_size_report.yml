@@ -27,6 +27,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y make
 
+      # New step: set FASTLANES_DATA_DIR to repo root
+      - name: Set FASTLANES_DATA_DIR environment variable
+        run: echo "FASTLANES_DATA_DIR=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
+
       - name: Generate CSV size report
         run: make csv_size_report
 
