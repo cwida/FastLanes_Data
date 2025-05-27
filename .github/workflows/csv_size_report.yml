@@ -7,10 +7,16 @@ on:
 jobs:
   report:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
 
     steps:
       - name: Check out repo
         uses: actions/checkout@v3
+
+      - name: Show repository tree (for debugging)
+        run: ls -R .
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
@@ -23,10 +29,11 @@ jobs:
           sudo apt-get install -y make
 
       - name: Make export script executable
-        run: chmod +x ./export_fastlanes_data_dir.sh
+        run: |
+          # adjust this path if your script lives elsewhere
+          chmod +x ./export_fastlanes_data_dir.sh
 
       - name: Generate CSV size report
-        # this will invoke `install` and `env` before `csv_size_report`
         run: make csv_size_report
 
       - name: Show generated CSV
