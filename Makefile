@@ -1,12 +1,13 @@
 # Makefile for FastLanes Data workflows
 
-PYTHON       := python3
-SCRIPT       := public_bi_extract_schemas.py
-VENV_DIR     := venv
-ENV_SCRIPT   := export_fastlanes_data_dir.sh
-REFORMAT     := reformat_csvs.py
+PYTHON              := python3
+SCRIPT              := public_bi_extract_schemas.py
+VENV_DIR            := venv
+ENV_SCRIPT          := export_fastlanes_data_dir.sh
+REFORMAT            := reformat_csvs.py
+CSV_SIZE_REPORT     := csv_size_report.py
 
-.PHONY: all env install get_public_bi_schemas reformat_csvs clean
+.PHONY: all env install get_public_bi_schemas reformat_csvs csv_size_report clean
 
 # Default: load env, create venv, and run schema extraction
 all: env install get_public_bi_schemas
@@ -42,7 +43,15 @@ reformat_csvs: install env
 	. $(VENV_DIR)/bin/activate && \
 		$(PYTHON) scripts/$(REFORMAT) $(FASTLANES_DATA_DIR)/NextiaJD
 
+# --------------------------------------------------------------------
+# New target: run the CSV‐size report script and save to csv_sizes_report.csv
+csv_size_report: install env
+	@echo "Generating CSV size report..."
+	. $(VENV_DIR)/bin/activate && \
+		$(PYTHON) scripts/$(CSV_SIZE_REPORT) > csv_sizes_report.csv
+	@echo "→ csv_sizes_report.csv created."
+
 # Clean up generated files and virtual environment
 clean:
 	@echo "Cleaning up..."
-	rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables
+	rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv

@@ -1,0 +1,40 @@
+name: CSV Size Report
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install make
+        run: sudo apt-get update && sudo apt-get install -y make
+
+      - name: Make export script executable
+        run: chmod +x ./export_fastlanes_data_dir.sh
+
+      - name: Generate CSV size report
+        # This will invoke `install` and `env` before `csv_size_report`
+        run: make csv_size_report
+
+      - name: Show generated CSV
+        run: |
+          echo "→ csv_sizes_report.csv contents:"
+          cat csv_sizes_report.csv
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: csv-size-report
+          path: csv_sizes_report.csv
