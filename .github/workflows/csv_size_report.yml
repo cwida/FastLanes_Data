@@ -2,8 +2,6 @@ name: CSV Size Report
 
 on:
   push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
