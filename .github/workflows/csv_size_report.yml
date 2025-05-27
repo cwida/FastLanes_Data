@@ -35,7 +35,7 @@ jobs:
           cat csv_sizes_report.csv
 
       - name: Upload report artifact
-        uses: actions/upload-artifact@v2
+        uses: ./.github/actions/upload-artifact
         with:
           name: csv-size-report
           path: csv_sizes_report.csv
