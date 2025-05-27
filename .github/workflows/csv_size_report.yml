@@ -17,20 +17,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug workspace
-        run: |
-          echo "Workspace root: $GITHUB_WORKSPACE"
-          ls -alh $GITHUB_WORKSPACE
-
-      - name: Dump export script
-        run: |
-          echo "---- export_fastlanes_data_dir.sh ----"
-          head -n 20 export_fastlanes_data_dir.sh || true
-          echo "-------------------------------------"
-
-      - name: Make export script executable
-        run: chmod +x export_fastlanes_data_dir.sh
-
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
