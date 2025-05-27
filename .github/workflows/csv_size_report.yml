@@ -40,7 +40,7 @@ jobs:
           cat csv_sizes_report.csv
 
       - name: Upload report artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: csv-size-report
           path: csv_sizes_report.csv
