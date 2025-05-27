@@ -12,11 +12,15 @@ jobs:
         shell: bash
 
     steps:
-      - name: Check out repo
+      - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-      - name: Show repository tree (for debugging)
-        run: ls -R .
+      - name: Debug workspace
+        run: |
+          echo "Workspace contents:"
+          ls -alh .
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
@@ -28,10 +32,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y make
 
-      - name: Make export script executable
+      - name: Ensure export script exists
         run: |
-          # adjust this path if your script lives elsewhere
-          chmod +x ./export_fastlanes_data_dir.sh
+          if [ ! -f export_fastlanes_data_dir.sh ]; then
+            echo "❌ export_fastlanes_data_dir.sh not found!"
+            exit 1
+          fi
+
+      - name: Make export script executable
+        run: chmod +x export_fastlanes_data_dir.sh
 
       - name: Generate CSV size report
         run: make csv_size_report
