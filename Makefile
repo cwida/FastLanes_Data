@@ -1,9 +1,12 @@
-PYTHON := python3
-SCRIPT := public_bi_extract_schemas.py
-VENV_DIR := venv
-ENV_SCRIPT := export_fastlanes_data_dir.sh
+# Makefile for FastLanes Data workflows
 
-.PHONY: all env install get_public_bi_schemas clean
+PYTHON       := python3
+SCRIPT       := public_bi_extract_schemas.py
+VENV_DIR     := venv
+ENV_SCRIPT   := export_fastlanes_data_dir.sh
+REFORMAT     := reformat_csvs.py
+
+.PHONY: all env install get_public_bi_schemas reformat_csvs clean
 
 # Default: load env, create venv, and run schema extraction
 all: env install get_public_bi_schemas
@@ -13,16 +16,16 @@ env:
 	@echo "Loading environment variables..."
 	. $(ENV_SCRIPT)
 
-# Set up and activate virtual environment
-install: $(VENV_DIR)
-
-$(VENV_DIR):
-	@echo "Creating virtual environment..."
-	$(PYTHON) -m venv $(VENV_DIR)
+# Set up (if needed) and install into virtual environment
+install:
+	@if [ ! -d $(VENV_DIR) ]; then \
+		echo "Creating virtual environment..."; \
+		$(PYTHON) -m venv $(VENV_DIR); \
+	fi
 	@echo "Upgrading pip..."
 	. $(VENV_DIR)/bin/activate && pip install --upgrade pip
 	@echo "Installing required Python packages..."
-	. $(VENV_DIR)/bin/activate && pip install pyyaml
+	. $(VENV_DIR)/bin/activate && pip install pyyaml pandas
 	@if [ -f requirements.txt ]; then \
 		echo "Installing dependencies from requirements.txt..."; \
 		. $(VENV_DIR)/bin/activate && pip install -r requirements.txt; \
@@ -32,6 +35,12 @@ $(VENV_DIR):
 get_public_bi_schemas: install env
 	@echo "Extracting public BI schemas..."
 	cd scripts && . ../$(VENV_DIR)/bin/activate && $(PYTHON) $(SCRIPT)
+
+# Re-format all CSV files under NextiaJD
+reformat_csvs: install env
+	@echo "Re-formatting all CSV files under NextiaJD..."
+	. $(VENV_DIR)/bin/activate && \
+		$(PYTHON) scripts/$(REFORMAT) $(FASTLANES_DATA_DIR)/NextiaJD
 
 # Clean up generated files and virtual environment
 clean:
