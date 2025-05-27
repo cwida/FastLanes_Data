@@ -15,7 +15,7 @@ all: env install get_public_bi_schemas
 # Load FASTLANES_DATA_DIR and other env vars
 env:
 	@echo "Loading environment variables..."
-	. $(ENV_SCRIPT)
+	. $(CURDIR)/$(ENV_SCRIPT)
 
 # Set up (if needed) and install into virtual environment
 install:
