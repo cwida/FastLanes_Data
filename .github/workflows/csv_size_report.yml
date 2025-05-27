@@ -27,7 +27,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y make
 
-      # New step: set FASTLANES_DATA_DIR to repo root
+      # Set FASTLANES_DATA_DIR to repo root
       - name: Set FASTLANES_DATA_DIR environment variable
         run: echo "FASTLANES_DATA_DIR=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
 
@@ -40,7 +40,7 @@ jobs:
           cat csv_sizes_report.csv
 
       - name: Upload report artifact
-        uses: ./.github/actions/upload-artifact
+        uses: actions/upload-artifact@v3
         with:
           name: csv-size-report
           path: csv_sizes_report.csv
