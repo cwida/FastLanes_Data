@@ -1,4 +1,3 @@
-# .github/workflows/csv-size-report.yml
 name: CSV Size Report
 
 on:
@@ -20,8 +19,17 @@ jobs:
 
       - name: Debug workspace
         run: |
-          echo "Workspace contents:"
-          ls -alh .
+          echo "Workspace root: $GITHUB_WORKSPACE"
+          ls -alh $GITHUB_WORKSPACE
+
+      - name: Dump export script
+        run: |
+          echo "---- export_fastlanes_data_dir.sh ----"
+          head -n 20 export_fastlanes_data_dir.sh || true
+          echo "-------------------------------------"
+
+      - name: Make export script executable
+        run: chmod +x export_fastlanes_data_dir.sh
 
       - name: Set up Python 3.10
         uses: actions/setup-python@v4
@@ -32,16 +40,6 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y make
-
-      - name: Ensure export script exists
-        run: |
-          if [ ! -f export_fastlanes_data_dir.sh ]; then
-            echo "❌ export_fastlanes_data_dir.sh not found!"
-            exit 1
-          fi
-
-      - name: Make export script executable
-        run: chmod +x export_fastlanes_data_dir.sh
 
       - name: Generate CSV size report
         run: make csv_size_report

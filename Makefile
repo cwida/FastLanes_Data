@@ -1,5 +1,8 @@
 # Makefile for FastLanes Data workflows
 
+# Force all recipes to run under Bash (so "set -o pipefail" works)
+SHELL := /bin/bash
+
 PYTHON              := python3
 SCRIPT              := public_bi_extract_schemas.py
 VENV_DIR            := venv
@@ -14,7 +17,7 @@ all: env install get_public_bi_schemas
 
 # Load FASTLANES_DATA_DIR and other env vars
 env:
-	@echo "Loading environment variables..."
+	@echo "Loading environment variables from $(ENV_SCRIPT)..."
 	. $(CURDIR)/$(ENV_SCRIPT)
 
 # Set up (if needed) and install into virtual environment
