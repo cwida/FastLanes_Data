@@ -10,7 +10,7 @@ ENV_SCRIPT          := export_fastlanes_data_dir.sh
 REFORMAT            := reformat_csvs.py
 CSV_SIZE_REPORT     := csv_size_report.py
 
-.PHONY: all env install get_public_bi_schemas reformat_csvs csv_size_report clean
+.PHONY: all env install get_public_bi_schemas reformat_csvs csv_size_report download_nextiajd clean
 
 # Default: load env, create venv, and run schema extraction
 all: install get_public_bi_schemas
@@ -24,7 +24,7 @@ install:
 	@echo "Upgrading pip..."
 	. $(VENV_DIR)/bin/activate && pip install --upgrade pip
 	@echo "Installing required Python packages..."
-	. $(VENV_DIR)/bin/activate && pip install pyyaml pandas
+	. $(VENV_DIR)/bin/activate && pip install pyyaml pandas beautifulsoup4 requests
 	@if [ -f requirements.txt ]; then \
 		echo "Installing dependencies from requirements.txt..."; \
 		. $(VENV_DIR)/bin/activate && pip install -r requirements.txt; \
@@ -42,7 +42,13 @@ reformat_csvs: install
 		$(PYTHON) scripts/$(REFORMAT) $(FASTLANES_DATA_DIR)/NextiaJD
 
 # --------------------------------------------------------------------
-# New target: run the CSV‐size report script and save to csv_sizes_report.csv
+# New target: download all files from NextiaJD into the local NextiaJD folder
+download_nextiajd: install
+	@echo "Downloading all NextiaJD files into repo/NextiaJD..."
+	. $(VENV_DIR)/bin/activate && \
+		$(PYTHON) NextiaJD/download.py NextiaJD
+
+# Run the CSV‐size report script and save to csv_sizes_report.csv
 csv_size_report: install
 	@echo "Generating CSV size report..."
 	. $(VENV_DIR)/bin/activate && \
@@ -52,4 +58,4 @@ csv_size_report: install
 # Clean up generated files and virtual environment
 clean:
 	@echo "Cleaning up..."
-	rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
+	 rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
