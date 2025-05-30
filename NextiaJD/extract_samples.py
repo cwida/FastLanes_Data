@@ -2,22 +2,22 @@
 """
 extract_samples.py
 
-For each .csv file in NextiaJD/temp/, take the first 64*1024 bytes of data
-(ignoring the header row), re-serialize using '|' as delimiter and '\n' line
-breaks, and write into tables/<csv_name>/<csv_name>.csv.  If the target file
-already exists, it’s skipped.
+For each .csv file in NextiaJD/temp/, take the first N_ROWS of data
+(ignoring the header row), re-serialize using '|' as delimiter and '\n'
+line breaks, and write into tables/<csv_name>/<csv_name>.csv. If the
+target file already exists, it’s skipped.
 
-This version reads the delimiter for each file from temp/metadata.csv.
+This version reads the delimiter for each file from temp/metadata.csv
+and strips out any NUL bytes before parsing, and replaces empty values with 'null'.
 """
 
 import sys
 import csv
-import bz2
 from pathlib import Path
-from io import StringIO
 
-# how many bytes of output to accumulate
-BYTE_LIMIT = 64 * 1024
+# how many data rows (excluding header) to extract
+N_ROWS = 64 * 1024
+
 
 def load_delimiters(metadata_path: Path):
     """Return a dict mapping filename → delimiter (interpreting '\t')."""
@@ -35,9 +35,10 @@ def load_delimiters(metadata_path: Path):
             except Exception:
                 delim = raw
             if delim == '':
-                delim = ','  # default fallback
+                delim = ','  # fallback
             delim_map[fname] = delim
     return delim_map
+
 
 def extract_sample(in_path: Path, out_path: Path, delim: str):
     if out_path.exists():
@@ -45,12 +46,16 @@ def extract_sample(in_path: Path, out_path: Path, delim: str):
         return
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    bytes_written = 0
 
-    with in_path.open(newline='', encoding='utf-8') as src, \
+    with in_path.open('r', newline='', encoding='utf-8', errors='replace') as src, \
             out_path.open('w', newline='', encoding='utf-8') as dst:
 
-        reader = csv.reader(src, delimiter=delim)
+        # Wrap src lines to strip any NUL bytes before parsing:
+        def nul_stripped_lines():
+            for line in src:
+                yield line.replace('\x00', '')
+
+        reader = csv.reader(nul_stripped_lines(), delimiter=delim)
         writer = csv.writer(dst, delimiter='|', lineterminator='\n')
 
         # skip header
@@ -60,25 +65,21 @@ def extract_sample(in_path: Path, out_path: Path, delim: str):
             print(f"-- Warning: {in_path.name} is empty, skipping")
             return
 
+        row_count = 0
         for row in reader:
-            # serialize one row to measure byte length
-            buf = StringIO()
-            tmp = csv.writer(buf, delimiter='|', lineterminator='\n')
-            tmp.writerow(row)
-            row_str = buf.getvalue()
-            row_bytes = row_str.encode('utf-8')
-
-            if bytes_written + len(row_bytes) > BYTE_LIMIT:
+            if row_count >= N_ROWS:
                 break
+            # replace empty fields with 'null'
+            cleaned_row = [cell if cell != '' else 'null' for cell in row]
+            writer.writerow(cleaned_row)
+            row_count += 1
 
-            dst.write(row_str)
-            bytes_written += len(row_bytes)
+    print(f"-- Wrote {row_count} rows to {out_path.relative_to(Path.cwd())}")
 
-    print(f"-- Wrote {bytes_written} bytes to {out_path.relative_to(Path.cwd())}")
 
 def main():
     script_dir = Path(__file__).resolve().parent
-    input_dir  = script_dir / 'temp'
+    input_dir = script_dir / 'temp'
     metadata_path = input_dir / 'metadata.csv'
     output_root = script_dir / 'tables'
 
@@ -95,10 +96,11 @@ def main():
     # process every .csv in temp/
     for csv_file in sorted(input_dir.glob('*.csv')):
         name = csv_file.stem
-        out_dir  = output_root / name
+        out_dir = output_root / name
         out_file = out_dir / f"{name}.csv"
         delim = delim_map.get(csv_file.name, ',')
         extract_sample(csv_file, out_file, delim)
+
 
 if __name__ == '__main__':
     main()
