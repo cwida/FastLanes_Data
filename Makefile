@@ -10,7 +10,7 @@ ENV_SCRIPT          := export_fastlanes_data_dir.sh
 REFORMAT            := reformat_csvs.py
 CSV_SIZE_REPORT     := csv_size_report.py
 
-.PHONY: all env install get_public_bi_schemas reformat_csvs csv_size_report download_nextiajd clean
+.PHONY: all env install get_public_bi_schemas reformat_csvs download_nextiajd check_metadata csv_size_report clean
 
 # Default: load env, create venv, and run schema extraction
 all: install get_public_bi_schemas
@@ -42,11 +42,18 @@ reformat_csvs: install
 		$(PYTHON) scripts/$(REFORMAT) $(FASTLANES_DATA_DIR)/NextiaJD
 
 # --------------------------------------------------------------------
-# New target: download all files from NextiaJD into the local NextiaJD folder
+# Download NextiaJD files into the local NextiaJD/temp folder
 download_nextiajd: install
-	@echo "Downloading all NextiaJD files into repo/NextiaJD..."
+	@echo "Downloading all NextiaJD files..."
 	. $(VENV_DIR)/bin/activate && \
-		$(PYTHON) NextiaJD/download.py NextiaJD
+		$(PYTHON) NextiaJD/download.py
+
+# --------------------------------------------------------------------
+# Verify presence of all files listed in metadata.csv
+check_metadata:
+	@echo "Verifying NextiaJD downloads against metadata..."
+	. $(VENV_DIR)/bin/activate && \
+		$(PYTHON) NextiaJD/check_metadata.py
 
 # Run the CSV‐size report script and save to csv_sizes_report.csv
 csv_size_report: install
@@ -58,4 +65,5 @@ csv_size_report: install
 # Clean up generated files and virtual environment
 clean:
 	@echo "Cleaning up..."
-	 rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
+	rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
+	rm -rf NextiaJD/temp

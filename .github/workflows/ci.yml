@@ -1,3 +1,4 @@
+# .github/workflows/csv_size_report.yml
 name: CSV Size Report
 
 on:
@@ -27,12 +28,14 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y make
 
-      # Set FASTLANES_DATA_DIR to repo root
       - name: Set FASTLANES_DATA_DIR environment variable
         run: echo "FASTLANES_DATA_DIR=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
 
       - name: Download NextiaJD files
         run: make download_nextiajd
+
+      - name: Verify NextiaJD files against metadata
+        run: make check_metadata
 
       - name: Generate CSV size report
         run: make csv_size_report
