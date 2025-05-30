@@ -4,7 +4,7 @@ generate_csv_schemas_duckdb.py
 
 For each tables/<name>/<name>.csv, use DuckDB's read_csv_auto to infer
 column types exactly as DuckDB would, and write tables/<name>/schema.json.
-Skips any table_dir that already contains schema.json.
+Skips any table_dir that already contains schema.json or is named 'metadata'.
 """
 
 import json
@@ -15,15 +15,16 @@ import duckdb
 
 def introspect_csv(csv_path: Path):
     """
-    Returns a list of (column_name, duckdb_type) tuples by running:
-        DESCRIBE SELECT * FROM read_csv_auto(...)
+    Returns DuckDB's DESCRIBE output for read_csv_auto, e.g.:
+      [("col1", "VARCHAR", ...), ("col2", "BIGINT", ...), ...]
+    We’ll only take the first two fields.
     """
     con = duckdb.connect(database=':memory:')
-    # DuckDB will infer the schema for us
-    query = f"DESCRIBE SELECT * FROM read_csv_auto('{csv_path}', delim='|', header=True)"
-    result = con.execute(query).fetchall()
-    # Each row is (column_name, column_type)
-    return result
+    query = (
+        f"DESCRIBE SELECT * "
+        f"FROM read_csv_auto('{csv_path.as_posix()}', delim='|', header=True)"
+    )
+    return con.execute(query).fetchall()
 
 
 def main():
@@ -34,6 +35,11 @@ def main():
 
     for table_dir in sorted(base.iterdir()):
         if not table_dir.is_dir():
+            continue
+
+        # Skip the metadata folder entirely
+        if table_dir.name == "metadata":
+            print(f"-- Skipping '{table_dir.name}' (metadata file)")
             continue
 
         schema_file = table_dir / "schema.json"
@@ -49,18 +55,22 @@ def main():
 
         csv_path = csv_files[0]
         try:
-            cols = introspect_csv(csv_path)
+            rows = introspect_csv(csv_path)
         except Exception as e:
             print(f"-- ❌ Failed to introspect {csv_path.name}: {e}")
             continue
 
         schema = {
             "table": table_dir.name,
-            "columns": [
-                {"name": name, "type": dtype}
-                for name, dtype in cols
-            ]
+            "columns": []
         }
+        for row in rows:
+            col_name = row[0]
+            col_type = row[1]
+            schema["columns"].append({
+                "name": col_name,
+                "type": col_type
+            })
 
         with schema_file.open("w", encoding="utf-8") as f:
             json.dump(schema, f, indent=2)
