@@ -1,0 +1,29 @@
+{
+    "columns": [
+        {
+            "name": "ps_partkey",
+            "type": "BIGINT",
+            "index": 0
+        },
+        {
+            "name": "ps_suppkey",
+            "type": "BIGINT",
+            "index": 1
+        },
+        {
+            "name": "ps_availqty",
+            "type": "BIGINT",
+            "index": 2
+        },
+        {
+            "name": "ps_supplycost",
+            "type": "DECIMAL(15,2)",
+            "index": 3
+        },
+        {
+            "name": "ps_comment",
+            "type": "VARCHAR",
+            "index": 4
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "name": "o_orderkey",
+            "type": "BIGINT",
+            "index": 0
+        },
+        {
+            "name": "o_custkey",
+            "type": "BIGINT",
+            "index": 1
+        },
+        {
+            "name": "o_orderstatus",
+            "type": "VARCHAR",
+            "index": 2
+        },
+        {
+            "name": "o_totalprice",
+            "type": "DECIMAL(15,2)",
+            "index": 3
+        },
+        {
+            "name": "o_orderdate",
+            "type": "DATE",
+            "index": 4
+        },
+        {
+            "name": "o_orderpriority",
+            "type": "VARCHAR",
+            "index": 5
+        },
+        {
+            "name": "o_clerk",
+            "type": "VARCHAR",
+            "index": 6
+        },
+        {
+            "name": "o_shippriority",
+            "type": "INTEGER",
+            "index": 7
+        },
+        {
+            "name": "o_comment",
+            "type": "VARCHAR",
+            "index": 8
+        }
+    ]
+}
