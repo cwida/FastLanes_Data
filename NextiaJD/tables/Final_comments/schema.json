@@ -1,0 +1,57 @@
+{
+  "table": "Final_comments",
+  "columns": [
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "gp:AOqpTOF3OmBhtn-mCpk-oJ7j6hzmh0XpEvBUHCQCdo5onX2I7tcG2b7FWk3PezzYF8xN1AmZisNWQxc08Lr2Ag",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Christine S",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "https://lh3.googleusercontent.com/-u36sfNNLUw4/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucl_w9Gc56MwHIQsjbAUn4FZSW8QeQ/photo.jpg",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Navigation is a mess, the HUGE majority of training for listeners is optional and the app has limited functionality compared to browser version. The chat request function also seems buggy which is frustrating. Having said all that, there are honestly plenty of really amazing listeners available, if you persevere (all stars are for them!). There are brief self-help guides available on various topics - they can be hit and miss, and should be taken with a grain of salt, or simply as introductions.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "4",
+      "type": "BIGINT"
+    },
+    {
+      "name": "4_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "4.6.9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2020-05-29 18:56:28",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "Hello Christine, Thank you for your feedback. We sincerely apologize for the troubles you've had with the app. We would be happy to take a look into this for you. Please contact us at Support@7cups.com. Thank you.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2020-05-30 05:36:53",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "most_relevant",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "com.sevencupsoftea.app",
+      "type": "VARCHAR"
+    }
+  ]
+}

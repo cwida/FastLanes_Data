@@ -1,0 +1,13 @@
+{
+  "table": "question_tags",
+  "columns": [
+    {
+      "name": "1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "data",
+      "type": "VARCHAR"
+    }
+  ]
+}

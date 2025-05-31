@@ -1,15 +1,16 @@
 {
+  "table": "plays",
   "columns": [
     {
-      "name": "catch",
+      "name": "2018-02-23 15:22:44.015",
       "type": "TIMESTAMP"
     },
     {
-      "name": "id",
+      "name": "0000-0000-0353-3D35",
       "type": "VARCHAR"
     },
     {
-      "name": "player",
+      "name": "darter60k",
       "type": "VARCHAR"
     }
   ]

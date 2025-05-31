@@ -1,27 +1,28 @@
 {
+  "table": "reviews_summary",
   "columns": [
     {
-      "name": "listing_id",
+      "name": "2015",
       "type": "BIGINT"
     },
     {
-      "name": "id",
+      "name": "69544350",
       "type": "BIGINT"
     },
     {
-      "name": "date",
+      "name": "2016-04-11",
       "type": "DATE"
     },
     {
-      "name": "reviewer_id",
+      "name": "7178145",
       "type": "BIGINT"
     },
     {
-      "name": "reviewer_name",
+      "name": "Rahel",
       "type": "VARCHAR"
     },
     {
-      "name": "comments",
+      "name": "Mein Freund und ich hatten gute gem\u00fctliche vier N\u00e4chte in Jans Studio. Es ist unfassbar ruhig und hat sogar ein ged\u00e4mpftes Klavier f\u00fcr Leute die gerne spielen. Die Lage ist hervorragend und es gibt in der Strasse einen tollen alimentari und eine g\u00fcnstige weinerei. Das Bad ist sehr alt aber funktionst\u00fcchtig und der insgesamte Standard ist ok, ein wenig chaotisch aber daf\u00fcr hat man das Gef\u00fchl man ist bei jemandem zuhause ! Jan ist ein aufgeschlossener lustiger Mann und auch um frische Handt\u00fccher und sonstiges bem\u00fcht! Wir danken.",
       "type": "VARCHAR"
     }
   ]

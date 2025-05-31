@@ -1,31 +1,32 @@
 {
+  "table": "otp",
   "columns": [
     {
-      "name": "train_id",
+      "name": "778",
       "type": "VARCHAR"
     },
     {
-      "name": "direction",
+      "name": "N",
       "type": "VARCHAR"
     },
     {
-      "name": "origin",
+      "name": "Trenton",
       "type": "VARCHAR"
     },
     {
-      "name": "next_station",
+      "name": "Stenton",
       "type": "VARCHAR"
     },
     {
-      "name": "date",
+      "name": "2016-03-23",
       "type": "DATE"
     },
     {
-      "name": "status",
+      "name": "1 min",
       "type": "VARCHAR"
     },
     {
-      "name": "timeStamp",
+      "name": "2016-03-23 00:01:47",
       "type": "TIMESTAMP"
     }
   ]

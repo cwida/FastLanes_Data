@@ -1,0 +1,29 @@
+{
+  "table": "bgg-13m-reviews",
+  "columns": [
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "sidehacker",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "10.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "13",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Catan",
+      "type": "VARCHAR"
+    }
+  ]
+}

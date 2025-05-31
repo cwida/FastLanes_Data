@@ -1,0 +1,77 @@
+{
+  "table": "yellow_tripdata_2019-01",
+  "columns": [
+    {
+      "name": "1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2019-01-01 00:46:40",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "2019-01-01 00:53:20",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "1_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1.50",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "1_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "N",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "151",
+      "type": "BIGINT"
+    },
+    {
+      "name": "239",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "7",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.5",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.5_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "1.65",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.3",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "9.95",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    }
+  ]
+}

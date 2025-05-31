@@ -1,0 +1,133 @@
+{
+  "table": "Homo_sapiens.GRCh38.92",
+  "columns": [
+    {
+      "name": "1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "havana",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "gene",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "11869",
+      "type": "BIGINT"
+    },
+    {
+      "name": "14409",
+      "type": "BIGINT"
+    },
+    {
+      "name": ".",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "+",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "._1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "transcribed_unprocessed_pseudogene",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "ENSG00000223972",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "DDX11L1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "havana_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_14",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_15",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_16",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_17",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_18",
+      "type": "VARCHAR"
+    }
+  ]
+}

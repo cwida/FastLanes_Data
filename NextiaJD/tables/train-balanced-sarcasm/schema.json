@@ -1,0 +1,45 @@
+{
+  "table": "train-balanced-sarcasm",
+  "columns": [
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "NC and NH.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Trumpbart",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "politics",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "-1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "-1_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2016-10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2016-10-16 23:55:23",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "Yeah, I get that argument. At this point, I'd prefer is she lived in NC as well.",
+      "type": "VARCHAR"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "table": "business-licences",
+  "columns": [
+    {
+      "name": "14",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2154508",
+      "type": "BIGINT"
+    },
+    {
+      "name": "14-142098",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "00",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Flok Enterprises Ltd",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Issued",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2014-02-05T20:25:36+01:00",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2014-12-31",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Retail Dealer",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Clothing/Shoes",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2870",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "W BROADWAY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Vancouver",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BC",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "CA",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "V6K 2G7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Kitsilano",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "170",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2019-07-21T22:49:12+02:00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    }
+  ]
+}

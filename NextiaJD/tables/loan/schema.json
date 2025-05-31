@@ -1,0 +1,585 @@
+{
+  "table": "loan",
+  "columns": [
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2500",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2500_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2500_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "36 months",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "13.56",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "84.92",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "C",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "C1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Chef",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "10+ years",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "RENT",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "55000",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "Not Verified",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Dec-2018",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Current",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "n",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "debt_consolidation",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Debt consolidation",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "109xx",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "NY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "18.24",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Apr-2001",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "45",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "9",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "4341",
+      "type": "BIGINT"
+    },
+    {
+      "name": "10.3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "34",
+      "type": "BIGINT"
+    },
+    {
+      "name": "w",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2386.02",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "2386.02_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "167.02",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "167.02_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "113.98",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "53.04",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_2",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "Feb-2019",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "84.92_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "Mar-2019",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Feb-2019_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Individual",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "16901",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "12560",
+      "type": "BIGINT"
+    },
+    {
+      "name": "69",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2_4",
+      "type": "BIGINT"
+    },
+    {
+      "name": "7",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2137",
+      "type": "BIGINT"
+    },
+    {
+      "name": "28",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "42000",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_4",
+      "type": "BIGINT"
+    },
+    {
+      "name": "11",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2_5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "9_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1878",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "34360",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "5.9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_4",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "140",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "212",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_6",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_6",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_7",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2_7",
+      "type": "BIGINT"
+    },
+    {
+      "name": "5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "3_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "16",
+      "type": "BIGINT"
+    },
+    {
+      "name": "7_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "18",
+      "type": "BIGINT"
+    },
+    {
+      "name": "5_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "9_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_9",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_10",
+      "type": "BIGINT"
+    },
+    {
+      "name": "3_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "100",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1_8",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_12",
+      "type": "BIGINT"
+    },
+    {
+      "name": "60124",
+      "type": "BIGINT"
+    },
+    {
+      "name": "16901_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "36500",
+      "type": "BIGINT"
+    },
+    {
+      "name": "18124",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_14",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_15",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_16",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_17",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_18",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_19",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_20",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_21",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "N_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_22",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_23",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_24",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_25",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_26",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_27",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_28",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_29",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_30",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_31",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_32",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_33",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_34",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_35",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Cash",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "N_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_36",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_37",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_38",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_39",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_40",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_41",
+      "type": "VARCHAR"
+    }
+  ]
+}

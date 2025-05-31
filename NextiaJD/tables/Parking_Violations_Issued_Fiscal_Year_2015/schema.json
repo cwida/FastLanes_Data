@@ -1,0 +1,193 @@
+{
+  "table": "Parking_Violations_Issued_Fiscal_Year_2015",
+  "columns": [
+    {
+      "name": "8002531292",
+      "type": "BIGINT"
+    },
+    {
+      "name": "EPC5238",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "NY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "PAS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "10/01/2014",
+      "type": "DATE"
+    },
+    {
+      "name": "21",
+      "type": "BIGINT"
+    },
+    {
+      "name": "SUBN",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "CHEVR",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "T",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "20390",
+      "type": "BIGINT"
+    },
+    {
+      "name": "29890",
+      "type": "BIGINT"
+    },
+    {
+      "name": "31490",
+      "type": "BIGINT"
+    },
+    {
+      "name": "01/01/20150111 12:00:00 PM",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "7_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "7_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "345454",
+      "type": "BIGINT"
+    },
+    {
+      "name": "T800",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "A2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "NY_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "F",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "133",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Essex St",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "01/05/0001 12:00:00 PM",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "408",
+      "type": "BIGINT"
+    },
+    {
+      "name": "d1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Y Y Y",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BL",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2005",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "A 77",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "21-No Parking (street clean)",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_14",
+      "type": "VARCHAR"
+    }
+  ]
+}

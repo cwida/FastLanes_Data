@@ -1,0 +1,21 @@
+{
+  "table": "utterances",
+  "columns": [
+    {
+      "name": "57264",
+      "type": "BIGINT"
+    },
+    {
+      "name": "9",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Ms. LOREN MOONEY (Editor-in-Chief, Bicycling Magazine)",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "It's a 2,200-mile race. To give some sense of perspective, that's roughly the distance between Washington, D.C. and Las Vegas. They do it over the course of three weeks at very fast speeds. But incredibly, oftentimes the distance between first and second is somewhere between and one and three minutes.",
+      "type": "VARCHAR"
+    }
+  ]
+}

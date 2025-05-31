@@ -1,95 +1,96 @@
 {
+  "table": "Chicago_Crimes_2005_to_2007",
   "columns": [
     {
-      "name": "col1",
+      "name": "0",
       "type": "BIGINT"
     },
     {
-      "name": "ID",
+      "name": "4673626",
       "type": "BIGINT"
     },
     {
-      "name": "Case Number",
+      "name": "HM274058",
       "type": "VARCHAR"
     },
     {
-      "name": "Date",
+      "name": "04/02/2006 01:00:00 PM",
       "type": "TIMESTAMP"
     },
     {
-      "name": "Block",
+      "name": "055XX N MANGO AVE",
       "type": "VARCHAR"
     },
     {
-      "name": "IUCR",
+      "name": "2825",
       "type": "VARCHAR"
     },
     {
-      "name": "Primary Type",
+      "name": "OTHER OFFENSE",
       "type": "VARCHAR"
     },
     {
-      "name": "Description",
+      "name": "HARASSMENT BY TELEPHONE",
       "type": "VARCHAR"
     },
     {
-      "name": "Location Description",
+      "name": "RESIDENCE",
       "type": "VARCHAR"
     },
     {
-      "name": "Arrest",
+      "name": "False",
       "type": "BOOLEAN"
     },
     {
-      "name": "Domestic",
+      "name": "False_1",
       "type": "BOOLEAN"
     },
     {
-      "name": "Beat",
+      "name": "1622",
       "type": "BIGINT"
     },
     {
-      "name": "District",
+      "name": "16.0",
       "type": "DOUBLE"
     },
     {
-      "name": "Ward",
+      "name": "45.0",
       "type": "DOUBLE"
     },
     {
-      "name": "Community Area",
+      "name": "11.0",
       "type": "DOUBLE"
     },
     {
-      "name": "FBI Code",
+      "name": "26",
       "type": "VARCHAR"
     },
     {
-      "name": "X Coordinate",
-      "type": "DOUBLE"
+      "name": "1136872.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "Y Coordinate",
-      "type": "DOUBLE"
+      "name": "1936499.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "Year",
+      "name": "2006",
       "type": "BIGINT"
     },
     {
-      "name": "Updated On",
+      "name": "04/15/2016 08:55:02 AM",
       "type": "TIMESTAMP"
     },
     {
-      "name": "Latitude",
-      "type": "DOUBLE"
+      "name": "41.981912692",
+      "type": "VARCHAR"
     },
     {
-      "name": "Longitude",
-      "type": "DOUBLE"
+      "name": "-87.771996382",
+      "type": "VARCHAR"
     },
     {
-      "name": "Location",
+      "name": "(41.981912692, -87.771996382)",
       "type": "VARCHAR"
     }
   ]

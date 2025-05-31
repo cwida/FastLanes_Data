@@ -1,115 +1,116 @@
 {
+  "table": "eo3",
   "columns": [
     {
-      "name": "EIN",
+      "name": "000260049",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME",
+      "name": "CORINTH BAPTIST CHURCH",
       "type": "VARCHAR"
     },
     {
-      "name": "ICO",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "STREET",
+      "name": "PO BOX 92",
       "type": "VARCHAR"
     },
     {
-      "name": "CITY",
+      "name": "HOSFORD",
       "type": "VARCHAR"
     },
     {
-      "name": "STATE",
+      "name": "FL",
       "type": "VARCHAR"
     },
     {
-      "name": "ZIP",
+      "name": "32334-0092",
       "type": "VARCHAR"
     },
     {
-      "name": "GROUP",
+      "name": "2024",
       "type": "VARCHAR"
     },
     {
-      "name": "SUBSECTION",
+      "name": "03",
       "type": "VARCHAR"
     },
     {
-      "name": "AFFILIATION",
+      "name": "9",
       "type": "BIGINT"
     },
     {
-      "name": "CLASSIFICATION",
+      "name": "7200",
       "type": "VARCHAR"
     },
     {
-      "name": "RULING",
+      "name": "196908",
       "type": "VARCHAR"
     },
     {
-      "name": "DEDUCTIBILITY",
+      "name": "1",
       "type": "BIGINT"
     },
     {
-      "name": "FOUNDATION",
+      "name": "10",
       "type": "VARCHAR"
     },
     {
-      "name": "ACTIVITY",
+      "name": "059029000",
       "type": "VARCHAR"
     },
     {
-      "name": "ORGANIZATION",
+      "name": "5",
       "type": "BIGINT"
     },
     {
-      "name": "STATUS",
+      "name": "01",
       "type": "VARCHAR"
     },
     {
-      "name": "TAX_PERIOD",
-      "type": "BIGINT"
-    },
-    {
-      "name": "ASSET_CD",
-      "type": "BIGINT"
-    },
-    {
-      "name": "INCOME_CD",
-      "type": "BIGINT"
-    },
-    {
-      "name": "FILING_REQ_CD",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
-      "name": "PF_FILING_REQ_CD",
+      "name": "0",
       "type": "BIGINT"
     },
     {
-      "name": "ACCT_PD",
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "06",
       "type": "VARCHAR"
     },
     {
-      "name": "ASSET_AMT",
+      "name": "0_2",
       "type": "BIGINT"
     },
     {
-      "name": "INCOME_AMT",
-      "type": "BIGINT"
-    },
-    {
-      "name": "REVENUE_AMT",
-      "type": "BIGINT"
-    },
-    {
-      "name": "NTEE_CD",
+      "name": "12",
       "type": "VARCHAR"
     },
     {
-      "name": "SORT_NAME",
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
       "type": "VARCHAR"
     }
   ]

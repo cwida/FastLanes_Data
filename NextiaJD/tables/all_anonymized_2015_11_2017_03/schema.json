@@ -1,67 +1,68 @@
 {
+  "table": "all_anonymized_2015_11_2017_03",
   "columns": [
     {
-      "name": "maker",
+      "name": "ford",
       "type": "VARCHAR"
     },
     {
-      "name": "model",
+      "name": "galaxy",
       "type": "VARCHAR"
     },
     {
-      "name": "mileage",
-      "type": "BIGINT"
-    },
-    {
-      "name": "manufacture_year",
-      "type": "BIGINT"
-    },
-    {
-      "name": "engine_displacement",
-      "type": "BIGINT"
-    },
-    {
-      "name": "engine_power",
-      "type": "BIGINT"
-    },
-    {
-      "name": "body_type",
+      "name": "151000",
       "type": "VARCHAR"
     },
     {
-      "name": "color_slug",
+      "name": "2011",
       "type": "VARCHAR"
     },
     {
-      "name": "stk_year",
+      "name": "2000",
       "type": "VARCHAR"
     },
     {
-      "name": "transmission",
+      "name": "103",
       "type": "VARCHAR"
     },
     {
-      "name": "door_count",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "seat_count",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
-      "name": "fuel_type",
+      "name": "None",
       "type": "VARCHAR"
     },
     {
-      "name": "date_created",
+      "name": "man",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "diesel",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2015-11-14 18:10:06.838319+00",
       "type": "TIMESTAMP"
     },
     {
-      "name": "date_last_seen",
+      "name": "2016-01-27 20:40:15.46361+00",
       "type": "TIMESTAMP"
     },
     {
-      "name": "price_eur",
+      "name": "10584.75",
       "type": "DOUBLE"
     }
   ]

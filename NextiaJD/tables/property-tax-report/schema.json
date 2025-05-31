@@ -1,0 +1,121 @@
+{
+  "table": "property-tax-report",
+  "columns": [
+    {
+      "name": "018-502-725",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "STRATA",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "210706830012",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "21070683",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "C-2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Commercial",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "LMS1111",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "301",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "302",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "3981",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "FRASER ST",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "V5V 4E5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0 SHARE IN COM PROP THEREIN.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "301  NEW WESTMINSTER UNDIV 833/1000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "LOT 12  PLAN LMS1111  DISTRICT LOT",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "269000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "155000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2018",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "157000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "201000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1994",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1994_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1046.55",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "015",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2018_1",
+      "type": "BIGINT"
+    }
+  ]
+}

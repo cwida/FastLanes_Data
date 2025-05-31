@@ -1,95 +1,96 @@
 {
+  "table": "Chicago_Crimes_2012_to_2017",
   "columns": [
     {
-      "name": "col1",
+      "name": "3",
       "type": "BIGINT"
     },
     {
-      "name": "ID",
+      "name": "10508693",
       "type": "BIGINT"
     },
     {
-      "name": "Case Number",
+      "name": "HZ250496",
       "type": "VARCHAR"
     },
     {
-      "name": "Date",
+      "name": "05/03/2016 11:40:00 PM",
       "type": "TIMESTAMP"
     },
     {
-      "name": "Block",
+      "name": "013XX S SAWYER AVE",
       "type": "VARCHAR"
     },
     {
-      "name": "IUCR",
+      "name": "0486",
       "type": "VARCHAR"
     },
     {
-      "name": "Primary Type",
+      "name": "BATTERY",
       "type": "VARCHAR"
     },
     {
-      "name": "Description",
+      "name": "DOMESTIC BATTERY SIMPLE",
       "type": "VARCHAR"
     },
     {
-      "name": "Location Description",
+      "name": "APARTMENT",
       "type": "VARCHAR"
     },
     {
-      "name": "Arrest",
+      "name": "True",
       "type": "BOOLEAN"
     },
     {
-      "name": "Domestic",
+      "name": "True_1",
       "type": "BOOLEAN"
     },
     {
-      "name": "Beat",
+      "name": "1022",
       "type": "BIGINT"
     },
     {
-      "name": "District",
+      "name": "10.0",
       "type": "DOUBLE"
     },
     {
-      "name": "Ward",
+      "name": "24.0",
       "type": "DOUBLE"
     },
     {
-      "name": "Community Area",
+      "name": "29.0",
       "type": "DOUBLE"
     },
     {
-      "name": "FBI Code",
+      "name": "08B",
       "type": "VARCHAR"
     },
     {
-      "name": "X Coordinate",
-      "type": "DOUBLE"
+      "name": "1154907.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "Y Coordinate",
-      "type": "DOUBLE"
+      "name": "1893681.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "Year",
+      "name": "2016",
       "type": "BIGINT"
     },
     {
-      "name": "Updated On",
+      "name": "05/10/2016 03:56:50 PM",
       "type": "TIMESTAMP"
     },
     {
-      "name": "Latitude",
-      "type": "DOUBLE"
+      "name": "41.864073157",
+      "type": "VARCHAR"
     },
     {
-      "name": "Longitude",
-      "type": "DOUBLE"
+      "name": "-87.706818608",
+      "type": "VARCHAR"
     },
     {
-      "name": "Location",
+      "name": "(41.864073157, -87.706818608)",
       "type": "VARCHAR"
     }
   ]

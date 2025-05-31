@@ -1,0 +1,45 @@
+{
+  "table": "hail-2015",
+  "columns": [
+    {
+      "name": "20150101050706",
+      "type": "BIGINT"
+    },
+    {
+      "name": "-97.16003",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "32.66308",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "KDFW",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "C0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "27",
+      "type": "BIGINT"
+    },
+    {
+      "name": "207",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "10",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0.5",
+      "type": "DOUBLE"
+    }
+  ]
+}
