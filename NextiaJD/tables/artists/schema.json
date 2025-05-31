@@ -1,43 +1,44 @@
 {
+  "table": "artists",
   "columns": [
     {
-      "name": "mbid",
+      "name": "cc197bad-dc9c-440d-a5b5-d52ba2e14234",
       "type": "VARCHAR"
     },
     {
-      "name": "artist_mb",
+      "name": "Coldplay",
       "type": "VARCHAR"
     },
     {
-      "name": "artist_lastfm",
+      "name": "Coldplay_1",
       "type": "VARCHAR"
     },
     {
-      "name": "country_mb",
+      "name": "United Kingdom",
       "type": "VARCHAR"
     },
     {
-      "name": "country_lastfm",
+      "name": "United Kingdom_1",
       "type": "VARCHAR"
     },
     {
-      "name": "tags_mb",
+      "name": "rock; pop; alternative rock; british; uk; britannique; britpop; pop rock; piano pop; piano rock; english; parlophone; rock and indie; ambient pop; pop/rock; chapel; post-britpop",
       "type": "VARCHAR"
     },
     {
-      "name": "tags_lastfm",
+      "name": "rock; alternative; britpop; alternative rock; indie; british; seen live; Coldplay; pop; indie rock; pop rock; piano rock; UK; soft rock; Mellow; male vocalists; chillout; piano; 00s; chill; favorites; indie pop; acoustic; singer-songwriter; emo; english; Love; classic rock; electronic; brit rock; brit pop; overrated; 90s; Pop-Rock; cold play; Favourites; Britrock; relax",
       "type": "VARCHAR"
     },
     {
-      "name": "listeners_lastfm",
+      "name": "5381567",
       "type": "BIGINT"
     },
     {
-      "name": "scrobbles_lastfm",
+      "name": "360111850",
       "type": "BIGINT"
     },
     {
-      "name": "ambiguous_artist",
+      "name": "FALSE",
       "type": "BOOLEAN"
     }
   ]

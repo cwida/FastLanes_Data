@@ -1,0 +1,161 @@
+{
+  "table": "Parking_Violations_Issued_Fiscal_Year_2017",
+  "columns": [
+    {
+      "name": "5092469481",
+      "type": "BIGINT"
+    },
+    {
+      "name": "GZH7067",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "NY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "PAS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "07/10/2016",
+      "type": "DATE"
+    },
+    {
+      "name": "7",
+      "type": "BIGINT"
+    },
+    {
+      "name": "SUBN",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "TOYOT",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "V",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_4",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_6",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BX",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "ALLERTON AVE (W/B) @",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BARNES AVE",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_7",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1111",
+      "type": "BIGINT"
+    },
+    {
+      "name": "D",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "T",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "GY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2001",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_8",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "FAILURE TO STOP AT RED LIGHT",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    }
+  ]
+}

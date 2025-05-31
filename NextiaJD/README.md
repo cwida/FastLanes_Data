@@ -1,26 +1,184 @@
-This repository contains processed `.csv` files from the [NextiaJD dataset](https://homepages.cwi.nl/~boncz/NextiaJD/) and `.ipynb`/`.py` that we used to process them. 
-* The files are stored in folders named identically to the respective CSV files. 
-	* All ` `, `-` and `.` in file names are replaced by `_` to avoid problems when using files in C++.
-* Each file in repo was originally smaller than 100MB and contains exactly 65,536 (64 * 1024) rows of data for uniformity. 
-* To maintain consistency across the dataset, we have replaced various file-specific delimiters with a single '|' delimiter. 
-* All the data is in UTF-8 encoding. 
-* During processing, some files were identified to have corrupted entries or columns that required cleaning. The sections below detail the specific issues encountered and the corrective actions taken for selected files. All these changes are reflected in our code in `get-data.ipynb` (and `get-data.py`), but sometimes not in the data we provide, as corrupted entries may occur only after the 64K rows.
+# NextiaJD Data Preparation Pipeline
 
-## Chicago Crimes (2001 to 2004)
-In the `Chicago_Crimes_2001_to_2004.csv` file, we encountered issues in row 1,602,849, particularly with the 'Y Coordinate', 'Year', and 'Updated On' columns. The 'Y Coordinate' column contained `None` values. To address this, we replaced the faulty 'Y Coordinate' entry in row 1,602,849 with an empty value, while the 'Year' and 'Updated On' entries were corrected using the data from row 1,602,848.
+This document describes the full NextiaJD dataset preparation pipeline, including special cases requiring manual
+attention.
 
-## Chicago Crimes (2005 to 2007)
-The `Chicago_Crimes_2005_to_2007.csv` file had a problematic 'Location' entry at row 533,719. Given that the location can be inferred from the 'Longitude' and 'Latitude' columns, we manually corrected this issue to ensure data integrity.
+## Table of Contents
 
-## Arizona Postcodes
-In the `az.csv` file, the “POSTCODE” column occasionally contains spaces (" "), which we interpreted as NaN values. To maintain data type consistency, we replaced these spaces with empty values. Additionally, we identified and corrected invalid string entries in the postcodes at rows 423,531, 2,561,616, and 2,572,688 by setting them to empty values too.
+1. [Overview](#overview)
+2. [Repository Structure](#repository-structure)
+3. [Prerequisites & Setup](#prerequisites--setup)
+4. [Usage](#usage)
 
-# Future work
-## Schema inference
-We only infer the schema after stripping the data to 64 * 1024 rows. Because of that, some columns (like the `congestion_surcharge` column of `yellow_tripdata_2019_01`) contain only null values. By default, our pipeline will infer that this column is of VARCHAR type. It then needs to be changed manually to the actual type of the column. Right now, there is no mechanism of alerting when column contains only nones, so if more data is added in future, there can be wrong inferences that we are not aware of. Implement it.
+    * [Run All Steps](#run-all-steps)
+    * [Individual Scripts](#individual-scripts)
+5. [Script Details](#script-details)
+6. [Special Table Handling](#special-table-handling)
+7. [Customization](#customization)
+8. [License](#license)
 
-## Business Licenses
-The `business-licences.csv` file's “House” column is treated as VARCHAR. However, it could potentially be stored as a more compressible data type with due cleaning.
+---
 
-## US Permanent Visas
-The `us_perv_visas.csv` file presented a challenge with its messy data. Currently, almost all columns are treated as VARCHARs. Through meticulous cleaning, it is possible to have more compressible data types.
+## Overview
+
+A set of Python scripts to:
+
+1. Download compressed datasets from a remote directory.
+2. Decompress `.bz2` archives to CSV.
+3. Extract fixed-size samples from each CSV.
+4. Generate JSON schemas via DuckDB introspection.
+5. Verify metadata presence.
+6. Remove any tables below a minimum row threshold.
+
+All scripts can be orchestrated via `prepare.py`.
+
+---
+
+## Repository Structure
+
+```plaintext
+NextiaJD/
+├── download.py               # Downloads .bz2 files into temp/
+├── decompress_bz2.py         # Decompresses .bz2 → .csv in temp/
+├── extract_samples.py        # Writes fixed-row samples
+├── generate_csv_schemas.py   # Introspects CSVs to JSON schemas
+├── check_metadata.py         # Validates metadata entries
+├── remove_small_tables.py    # Deletes tables < MIN_ROWS
+├── prepare.py                # Runs all steps in order
+├── temp/                     # (Auto) Download & decompression staging
+└── tables/                   # (Auto) Schema & metadata output
+````
+
+---
+
+## Usage
+
+### Run All Steps
+
+```bash
+# Make sure prepare.py is executable
+chmod +x prepare.py
+./prepare.py
+```
+
+This executes:
+
+1. `download.py`
+2. `decompress_bz2.py`
+3. `extract_samples.py`
+4. `generate_csv_schemas.py`
+5. `check_metadata.py`
+6. `remove_small_tables.py`
+
+### Individual Scripts
+
+Run manually in sequence if desired:
+
+```bash
+python download.py
+python decompress_bz2.py
+python extract_samples.py
+python generate_csv_schemas.py
+python check_metadata.py
+python remove_small_tables.py
+```
+
+---
+
+## Script Details
+
+### `download.py`
+
+* **Function**: Crawl `BASE_URL`, download `.bz2` files into `temp/`. Skips files matching remote sizes.
+* **Key Constants**:
+
+    * `BASE_URL`: source directory URL
+    * `dest_dir`: defaults to `temp/` relative to script
+
+### `decompress_bz2.py`
+
+* **Function**: Decompress every `.bz2` in `temp/` to `.csv`, skipping if target exists.
+* **Output**: `.csv` files alongside `.bz2` files in `temp/`.
+
+### `extract_samples.py`
+
+* **Function**: Read each CSV and write a sample of `SAMPLE_SIZE` rows to `temp/samples/`.
+* **Default Sample Size**: 65,536 rows.
+
+### `generate_csv_schemas.py`
+
+* **Function**: Use DuckDB’s `read_csv_auto` to infer column types/dialects, write each schema to
+  `tables/<name>/schema.json`.
+* **Failure Handling**: Logs errors when sniffing fails, skips those tables.
+
+### `check_metadata.py`
+
+* **Function**: Confirm each CSV has a corresponding metadata entry; prints ✅ or ❌.
+
+### `remove_small_tables.py`
+
+* **Function**: Count rows in each table; remove directories for tables with fewer than `MIN_ROWS` rows (default
+  65,536).
+
+---
+
+## Special Table Handling
+
+The following tables require manual attention:
+
+### 1. `comments_negative.csv`
+
+* **Status**: No `schema.json` generated.
+* **Issue**: CSV sniffing failed (likely pipe-delimited with irregular quoting).
+* **Action**:
+
+    1. Inspect the first lines for delimiter/quote/escape settings.
+    2. In DuckDB:
+
+       ```sql
+       CREATE TABLE tmp AS SELECT * FROM read_csv_auto(
+         'tables/comments_negative/comments_negative.csv',
+         delim='|', quote='"', escape='\\', strict_mode=false
+       );
+       PRAGMA write_json_schema('tmp', 'tables/comments_negative/schema.json');
+       ```
+    3. Commit the generated `schema.json`.
+
+### 2. `comments_positive.csv`
+
+* **Status**: No `schema.json` generated.
+* **Issue**: Same sniffing failure as above.
+* **Action**: Follow identical steps to produce and commit `tables/comments_positive/schema.json`.
+
+### 3. `glassdoor.csv`
+
+* **Status**: Removed by cleanup (0 rows).
+* **Issue**: `remove_small_tables.py` deletes tables <65,536 rows.
+* **Action**:
+
+    1. Verify `temp/glassdoor.csv.bz2` contains data.
+    2. Re-download or regenerate if missing.
+    3. Adjust `MIN_ROWS` threshold or add exception in `remove_small_tables.py`.
+    4. Re-run pipeline to restore `tables/glassdoor/`.
+
+### 4. `github_issues.csv`
+
+* **Status**: Removed by cleanup (forced deletion).
+* **Issue**: A Stripe Test API Secret Key was publicly leaked inside `tables/github_issues/github_issues.csv`,
+  triggering GitHub’s secret scanning. The pipeline automatically deletes any `github_issues` directory to prevent
+  further exposure.
+* **Action**:
+
+    1. **Rotate and revoke** the leaked Stripe Test API key immediately in your Stripe dashboard.
+    2. **Purge** the sensitive file from the Git history:
+
+       ```bash
+       # Example using git-filter-repo (install with pip if needed)
+       git filter-repo --path tables/github_issues/github_issues.csv --invert-paths
+       ```
+    3. Ensure no other secrets remain in `github_issues.csv`. If sanitized data is needed, create a sanitized version (
+       e.g., strip out API keys) before re-adding.
+    4. Commit the changes and push to the remote repository. The pipeline’s `remove_small_tables.py` now skips (and
+       forces deletion of) `github_issues/` on each run.
+
+---

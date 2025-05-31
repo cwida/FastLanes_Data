@@ -1,0 +1,193 @@
+{
+  "table": "Parking_Violations_Issued_Fiscal_Year_2016",
+  "columns": [
+    {
+      "name": "1363745270",
+      "type": "BIGINT"
+    },
+    {
+      "name": "GGY6450",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "99",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "PAS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "07/09/2015",
+      "type": "DATE"
+    },
+    {
+      "name": "46",
+      "type": "BIGINT"
+    },
+    {
+      "name": "SDN",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "HONDA",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "P",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "40404",
+      "type": "BIGINT"
+    },
+    {
+      "name": "40404_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "20170602",
+      "type": "BIGINT"
+    },
+    {
+      "name": "74",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "74_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "301",
+      "type": "BIGINT"
+    },
+    {
+      "name": "358160",
+      "type": "BIGINT"
+    },
+    {
+      "name": "T301",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "K",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "F",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "142",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "MACDOUNGH ST",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "408",
+      "type": "BIGINT"
+    },
+    {
+      "name": "D1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BBBBBBB",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "WHITE",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2010",
+      "type": "BIGINT"
+    },
+    {
+      "name": "-",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_14",
+      "type": "VARCHAR"
+    }
+  ]
+}

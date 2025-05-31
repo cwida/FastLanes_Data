@@ -1,47 +1,48 @@
 {
+  "table": "az",
   "columns": [
     {
-      "name": "LON",
+      "name": "-111.5723157",
       "type": "DOUBLE"
     },
     {
-      "name": "LAT",
+      "name": "35.2367222",
       "type": "DOUBLE"
     },
     {
-      "name": "NUMBER",
+      "name": "6110",
       "type": "VARCHAR"
     },
     {
-      "name": "STREET",
+      "name": "N HIGHWAY 89",
       "type": "VARCHAR"
     },
     {
-      "name": "UNIT",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "CITY",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
-      "name": "DISTRICT",
+      "name": "null_2",
       "type": "VARCHAR"
     },
     {
-      "name": "REGION",
+      "name": "null_3",
       "type": "VARCHAR"
     },
     {
-      "name": "POSTCODE",
+      "name": "86004",
       "type": "BIGINT"
     },
     {
-      "name": "ID",
+      "name": "null_4",
       "type": "VARCHAR"
     },
     {
-      "name": "HASH",
+      "name": "ec074bdfa4581255",
       "type": "VARCHAR"
     }
   ]

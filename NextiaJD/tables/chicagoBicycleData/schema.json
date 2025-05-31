@@ -1,0 +1,97 @@
+{
+  "table": "chicagoBicycleData",
+  "columns": [
+    {
+      "name": "2355134",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2014",
+      "type": "BIGINT"
+    },
+    {
+      "name": "6",
+      "type": "BIGINT"
+    },
+    {
+      "name": "27",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "23",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Subscriber",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Male",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2014-06-30 23:57:00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "2014-07-01 00:07:00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "10.066666666666666",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "68.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "tstorms",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "131",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Lincoln Ave & Belmont Ave",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "41.939365",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "-87.668385",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "15.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "303",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Broadway & Cornelia Ave",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "41.945512",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "-87.64598000000001",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "15.0_1",
+      "type": "DOUBLE"
+    }
+  ]
+}

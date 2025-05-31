@@ -1,31 +1,32 @@
 {
+  "table": "wowah_data",
   "columns": [
     {
-      "name": "char",
+      "name": "59425",
       "type": "BIGINT"
     },
     {
-      "name": "level",
+      "name": "1",
       "type": "BIGINT"
     },
     {
-      "name": "race",
+      "name": "Orc",
       "type": "VARCHAR"
     },
     {
-      "name": "charclass",
+      "name": "Rogue",
       "type": "VARCHAR"
     },
     {
-      "name": "zone",
+      "name": "Orgrimmar",
       "type": "VARCHAR"
     },
     {
-      "name": "guild",
+      "name": "165",
       "type": "BIGINT"
     },
     {
-      "name": "timestamp",
+      "name": "01/01/08 00:02:04",
       "type": "TIMESTAMP"
     }
   ]

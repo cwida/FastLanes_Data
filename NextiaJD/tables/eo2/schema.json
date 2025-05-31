@@ -1,115 +1,116 @@
 {
+  "table": "eo2",
   "columns": [
     {
-      "name": "EIN",
+      "name": "000000001",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME",
+      "name": "VOLUNTEERS OF AMERICA INC",
       "type": "VARCHAR"
     },
     {
-      "name": "ICO",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "STREET",
+      "name": "570 SOUTH FOURTH STREET NO 100",
       "type": "VARCHAR"
     },
     {
-      "name": "CITY",
+      "name": "LOUISVILLE",
       "type": "VARCHAR"
     },
     {
-      "name": "STATE",
+      "name": "KY",
       "type": "VARCHAR"
     },
     {
-      "name": "ZIP",
+      "name": "40202-2504",
       "type": "VARCHAR"
     },
     {
-      "name": "GROUP",
+      "name": "1736",
       "type": "VARCHAR"
     },
     {
-      "name": "SUBSECTION",
+      "name": "03",
       "type": "VARCHAR"
     },
     {
-      "name": "AFFILIATION",
+      "name": "9",
       "type": "BIGINT"
     },
     {
-      "name": "CLASSIFICATION",
+      "name": "7100",
       "type": "VARCHAR"
     },
     {
-      "name": "RULING",
+      "name": "196505",
       "type": "VARCHAR"
     },
     {
-      "name": "DEDUCTIBILITY",
+      "name": "1",
       "type": "BIGINT"
     },
     {
-      "name": "FOUNDATION",
+      "name": "10",
       "type": "VARCHAR"
     },
     {
-      "name": "ACTIVITY",
+      "name": "325902160",
       "type": "VARCHAR"
     },
     {
-      "name": "ORGANIZATION",
+      "name": "5",
       "type": "BIGINT"
     },
     {
-      "name": "STATUS",
+      "name": "01",
       "type": "VARCHAR"
     },
     {
-      "name": "TAX_PERIOD",
-      "type": "BIGINT"
-    },
-    {
-      "name": "ASSET_CD",
-      "type": "BIGINT"
-    },
-    {
-      "name": "INCOME_CD",
-      "type": "BIGINT"
-    },
-    {
-      "name": "FILING_REQ_CD",
+      "name": "201506",
       "type": "VARCHAR"
     },
     {
-      "name": "PF_FILING_REQ_CD",
+      "name": "0",
       "type": "BIGINT"
     },
     {
-      "name": "ACCT_PD",
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "01_1",
       "type": "VARCHAR"
     },
     {
-      "name": "ASSET_AMT",
+      "name": "0_2",
       "type": "BIGINT"
     },
     {
-      "name": "INCOME_AMT",
-      "type": "BIGINT"
-    },
-    {
-      "name": "REVENUE_AMT",
-      "type": "BIGINT"
-    },
-    {
-      "name": "NTEE_CD",
+      "name": "06",
       "type": "VARCHAR"
     },
     {
-      "name": "SORT_NAME",
+      "name": "0_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "VOAKY HOPEFUL ROAD INC",
       "type": "VARCHAR"
     }
   ]

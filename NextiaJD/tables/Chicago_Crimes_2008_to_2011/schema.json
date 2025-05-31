@@ -1,0 +1,97 @@
+{
+  "table": "Chicago_Crimes_2008_to_2011",
+  "columns": [
+    {
+      "name": "388",
+      "type": "BIGINT"
+    },
+    {
+      "name": "4785",
+      "type": "BIGINT"
+    },
+    {
+      "name": "HP610824",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "10/07/2008 12:39:00 PM",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "000XX E 75TH ST",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0110",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "HOMICIDE",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "FIRST DEGREE MURDER",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "ALLEY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "True",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "False",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "323",
+      "type": "BIGINT"
+    },
+    {
+      "name": "3.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "6.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "69.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "01A",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1178207.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1855308.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2008",
+      "type": "BIGINT"
+    },
+    {
+      "name": "08/17/2015 03:03:40 PM",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "41.758275857",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "-87.622451031",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "(41.758275857, -87.622451031)",
+      "type": "VARCHAR"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "table": "bitcoin_reddit_all",
+  "columns": [
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2014-06-26 16:49:41",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "2014-06-26",
+      "type": "DATE"
+    },
+    {
+      "name": "HonorConnor",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "AskReddit",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1403801381",
+      "type": "BIGINT"
+    },
+    {
+      "name": "162.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "How do you feel about Bitcoin? I don't really understand it and it never seemed useful.",
+      "type": "VARCHAR"
+    }
+  ]
+}

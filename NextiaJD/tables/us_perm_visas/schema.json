@@ -1,619 +1,620 @@
 {
+  "table": "us_perm_visas",
   "columns": [
     {
-      "name": "add_these_pw_job_title_9089",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "agent_city",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
-      "name": "agent_firm_name",
+      "name": "null_2",
       "type": "VARCHAR"
     },
     {
-      "name": "agent_state",
+      "name": "null_3",
       "type": "VARCHAR"
     },
     {
-      "name": "application_type",
+      "name": "PERM",
       "type": "VARCHAR"
     },
     {
-      "name": "case_no",
+      "name": "A-07323-97014",
       "type": "VARCHAR"
     },
     {
-      "name": "case_number",
+      "name": "null_4",
       "type": "VARCHAR"
     },
     {
-      "name": "case_received_date",
+      "name": "null_5",
       "type": "VARCHAR"
     },
     {
-      "name": "case_status",
+      "name": "Certified",
       "type": "VARCHAR"
     },
     {
-      "name": "class_of_admission",
+      "name": "J-1",
       "type": "VARCHAR"
     },
     {
-      "name": "country_of_citizenship",
+      "name": "null_6",
       "type": "VARCHAR"
     },
     {
-      "name": "country_of_citzenship",
+      "name": "ARMENIA",
       "type": "VARCHAR"
     },
     {
-      "name": "decision_date",
+      "name": "2012-02-01",
       "type": "DATE"
     },
     {
-      "name": "employer_address_1",
+      "name": "24 WEST 25 STREET",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_address_2",
+      "name": "5TH FLOOR",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_city",
+      "name": "NEW YORK",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_country",
+      "name": "null_7",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_decl_info_title",
+      "name": "null_8",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_name",
+      "name": "NETSOFT USA INC.",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_num_employees",
+      "name": "null_9",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_phone",
+      "name": "null_10",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_phone_ext",
+      "name": "null_11",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_postal_code",
+      "name": "10010.0",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_state",
+      "name": "NY",
       "type": "VARCHAR"
     },
     {
-      "name": "employer_yr_estab",
+      "name": "null_12",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_alt_edu_experience",
+      "name": "null_13",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_birth_country",
+      "name": "null_14",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_city",
+      "name": "null_15",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_education",
+      "name": "null_16",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_education_other",
+      "name": "null_17",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_inst",
+      "name": "null_18",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_major",
+      "name": "null_19",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_postal_code",
+      "name": "null_20",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_rel_occup_exp",
+      "name": "null_21",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_req_experience",
+      "name": "null_22",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_state",
+      "name": "null_23",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_info_training_comp",
+      "name": "null_24",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_ownership_interest",
+      "name": "null_25",
       "type": "VARCHAR"
     },
     {
-      "name": "foreign_worker_yr_rel_edu_completed",
+      "name": "null_26",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_alt_edu_experience",
+      "name": "null_27",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_birth_country",
+      "name": "null_28",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_education_other",
+      "name": "null_29",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_postal_code",
+      "name": "null_30",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_rel_occup_exp",
+      "name": "null_31",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_req_experience",
+      "name": "null_32",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_training_comp",
+      "name": "null_33",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_info_yr_rel_edu_completed",
+      "name": "null_34",
       "type": "VARCHAR"
     },
     {
-      "name": "fw_ownership_interest",
+      "name": "null_35",
       "type": "VARCHAR"
     },
     {
-      "name": "ji_foreign_worker_live_on_premises",
+      "name": "null_36",
       "type": "VARCHAR"
     },
     {
-      "name": "ji_fw_live_on_premises",
+      "name": "null_37",
       "type": "VARCHAR"
     },
     {
-      "name": "ji_live_in_dom_svc_contract",
+      "name": "null_38",
       "type": "VARCHAR"
     },
     {
-      "name": "ji_live_in_domestic_service",
+      "name": "null_39",
       "type": "VARCHAR"
     },
     {
-      "name": "ji_offered_to_sec_j_foreign_worker",
+      "name": "null_40",
       "type": "VARCHAR"
     },
     {
-      "name": "ji_offered_to_sec_j_fw",
+      "name": "null_41",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_cmb_ed_oth_yrs",
+      "name": "null_42",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_combo_ed",
+      "name": "null_43",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_combo_ed_exp",
+      "name": "null_44",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_combo_ed_other",
+      "name": "null_45",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_field",
+      "name": "null_46",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_field_name",
+      "name": "null_47",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_occ",
+      "name": "null_48",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_occ_job_title",
+      "name": "null_49",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_alt_occ_num_months",
+      "name": "null_50",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_combo_occupation",
+      "name": "null_51",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_education",
+      "name": "null_52",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_education_other",
+      "name": "null_53",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_experience",
+      "name": "null_54",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_experience_num_months",
+      "name": "null_55",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_foreign_ed",
+      "name": "null_56",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_foreign_lang_req",
+      "name": "null_57",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_job_req_normal",
+      "name": "null_58",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_job_title",
+      "name": "null_59",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_major",
+      "name": "null_60",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_training",
+      "name": "null_61",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_training_field",
+      "name": "null_62",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_training_num_months",
+      "name": "null_63",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_work_city",
+      "name": "New York_1",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_work_postal_code",
+      "name": "null_64",
       "type": "VARCHAR"
     },
     {
-      "name": "job_info_work_state",
+      "name": "NY_1",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_2007_us_code",
+      "name": "541512",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_2007_us_title",
+      "name": "Computer Systems Design Services",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_code",
+      "name": "null_65",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_title",
+      "name": "null_66",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_us_code",
+      "name": "null_67",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_us_code_2007",
+      "name": "null_68",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_us_title",
+      "name": "null_69",
       "type": "VARCHAR"
     },
     {
-      "name": "naics_us_title_2007",
+      "name": "null_70",
       "type": "VARCHAR"
     },
     {
-      "name": "orig_case_no",
+      "name": "null_71",
       "type": "VARCHAR"
     },
     {
-      "name": "orig_file_date",
+      "name": "null_72",
       "type": "VARCHAR"
     },
     {
-      "name": "preparer_info_emp_completed",
+      "name": "null_73",
       "type": "VARCHAR"
     },
     {
-      "name": "preparer_info_title",
+      "name": "null_74",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_amount_9089",
-      "type": "DOUBLE"
+      "name": "75629.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "pw_determ_date",
+      "name": "null_75",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_expire_date",
+      "name": "null_76",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_job_title_908",
+      "name": "null_77",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_job_title_9089",
+      "name": "Computer Software Engineers, Applications",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_level_9089",
+      "name": "Level II",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_soc_code",
+      "name": "15-1031.00",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_soc_title",
+      "name": "Computer Software Engineers, Applications_1",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_source_name_9089",
+      "name": "OES",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_source_name_other_9089",
+      "name": "null_78",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_track_num",
+      "name": "null_79",
       "type": "VARCHAR"
     },
     {
-      "name": "pw_unit_of_pay_9089",
+      "name": "yr",
       "type": "VARCHAR"
     },
     {
-      "name": "rec_info_barg_rep_notified",
+      "name": "null_80",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_barg_rep_notified",
+      "name": "null_81",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_coll_teach_comp_proc",
+      "name": "null_82",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_coll_univ_teacher",
+      "name": "null_83",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_employer_rec_payment",
+      "name": "null_84",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_first_ad_start",
+      "name": "null_85",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_job_fair_from",
+      "name": "null_86",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_job_fair_to",
+      "name": "null_87",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_on_campus_recr_from",
+      "name": "null_88",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_on_campus_recr_to",
+      "name": "null_89",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_pro_org_advert_from",
+      "name": "null_90",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_pro_org_advert_to",
+      "name": "null_91",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_prof_org_advert_from",
+      "name": "null_92",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_prof_org_advert_to",
+      "name": "null_93",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_professional_occ",
+      "name": "null_94",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_radio_tv_ad_from",
+      "name": "null_95",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_radio_tv_ad_to",
+      "name": "null_96",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_second_ad_start",
+      "name": "null_97",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_sunday_newspaper",
+      "name": "null_98",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_swa_job_order_end",
+      "name": "null_99",
       "type": "VARCHAR"
     },
     {
-      "name": "recr_info_swa_job_order_start",
+      "name": "null_100",
       "type": "VARCHAR"
     },
     {
-      "name": "refile",
+      "name": "null_101",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_1st_ad_newspaper_name",
+      "name": "null_102",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_2nd_ad_newspaper_name",
+      "name": "null_103",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_2nd_ad_newspaper_or_journal",
+      "name": "null_104",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_campus_placement_from",
+      "name": "null_105",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_campus_placement_to",
+      "name": "null_106",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_coll_tch_basic_process",
+      "name": "null_107",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_coll_teach_pro_jnl",
+      "name": "null_108",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_coll_teach_select_date",
+      "name": "null_109",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_employee_referral_prog_from",
+      "name": "null_110",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_employee_referral_prog_to",
+      "name": "null_111",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_employer_web_post_from",
+      "name": "null_112",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_employer_web_post_to",
+      "name": "null_113",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_job_search_website_from",
+      "name": "null_114",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_job_search_website_to",
+      "name": "null_115",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_layoff_in_past_six_months",
+      "name": "null_116",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_local_ethnic_paper_from",
+      "name": "null_117",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_local_ethnic_paper_to",
+      "name": "null_118",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_posted_notice_at_worksite",
+      "name": "null_119",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_pvt_employment_firm_from",
+      "name": "null_120",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_pvt_employment_firm_to",
+      "name": "null_121",
       "type": "VARCHAR"
     },
     {
-      "name": "ri_us_workers_considered",
+      "name": "null_122",
       "type": "VARCHAR"
     },
     {
-      "name": "schd_a_sheepherder",
+      "name": "null_123",
       "type": "VARCHAR"
     },
     {
-      "name": "us_economic_sector",
+      "name": "IT",
       "type": "VARCHAR"
     },
     {
-      "name": "wage_offer_from_9089",
-      "type": "DOUBLE"
+      "name": "75629.0_1",
+      "type": "VARCHAR"
     },
     {
-      "name": "wage_offer_to_9089",
-      "type": "DOUBLE"
+      "name": "null_124",
+      "type": "VARCHAR"
     },
     {
-      "name": "wage_offer_unit_of_pay_9089",
+      "name": "yr_1",
       "type": "VARCHAR"
     },
     {
-      "name": "wage_offered_from_9089",
+      "name": "null_125",
       "type": "VARCHAR"
     },
     {
-      "name": "wage_offered_to_9089",
+      "name": "null_126",
       "type": "VARCHAR"
     },
     {
-      "name": "wage_offered_unit_of_pay_9089",
+      "name": "null_127",
       "type": "VARCHAR"
     }
   ]

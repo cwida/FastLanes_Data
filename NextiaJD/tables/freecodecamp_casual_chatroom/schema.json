@@ -1,0 +1,109 @@
+{
+  "table": "freecodecamp_casual_chatroom",
+  "columns": [
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "https://avatars2githubusercontent.com/u/2199663?v=3&s=128",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "https://avatars2.githubusercontent.com/u/2199663?v=3&s=60",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Charles Watson",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "3.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "546fd99cdb8155e6700d6ec8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "/sircharleswatson",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "sircharleswatson",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "no legumes either",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "54a4804fb2b2de4b786502bf",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "[]",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "[]_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "[]_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "22",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2014-12-31T23:01:35.647Z",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "no legumes either_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "False",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "[]_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1",
+      "type": "BIGINT"
+    }
+  ]
+}

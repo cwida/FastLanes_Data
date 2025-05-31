@@ -1,95 +1,96 @@
 {
+  "table": "Chicago_Crimes_2001_to_2004",
   "columns": [
     {
-      "name": "col1",
+      "name": "879",
       "type": "BIGINT"
     },
     {
-      "name": "ID",
+      "name": "4786321",
       "type": "BIGINT"
     },
     {
-      "name": "Case Number",
+      "name": "HM399414",
       "type": "VARCHAR"
     },
     {
-      "name": "Date",
+      "name": "01/01/2004 12:01:00 AM",
       "type": "TIMESTAMP"
     },
     {
-      "name": "Block",
+      "name": "082XX S COLES AVE",
       "type": "VARCHAR"
     },
     {
-      "name": "IUCR",
+      "name": "0840",
       "type": "VARCHAR"
     },
     {
-      "name": "Primary Type",
+      "name": "THEFT",
       "type": "VARCHAR"
     },
     {
-      "name": "Description",
+      "name": "FINANCIAL ID THEFT: OVER $300",
       "type": "VARCHAR"
     },
     {
-      "name": "Location Description",
+      "name": "RESIDENCE",
       "type": "VARCHAR"
     },
     {
-      "name": "Arrest",
+      "name": "False",
       "type": "BOOLEAN"
     },
     {
-      "name": "Domestic",
+      "name": "False_1",
       "type": "BOOLEAN"
     },
     {
-      "name": "Beat",
+      "name": "424",
       "type": "BIGINT"
     },
     {
-      "name": "District",
+      "name": "4.0",
       "type": "DOUBLE"
     },
     {
-      "name": "Ward",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "Community Area",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "FBI Code",
+      "name": "7.0",
       "type": "VARCHAR"
     },
     {
-      "name": "X Coordinate",
-      "type": "DOUBLE"
+      "name": "46.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "Y Coordinate",
-      "type": "DOUBLE"
+      "name": "06",
+      "type": "VARCHAR"
     },
     {
-      "name": "Year",
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2004",
       "type": "BIGINT"
     },
     {
-      "name": "Updated On",
+      "name": "08/17/2015 03:03:40 PM",
       "type": "TIMESTAMP"
     },
     {
-      "name": "Latitude",
-      "type": "DOUBLE"
+      "name": "null_2",
+      "type": "VARCHAR"
     },
     {
-      "name": "Longitude",
-      "type": "DOUBLE"
+      "name": "null_3",
+      "type": "VARCHAR"
     },
     {
-      "name": "Location",
+      "name": "null_4",
       "type": "VARCHAR"
     }
   ]

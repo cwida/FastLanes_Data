@@ -1,59 +1,60 @@
 {
+  "table": "trainView",
   "columns": [
     {
-      "name": "train_id",
+      "name": "102TT",
       "type": "VARCHAR"
     },
     {
-      "name": "status",
+      "name": "0",
       "type": "BIGINT"
     },
     {
-      "name": "next_station",
+      "name": "Radnor",
       "type": "VARCHAR"
     },
     {
-      "name": "service",
+      "name": "LOCAL",
       "type": "VARCHAR"
     },
     {
-      "name": "dest",
+      "name": "Colmar-Link Belt",
       "type": "VARCHAR"
     },
     {
-      "name": "lon",
+      "name": "-75.37250",
       "type": "DOUBLE"
     },
     {
-      "name": "lat",
+      "name": "40.04388",
       "type": "DOUBLE"
     },
     {
-      "name": "source",
+      "name": "Devon",
       "type": "VARCHAR"
     },
     {
-      "name": "track_change",
+      "name": "-1",
       "type": "VARCHAR"
     },
     {
-      "name": "track",
+      "name": "-1_1",
       "type": "VARCHAR"
     },
     {
-      "name": "date",
+      "name": "2016-04-22",
       "type": "DATE"
     },
     {
-      "name": "timeStamp0",
+      "name": "2016-04-22 13:21:07",
       "type": "TIMESTAMP"
     },
     {
-      "name": "timeStamp1",
+      "name": "2016-04-22 13:22:43",
       "type": "TIMESTAMP"
     },
     {
-      "name": "seconds",
+      "name": "96",
       "type": "BIGINT"
     }
   ]

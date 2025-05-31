@@ -1,0 +1,101 @@
+{
+  "table": "Iowa_Liquor_Sales",
+  "columns": [
+    {
+      "name": "S29198800001",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "11/20/2015",
+      "type": "DATE"
+    },
+    {
+      "name": "2191",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Keokuk Spirits",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1013 MAIN",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "KEOKUK",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "52632",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1013 MAIN\nKEOKUK 52632\n(40.39978, -91.387531)",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "56",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Lee",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "255",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Wilson Daniels Ltd.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "297",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Templeton Rye w/Flask",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "6",
+      "type": "BIGINT"
+    },
+    {
+      "name": "750",
+      "type": "BIGINT"
+    },
+    {
+      "name": "$18.09",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "$27.14",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "6_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "$162.84",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "4.50",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "1.19",
+      "type": "DOUBLE"
+    }
+  ]
+}

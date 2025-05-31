@@ -1,0 +1,57 @@
+{
+  "table": "library-collection-inventory",
+  "columns": [
+    {
+      "name": "3011076",
+      "type": "BIGINT"
+    },
+    {
+      "name": "A tale of two friends / adapted by Ellie O'Ryan ; illustrated by Tom Caulfield, Frederick Gardner, Megan Petasky, and Allen Tam.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "O'Ryan, Ellie",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1481425730, 1481425749, 9781481425735, 9781481425742",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2014.",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Simon Spotlight,",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Musicians Fiction, Bullfighters Fiction, Best friends Fiction, Friendship Fiction, Adventure and adventurers Fiction",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "jcbk",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "ncrdr",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Floating",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "qna",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2017-09-01T00:00:00.000",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "1",
+      "type": "BIGINT"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "table": "saudi-hourly-weather-data",
+  "columns": [
+    {
+      "name": "41140099999",
+      "type": "BIGINT"
+    },
+    {
+      "name": "KING ABDULLAH BIN ABDULAZIZ",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "SA",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2019",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2019-09-08T23:00:00+02:00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "16.901111",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "42.585833",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "6.09",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "60",
+      "type": "BIGINT"
+    },
+    {
+      "name": "ANGULAR DEGREES",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Normal",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2.1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "METERS PER SECOND",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "22000",
+      "type": "BIGINT"
+    },
+    {
+      "name": "METERS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Missing",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "No",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "10000",
+      "type": "BIGINT"
+    },
+    {
+      "name": "METERS_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Missing_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed gross limits check if element is present",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "28.5",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "DEGREES CELSIUS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "23",
+      "type": "BIGINT"
+    },
+    {
+      "name": "DEGREES CELSIUS_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1004.2",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "HECTOPASCALS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Passed all quality control checks_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "16.901111,42.585833",
+      "type": "VARCHAR"
+    }
+  ]
+}

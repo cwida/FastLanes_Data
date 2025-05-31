@@ -1,0 +1,53 @@
+{
+  "table": "high_speed_spanish_trains",
+  "columns": [
+    {
+      "name": "2019-04-11 21:49:46",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "MADRID",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BARCELONA",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2019-04-18 05:50:00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "2019-04-18 08:55:00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "AVE",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "68.95",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Preferente",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Promo",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    }
+  ]
+}

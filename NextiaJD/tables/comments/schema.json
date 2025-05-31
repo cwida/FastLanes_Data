@@ -1,27 +1,28 @@
 {
+  "table": "comments",
   "columns": [
     {
-      "name": "comment_id",
+      "name": "1",
       "type": "BIGINT"
     },
     {
-      "name": "post_id",
+      "name": "1_1",
       "type": "BIGINT"
     },
     {
-      "name": "content",
+      "name": "Seemed to work fine.",
       "type": "VARCHAR"
     },
     {
-      "name": "author",
+      "name": "BJ Cook",
       "type": "VARCHAR"
     },
     {
-      "name": "date",
+      "name": "2010-04-01",
       "type": "DATE"
     },
     {
-      "name": "vote",
+      "name": "1_2",
       "type": "BIGINT"
     }
   ]

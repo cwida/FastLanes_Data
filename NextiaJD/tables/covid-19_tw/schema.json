@@ -1,0 +1,89 @@
+{
+  "table": "covid-19_tw",
+  "columns": [
+    {
+      "name": "\ud83d\udea8 BREAKING \ud83d\udea8\n\nWe have therefore made the assessment that #COVID19 can be characterized as a pandemic-@DrTedros #coronavirus https://t.co/JqdsM2051A",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1237777021742338050",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2020-03-11 19:26:53",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "50467",
+      "type": "BIGINT"
+    },
+    {
+      "name": "55743",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "World Health Organization (WHO)",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "14499829",
+      "type": "BIGINT"
+    },
+    {
+      "name": "We are the #UnitedNations\u2019 health agency. We are committed to achieving better health for everyone, everywhere - #HealthForAll",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2008-04-23 22:56:27",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Geneva, Switzerland",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "48639",
+      "type": "BIGINT"
+    },
+    {
+      "name": "5896245",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1715",
+      "type": "BIGINT"
+    },
+    {
+      "name": "10510",
+      "type": "BIGINT"
+    }
+  ]
+}

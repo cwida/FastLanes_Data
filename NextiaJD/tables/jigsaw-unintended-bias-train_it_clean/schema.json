@@ -1,0 +1,185 @@
+{
+  "table": "jigsaw-unintended-bias-train_it_clean",
+  "columns": [
+    {
+      "name": "59848",
+      "type": "BIGINT"
+    },
+    {
+      "name": "Questo \u00e8 veramente forte. \u00c8 come 'vorresti che tua madre leggesse questo ??' Davvero un'ottima idea, ben fatta!",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_2",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_3",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_4",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_5",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_14",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_15",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_16",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_17",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_18",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_19",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_20",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_21",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_22",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_23",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2015-09-29 10:50:41.987077+00",
+      "type": "TIMESTAMP"
+    },
+    {
+      "name": "2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_24",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "2006",
+      "type": "BIGINT"
+    },
+    {
+      "name": "rejected",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_3",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0_4",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0.0_6",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0_5",
+      "type": "BIGINT"
+    },
+    {
+      "name": "4",
+      "type": "BIGINT"
+    }
+  ]
+}

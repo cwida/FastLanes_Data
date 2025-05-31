@@ -1,0 +1,21 @@
+{
+  "table": "news-week-17aug24",
+  "columns": [
+    {
+      "name": "201708240000",
+      "type": "BIGINT"
+    },
+    {
+      "name": "w3-adweek",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "http://www.adweek.com/digital/facebook-2017-global-partner-summit/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%253A%2Badweek%252Fthe-press%2B%2528Adweek%2BDigital%2529",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Here Are the Details on Facebook's Global Partner Summit",
+      "type": "VARCHAR"
+    }
+  ]
+}

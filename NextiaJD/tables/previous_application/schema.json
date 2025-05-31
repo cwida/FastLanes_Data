@@ -1,152 +1,153 @@
 {
+  "table": "previous_application",
   "columns": [
     {
-      "name": "SK_ID_PREV",
+      "name": "2030495",
       "type": "BIGINT"
     },
     {
-      "name": "SK_ID_CURR",
+      "name": "271877",
       "type": "BIGINT"
     },
     {
-      "name": "NAME_CONTRACT_TYPE",
+      "name": "Consumer loans",
       "type": "VARCHAR"
     },
     {
-      "name": "AMT_ANNUITY",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "AMT_APPLICATION",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "AMT_CREDIT",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "AMT_DOWN_PAYMENT",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "AMT_GOODS_PRICE",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "WEEKDAY_APPR_PROCESS_START",
+      "name": "1730.43",
       "type": "VARCHAR"
     },
     {
-      "name": "HOUR_APPR_PROCESS_START",
+      "name": "17145.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "17145.0_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "17145.0_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "SATURDAY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "15",
       "type": "BIGINT"
     },
     {
-      "name": "FLAG_LAST_APPL_PER_CONTRACT",
+      "name": "Y",
       "type": "VARCHAR"
     },
     {
-      "name": "NFLAG_LAST_APPL_IN_DAY",
+      "name": "1",
       "type": "BIGINT"
     },
     {
-      "name": "RATE_DOWN_PAYMENT",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "RATE_INTEREST_PRIMARY",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "RATE_INTEREST_PRIVILEGED",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "NAME_CASH_LOAN_PURPOSE",
+      "name": "0.0_1",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME_CONTRACT_STATUS",
+      "name": "0.18283180324152784",
       "type": "VARCHAR"
     },
     {
-      "name": "DAYS_DECISION",
+      "name": "0.8673361522198731",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "XAP",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "Approved",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "-73",
       "type": "BIGINT"
     },
     {
-      "name": "NAME_PAYMENT_TYPE",
+      "name": "Cash through the bank",
       "type": "VARCHAR"
     },
     {
-      "name": "CODE_REJECT_REASON",
+      "name": "XAP_1",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME_TYPE_SUITE",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME_CLIENT_TYPE",
+      "name": "Repeater",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME_GOODS_CATEGORY",
+      "name": "Mobile",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME_PORTFOLIO",
+      "name": "POS",
       "type": "VARCHAR"
     },
     {
-      "name": "NAME_PRODUCT_TYPE",
+      "name": "XNA",
       "type": "VARCHAR"
     },
     {
-      "name": "CHANNEL_TYPE",
+      "name": "Country-wide",
       "type": "VARCHAR"
     },
     {
-      "name": "SELLERPLACE_AREA",
+      "name": "35",
       "type": "BIGINT"
     },
     {
-      "name": "NAME_SELLER_INDUSTRY",
+      "name": "Connectivity",
       "type": "VARCHAR"
     },
     {
-      "name": "CNT_PAYMENT",
-      "type": "DOUBLE"
-    },
-    {
-      "name": "NAME_YIELD_GROUP",
+      "name": "12.0",
       "type": "VARCHAR"
     },
     {
-      "name": "PRODUCT_COMBINATION",
+      "name": "middle",
       "type": "VARCHAR"
     },
     {
-      "name": "DAYS_FIRST_DRAWING",
-      "type": "DOUBLE"
+      "name": "POS mobile with interest",
+      "type": "VARCHAR"
     },
     {
-      "name": "DAYS_FIRST_DUE",
-      "type": "DOUBLE"
+      "name": "365243.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "DAYS_LAST_DUE_1ST_VERSION",
-      "type": "DOUBLE"
+      "name": "-42.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "DAYS_LAST_DUE",
-      "type": "DOUBLE"
+      "name": "300.0",
+      "type": "VARCHAR"
     },
     {
-      "name": "DAYS_TERMINATION",
-      "type": "DOUBLE"
+      "name": "-42.0_1",
+      "type": "VARCHAR"
     },
     {
-      "name": "NFLAG_INSURED_ON_APPROVAL",
-      "type": "DOUBLE"
+      "name": "-37.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0.0_2",
+      "type": "VARCHAR"
     }
   ]
 }

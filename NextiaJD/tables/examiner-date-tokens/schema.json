@@ -1,0 +1,13 @@
+{
+  "table": "examiner-date-tokens",
+  "columns": [
+    {
+      "name": "20100101",
+      "type": "BIGINT"
+    },
+    {
+      "name": "100 most anticipated books releasing 2010",
+      "type": "VARCHAR"
+    }
+  ]
+}

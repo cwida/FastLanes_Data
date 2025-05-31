@@ -1,0 +1,149 @@
+{
+  "table": "Reddit_Comments_7M_2019",
+  "columns": [
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "jayburd13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1401375187.0",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "[]",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "text",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "t2_griiu",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "False",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "You have the map awareness of a raccoon in a garbage can",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1546300804",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0.0",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_1",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "0.0_2",
+      "type": "DOUBLE"
+    },
+    {
+      "name": "eczayvu",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "t3_ab8wps",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "True",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "t3_ab8wps_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "/r/leagueoflegends/comments/ab8wps/whats_the_bestfunniest_insults_youve_ever_heard/eczayvu/",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1546300806",
+      "type": "BIGINT"
+    },
+    {
+      "name": "1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "True_1",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "False_1",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "leagueoflegends",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "t5_2rfxx",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "1546300806.0",
+      "type": "DOUBLE"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "table": "news-week-18aug24",
+  "columns": [
+    {
+      "name": "201808240000",
+      "type": "BIGINT"
+    },
+    {
+      "name": "w3-24h-vn",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "https://www.24h.com.vn/bong-da/u23-viet-nam-vao-tu-ket-hlv-bahrain-to-trong-tai-bat-sai-khen-van-quyet-c48a985098.html",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "U23 Vi\u1ec7t Nam v\u00e0o t\u1ee9 k\u1ebft: HLV Bahrain t\u1ed1 tr\u1ecdng t\u00e0i b\u1eaft sai, khen V\u0103n Quy\u1ebft",
+      "type": "VARCHAR"
+    }
+  ]
+}

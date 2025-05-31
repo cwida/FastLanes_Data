@@ -1,35 +1,36 @@
 {
+  "table": "glassdoor_photos",
   "columns": [
     {
-      "name": "id",
+      "name": "26411",
       "type": "BIGINT"
     },
     {
-      "name": "index",
+      "name": "0",
       "type": "BIGINT"
     },
     {
-      "name": "photos_val_caption",
+      "name": "Mango day",
       "type": "VARCHAR"
     },
     {
-      "name": "photos_val_photoId",
+      "name": "10772510",
       "type": "BIGINT"
     },
     {
-      "name": "photos_val_photoId2x",
+      "name": "10772511",
       "type": "BIGINT"
     },
     {
-      "name": "photos_val_photoLink",
+      "name": "/Photos/Afiniti-Office-Photos-IMG1912051.htm",
       "type": "VARCHAR"
     },
     {
-      "name": "photos_val_photoUrl",
+      "name": "https://media.glassdoor.com/lst/1436090/afiniti-office.jpg",
       "type": "VARCHAR"
     },
     {
-      "name": "photos_val_photoUrl2x",
+      "name": "https://media.glassdoor.com/lst2x/1436090/afiniti-office.jpg",
       "type": "VARCHAR"
     }
   ]

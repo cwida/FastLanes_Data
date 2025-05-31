@@ -1,0 +1,193 @@
+{
+  "table": "Parking_Violations_Issued__Fiscal_Year_2014__August_2013___June_2014_",
+  "columns": [
+    {
+      "name": "1283294138",
+      "type": "BIGINT"
+    },
+    {
+      "name": "GBB9093",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "NY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "PAS",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "08/04/2013",
+      "type": "DATE"
+    },
+    {
+      "name": "46",
+      "type": "BIGINT"
+    },
+    {
+      "name": "SUBN",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "AUDI",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "P",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "37250",
+      "type": "BIGINT"
+    },
+    {
+      "name": "13610",
+      "type": "BIGINT"
+    },
+    {
+      "name": "21190",
+      "type": "BIGINT"
+    },
+    {
+      "name": "20140831",
+      "type": "BIGINT"
+    },
+    {
+      "name": "33",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "33_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "33_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "921043",
+      "type": "BIGINT"
+    },
+    {
+      "name": "0033",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0000",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "F",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "712",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "W 175 ST",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0",
+      "type": "BIGINT"
+    },
+    {
+      "name": "408",
+      "type": "BIGINT"
+    },
+    {
+      "name": "F1",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_2",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "BBBBBBB",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "GY",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_1",
+      "type": "BIGINT"
+    },
+    {
+      "name": "2013",
+      "type": "BIGINT"
+    },
+    {
+      "name": "-",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "0_2",
+      "type": "BIGINT"
+    },
+    {
+      "name": "null_3",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_4",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_5",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_6",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_7",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_8",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_9",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_10",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_11",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_12",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_13",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_14",
+      "type": "VARCHAR"
+    },
+    {
+      "name": "null_15",
+      "type": "VARCHAR"
+    }
+  ]
+}

@@ -1,75 +1,76 @@
 {
+  "table": "Consumer_Complaints",
   "columns": [
     {
-      "name": "Date received",
+      "name": "3/12/2014",
       "type": "DATE"
     },
     {
-      "name": "Product",
+      "name": "Mortgage",
       "type": "VARCHAR"
     },
     {
-      "name": "Sub-product",
+      "name": "Other mortgage",
       "type": "VARCHAR"
     },
     {
-      "name": "Issue",
+      "name": "Loan modification,collection,foreclosure",
       "type": "VARCHAR"
     },
     {
-      "name": "Subissue",
+      "name": "null",
       "type": "VARCHAR"
     },
     {
-      "name": "Consumer complaint narrative",
+      "name": "null_1",
       "type": "VARCHAR"
     },
     {
-      "name": "Company public response",
+      "name": "null_2",
       "type": "VARCHAR"
     },
     {
-      "name": "Company",
+      "name": "M&T BANK CORPORATION",
       "type": "VARCHAR"
     },
     {
-      "name": "State",
+      "name": "MI",
       "type": "VARCHAR"
     },
     {
-      "name": "ZIP code",
+      "name": "48382",
       "type": "VARCHAR"
     },
     {
-      "name": "Tags",
+      "name": "null_3",
       "type": "VARCHAR"
     },
     {
-      "name": "Consumer consent provided",
+      "name": "N/A",
       "type": "VARCHAR"
     },
     {
-      "name": "Submitted via",
+      "name": "Referral",
       "type": "VARCHAR"
     },
     {
-      "name": "Date sent to company",
+      "name": "3/17/2014",
       "type": "DATE"
     },
     {
-      "name": "Company response to consumer",
+      "name": "Closed with explanation",
       "type": "VARCHAR"
     },
     {
-      "name": "Timely response",
+      "name": "Yes",
+      "type": "BOOLEAN"
+    },
+    {
+      "name": "No",
       "type": "VARCHAR"
     },
     {
-      "name": "Consumer disputed",
-      "type": "VARCHAR"
-    },
-    {
-      "name": "Complaint ID",
+      "name": "759217",
       "type": "BIGINT"
     }
   ]
