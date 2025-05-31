@@ -4,13 +4,23 @@
 SHELL := /bin/bash
 
 PYTHON              := python3
-SCRIPT              := public_bi_extract_schemas.py
 VENV_DIR            := venv
 ENV_SCRIPT          := export_fastlanes_data_dir.sh
+
+# Existing scripts
+SCRIPT              := public_bi_extract_schemas.py
 REFORMAT            := reformat_csvs.py
 CSV_SIZE_REPORT     := csv_size_report.py
 
-.PHONY: all env install get_public_bi_schemas reformat_csvs check_metadata prepare_nextiajd csv_size_report clean
+# TPCH-related script and outputs
+TPCH_DIR            := tpch
+TPCH_SCRIPT         := generate_tpch.py
+TPCH_DB             := tpch/tpch_sf1.duckdb
+TPCH_FULL_OUT       := tpch/temp
+TPCH_SAMPLE_OUT     := tpch/tables
+
+.PHONY: all env install get_public_bi_schemas reformat_csvs check_metadata \
+        prepare_nextiajd csv_size_report prepare_tpch clean_tpch clean
 
 # Default: load env, create venv, and run schema extraction
 all: install get_public_bi_schemas
@@ -63,8 +73,25 @@ csv_size_report: install
 		$(PYTHON) scripts/$(CSV_SIZE_REPORT) > csv_sizes_report.csv
 	@echo "→ csv_sizes_report.csv created."
 
+# --------------------------------------------------------------------
+# TPCH targets
+
+# Generate full TPC-H SF=1 tables and exports inside tpch/
+prepare_tpch: install
+	@echo "Generating TPC-H SF=1 tables and exporting CSVs/schema under tpch/ ..."
+	@cd $(TPCH_DIR) && . ../$(VENV_DIR)/bin/activate && $(PYTHON) $(TPCH_SCRIPT)
+
+# Remove TPCH database and full exports only (preserve sampled tables)
+clean_tpch:
+	@echo "Cleaning up TPCH artifacts (excluding sampled tables)..."
+	@rm -f $(TPCH_DB)
+	@rm -rf $(TPCH_FULL_OUT)
+	@echo "Removed $(TPCH_DB) and $(TPCH_FULL_OUT)."
+
+# --------------------------------------------------------------------
 # Clean up generated files and virtual environment
-clean:
-	@echo "Cleaning up..."
-	rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
-	rm -rf NextiaJD/temp
+clean: clean_tpch
+	@echo "Cleaning up global artifacts..."
+	@rm -rf $(VENV_DIR) public_bi_benchmark ../public_bi/tables csv_sizes_report.csv
+	@rm -rf NextiaJD/temp
+	@echo "Cleanup complete."

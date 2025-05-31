@@ -1,0 +1,49 @@
+{
+    "columns": [
+        {
+            "name": "p_partkey",
+            "type": "BIGINT",
+            "index": 0
+        },
+        {
+            "name": "p_name",
+            "type": "VARCHAR",
+            "index": 1
+        },
+        {
+            "name": "p_mfgr",
+            "type": "VARCHAR",
+            "index": 2
+        },
+        {
+            "name": "p_brand",
+            "type": "VARCHAR",
+            "index": 3
+        },
+        {
+            "name": "p_type",
+            "type": "VARCHAR",
+            "index": 4
+        },
+        {
+            "name": "p_size",
+            "type": "INTEGER",
+            "index": 5
+        },
+        {
+            "name": "p_container",
+            "type": "VARCHAR",
+            "index": 6
+        },
+        {
+            "name": "p_retailprice",
+            "type": "DECIMAL(15,2)",
+            "index": 7
+        },
+        {
+            "name": "p_comment",
+            "type": "VARCHAR",
+            "index": 8
+        }
+    ]
+}
