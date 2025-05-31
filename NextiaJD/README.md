@@ -136,13 +136,20 @@ The following tables require manual attention:
     2. In DuckDB:
 
        ```sql
-       CREATE TABLE tmp AS SELECT * FROM read_csv_auto(
-         'tables/comments_negative/comments_negative.csv',
-         delim='|', quote='"', escape='\\', strict_mode=false
-       );
+       CREATE TABLE tmp AS 
+         SELECT * 
+         FROM read_csv_auto(
+           'tables/comments_negative/comments_negative.csv',
+           delim='|', 
+           quote='"', 
+           escape='\\', 
+           strict_mode=false
+         );
        PRAGMA write_json_schema('tmp', 'tables/comments_negative/schema.json');
        ```
     3. Commit the generated `schema.json`.
+
+---
 
 ### 2. `comments_positive.csv`
 
@@ -150,23 +157,27 @@ The following tables require manual attention:
 * **Issue**: Same sniffing failure as above.
 * **Action**: Follow identical steps to produce and commit `tables/comments_positive/schema.json`.
 
+---
+
 ### 3. `glassdoor.csv`
 
 * **Status**: Removed by cleanup (0 rows).
-* **Issue**: `remove_small_tables.py` deletes tables <65,536 rows.
+* **Issue**: `remove_small_tables.py` deletes tables with fewer than 65,536 rows.
 * **Action**:
 
     1. Verify `temp/glassdoor.csv.bz2` contains data.
-    2. Re-download or regenerate if missing.
-    3. Adjust `MIN_ROWS` threshold or add exception in `remove_small_tables.py`.
-    4. Re-run pipeline to restore `tables/glassdoor/`.
+    2. Re‐download or regenerate if missing.
+    3. Adjust the `MIN_ROWS` threshold or add an exception in `remove_small_tables.py`.
+    4. Re‐run the pipeline to restore `tables/glassdoor/`.
+
+---
 
 ### 4. `github_issues.csv`
 
 * **Status**: Removed by cleanup (forced deletion).
-* **Issue**: A Stripe Test API Secret Key was publicly leaked inside `tables/github_issues/github_issues.csv`,
-  triggering GitHub’s secret scanning. The pipeline automatically deletes any `github_issues` directory to prevent
-  further exposure.
+* **Issue**: A Stripe Test API Secret Key was publicly leaked inside
+  `tables/github_issues/github_issues.csv`, triggering GitHub’s secret scanning.
+  The pipeline automatically deletes any `github_issues` directory to prevent further exposure.
 * **Action**:
 
     1. **Rotate and revoke** the leaked Stripe Test API key immediately in your Stripe dashboard.
@@ -176,9 +187,67 @@ The following tables require manual attention:
        # Example using git-filter-repo (install with pip if needed)
        git filter-repo --path tables/github_issues/github_issues.csv --invert-paths
        ```
-    3. Ensure no other secrets remain in `github_issues.csv`. If sanitized data is needed, create a sanitized version (
-       e.g., strip out API keys) before re-adding.
-    4. Commit the changes and push to the remote repository. The pipeline’s `remove_small_tables.py` now skips (and
-       forces deletion of) `github_issues/` on each run.
+    3. Ensure no other secrets remain in `github_issues.csv`.
+       If sanitized data is needed, create a sanitized version (e.g., strip out API keys) before re‐adding.
+    4. Commit the changes and push to the remote repository.
+       The pipeline’s `remove_small_tables.py` now skips (and forces deletion of)
+       `github_issues/` on each run.
+
+---
+
+### 5. `bitcoin_reddit_all.csv`
+
+* **Status**: Removed by cleanup (forced deletion).
+* **Issue**: Its sample CSV contains malformed, multi‐line comments and unmatched quotes
+  that break standard parsing logic. In particular, many records span multiple lines
+  without proper quoting, causing downstream scripts (e.g., sample extraction, schema introspection) to fail.
+* **Action**:
+
+    1. If you need `bitcoin_reddit_all`, locate the raw
+       `tables/bitcoin_reddit_all/bitcoin_reddit_all.csv` and open it in a text editor
+       to inspect any records split across blank lines or missing closing quotes.
+    2. To fix manually:
+
+        * Find each record where a comment is split over multiple lines without balanced `"` characters.
+        * Either consolidate the entire multi‐line comment into one logical CSV row enclosed by matching quotes (so embedded `\n` is valid), or rewrite that record on a single line with all nine pipe-delimited fields.
+    3. To fix programmatically, run a “multiline fixer” that joins lines between unmatched quotes before re‐extracting samples. For example:
+
+       ```python
+       # fix_multiline.py (example script):
+       import os
+  
+       IN_CSV  = 'tables/bitcoin_reddit_all/bitcoin_reddit_all.csv'
+       OUT_CSV = 'tables/bitcoin_reddit_all/bitcoin_reddit_all_fixed.csv'
+  
+       def fix_multiline_records(input_path, output_path):
+           with open(input_path, 'r', encoding='utf-8', errors='replace') as fin, \
+                open(output_path, 'w', encoding='utf-8') as fout:
+               buff = ''
+               in_quoted = False
+               for raw in fin:
+                   line = raw.rstrip('\n')
+                   if not in_quoted:
+                       buff = line
+                       if line.count('"') % 2 == 1:
+                           in_quoted = True
+                       else:
+                           fout.write(buff + '\n')
+                           buff = ''
+                   else:
+                       buff += '\n' + line
+                       if buff.count('"') % 2 == 0:
+                           fout.write(buff + '\n')
+                           buff = ''
+                           in_quoted = False
+               if in_quoted and buff:
+                   fout.write(buff + '\n')
+                   print("Warning: final record had unbalanced quotes.")
+  
+       if __name__ == '__main__':
+           fix_multiline_records(IN_CSV, OUT_CSV)
+       ```
+    4. Update `extract_samples.py` and subsequent steps to point at
+       `bitcoin_reddit_all_fixed.csv` instead of the original.
+    5. After fixing, re‐run the pipeline from `extract_samples.py` onward to generate a valid sample and schema, then commit `tables/bitcoin_reddit_all/schema.json`.
 
 ---

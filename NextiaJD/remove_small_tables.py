@@ -6,6 +6,8 @@ Remove any table directory under tables/ whose sample CSV has fewer
 than N_ROWS data rows or whose sample CSV exceeds MAX_SIZE bytes.
 Assumes sample CSVs have no header row. Skips the 'metadata' directory.
 Additionally, always remove the 'github_issues' directory unconditionally.
+Also forcibly remove 'bitcoin_reddit_all' unconditionally, because its CSV
+contains malformed, multi-line comments and unmatched quotes that break parsing.
 """
 
 import sys
@@ -38,6 +40,13 @@ def main():
         # forcibly remove the "github_issues" table unconditionally
         if table_dir.name == "github_issues":
             print(f"-- Removing {table_dir.name}: forced deletion")
+            shutil.rmtree(table_dir)
+            continue
+
+        # forcibly remove the "bitcoin_reddit_all" table unconditionally,
+        # because its CSV contains malformed multi-line comments and unmatched quotes.
+        if table_dir.name == "bitcoin_reddit_all":
+            print(f"-- Removing {table_dir.name}: sample CSV has malformed, multi-line comments and unmatched quotes")
             shutil.rmtree(table_dir)
             continue
 
