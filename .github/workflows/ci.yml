@@ -31,6 +31,9 @@ jobs:
       - name: Set FASTLANES_DATA_DIR environment variable
         run: echo "FASTLANES_DATA_DIR=${GITHUB_WORKSPACE}" >> $GITHUB_ENV
 
+      - name: Run full NextiaJD pipeline
+        run: make prepare_nextiajd
+
       - name: Generate CSV size report
         run: make csv_size_report
 
